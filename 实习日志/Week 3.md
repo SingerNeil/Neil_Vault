@@ -2,7 +2,7 @@
 ---
 # TODO：
 1. 继续优化 **`autofocus_ucruve`** 算法
-2. 在INDIGO Client的**control panel**界面添加合适的Backlash参数，具体是何参数需要在调试设备时寻找![[Week3_INDIGO Control Panel-Backlash setting.png]]
+2. 在INDIGO Client的**control panel**界面添加合适的Backlash参数，具体是何参数需要在调试设备时寻找![](assets/Week%203/file-20251124145514652.png)
 3. 尝试理解 **`find_star`** 算法，即设备是如何找到星体的
 
 # BackLash
@@ -35,10 +35,10 @@ $$y=ax^2+bx+c$$
 ### 在Microsoft Excel中拟合曲线
 
 两次 **`autofocus_ucurve`** 过程中记录的数据：
-![[Week3_HFDs Positions Excel.png]]
+![](assets/Week%203/file-20251124145528520.png)
 
 在此基础上，按照上述步骤在Microsoft Excel内通过 **插入浮点图** 和 **添加趋势线** ，所拟合出的两条曲线：
-![[Week3_HFDs-Positions Polynomial U-curve.png]]
+![](assets/Week%203/file-20251124145534751.png)
 	可以得知两条曲线趋近于在Positions轴上的平移关系，且平移距离为 ***113.315***（两次`autofocus_ucurve`中`best_focuses`的差值）
 	
 	于是可以视为，该设备的**backlash**约等于 ***113.315***

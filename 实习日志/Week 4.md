@@ -156,6 +156,3 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib && gdbserver :2333 /usr/l
     
 - **GDB 缺库 (libpython2.7):** 在 `launch.json` 中将 `miDebuggerPath` 改为 `/usr/bin/gdb-multiarch`。
 
-
-
-test1!!!

@@ -2,7 +2,7 @@
 
 ---
 
-![[autofocus_ucurve.pdf]]
+![](assets/关于autofocus_ucurve的个人改进想法/file-20251124145559695.pdf)
 
 
 ```c

@@ -10,7 +10,7 @@ password: ***20210929***
 ## 2. 配置
 - 进入控制云台后，按照如下配置：
 
-![[Week1_INDIGO Server Manager配置.png]]
+![](assets/Week%201/file-20251124145405278.png)
 
 # 在linux里登录账号
 ## root账户
@@ -73,8 +73,8 @@ ps aux |grep gdbserver
 ```
 
 若被占用，则在获得其PID后使用`kill 14671`（PID例为14671）杀死占用端口的进程；或者使用`kill gdbserver`。
+![](assets/Week%201/file-20251124145444722.png)
 
-![[Week1_kill gdb-server.png]]
 #### **开启gdb-server的端口**
 确认端口未被占用后，执行
 ```

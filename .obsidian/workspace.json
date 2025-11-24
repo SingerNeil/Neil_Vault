@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "实习日志/Week 4.md",
+                "file": "实习日志/Week 1.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Week 4"
+              "title": "Week 1"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "实习日志/Week 4.md",
+                "file": "实习日志/Week 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Week 4 的反向链接列表"
+              "title": "Week 1 的反向链接列表"
             }
           },
           {
@@ -169,8 +169,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -186,23 +185,31 @@
   },
   "active": "e165cf22f3ed3b4e",
   "lastOpenFiles": [
+    "实习日志/Week 4.md",
     "实习日志/Week 3.md",
     "实习日志/Week 1.md",
+    "autofocus_ucurve算法/Urcurve算法流程-AIGC.md",
+    "autofocus_ucurve算法/关于autofocus_ucurve的个人改进想法.md",
+    "autofocus_ucurve算法/assets/关于autofocus_ucurve的个人改进想法/file-20251124145559695.pdf",
+    "autofocus_ucurve算法/assets/关于autofocus_ucurve的个人改进想法",
+    "autofocus_ucurve算法/assets",
+    "实习日志/assets/Week 3/file-20251124145534751.png",
+    "实习日志/assets/Week 3/file-20251124145528520.png",
+    "实习日志/assets/Week 3/file-20251124145514652.png",
+    "实习日志/assets/Week 3",
+    "实习日志/assets/Week 1/file-20251124145444722.png",
+    "实习日志/assets/Week 1/file-20251124145405278.png",
+    "实习日志/assets/Week 1",
+    "实习日志/assets",
+    "contents/autofocus_ucurve算法_contents/autofocus_ucurve.pdf",
+    "contents/实习日志_contents/Week1_INDIGO Server Manager配置.png",
+    "contents/实习日志_contents/Week3_INDIGO Control Panel-Backlash setting.png",
+    "contents/实习日志_contents/Week3_HFDs Positions Excel.png",
+    "contents/实习日志_contents/Week3_HFDs-Positions Polynomial U-curve.png",
+    "contents/实习日志_contents/Week1_kill gdb-server.png",
     "Polynomial_coefficient-AIGC/Polynomial_coefficient-AIGC.md",
     "Polynomial_coefficient-AIGC",
-    "contents/实习日志_contents/Week3_INDIGO Control Panel-Backlash setting.png",
-    "contents/实习日志_contents/Week3_HFDs-Positions Polynomial U-curve.png",
-    "contents/实习日志_contents/Week3_HFDs Positions Excel.png",
-    "contents/实习日志_contents/Week1_kill gdb-server.png",
-    "contents/实习日志_contents/Week1_INDIGO Server Manager配置.png",
-    "contents/autofocus_ucurve算法_contents/autofocus_ucurve.pdf",
     "contents/实习日志_contents",
-    "contents/autofocus_ucurve算法_contents",
-    "contents",
-    "autofocus_ucurve算法/关于autofocus_ucurve的个人改进想法.md",
-    "autofocus_ucurve算法/Urcurve算法流程-AIGC.md",
-    "autofocus_ucurve算法",
-    "实习日志/Week 4.md",
-    "实习日志"
+    "contents/autofocus_ucurve算法_contents"
   ]
 }
