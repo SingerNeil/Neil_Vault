@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "实习日志/Week 1.md",
+                "file": "实习日志/Week 3.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Week 1"
+              "title": "Week 3"
+            }
+          },
+          {
+            "id": "42015c7f2cbde2e0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "实习日志/Week 4.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Week 4"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "实习日志/Week 1.md",
+                "file": "实习日志/Week 4.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Week 1 的反向链接列表"
+              "title": "Week 4 的反向链接列表"
             }
           },
           {
@@ -183,13 +198,13 @@
       "bases:创建新数据库": false
     }
   },
-  "active": "e165cf22f3ed3b4e",
+  "active": "42015c7f2cbde2e0",
   "lastOpenFiles": [
-    "实习日志/Week 4.md",
     "实习日志/Week 3.md",
-    "实习日志/Week 1.md",
-    "autofocus_ucurve算法/Urcurve算法流程-AIGC.md",
+    "实习日志/Week 4.md",
     "autofocus_ucurve算法/关于autofocus_ucurve的个人改进想法.md",
+    "autofocus_ucurve算法/Urcurve算法流程-AIGC.md",
+    "实习日志/Week 1.md",
     "autofocus_ucurve算法/assets/关于autofocus_ucurve的个人改进想法/file-20251124145559695.pdf",
     "autofocus_ucurve算法/assets/关于autofocus_ucurve的个人改进想法",
     "autofocus_ucurve算法/assets",
