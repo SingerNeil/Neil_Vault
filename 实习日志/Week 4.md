@@ -155,3 +155,7 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib && gdbserver :2333 /usr/l
 - **SCP 报错 Connection closed:** 必须加 `-O` 参数以支持旧版 SCP 协议。
     
 - **GDB 缺库 (libpython2.7):** 在 `launch.json` 中将 `miDebuggerPath` 改为 `/usr/bin/gdb-multiarch`。
+
+
+
+test1!!!
