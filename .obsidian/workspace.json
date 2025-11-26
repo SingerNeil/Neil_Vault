@@ -22,15 +22,17 @@
             }
           },
           {
-            "id": "8081eb8de9f01f38",
+            "id": "0a3534fd323b490b",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.10.6"
+                "file": "实习日志/Week 4.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-book-up",
-              "title": "版本说明 1.10.6"
+              "icon": "lucide-file",
+              "title": "Week 4"
             }
           }
         ],
@@ -169,12 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "实习日志/Week 4.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "Week 4 的大纲"
             }
           }
         ],
@@ -196,12 +199,12 @@
       "bases:创建新数据库": false
     }
   },
-  "active": "8081eb8de9f01f38",
+  "active": "0a3534fd323b490b",
   "lastOpenFiles": [
-    "实习日志/Week 1.md",
-    "实习日志/Week 3.md",
     "实习日志/Week 5.md",
     "实习日志/Week 4.md",
+    "实习日志/Week 1.md",
+    "实习日志/Week 3.md",
     "README.md",
     "autofocus_ucurve算法/关于autofocus_ucurve的个人改进想法.md",
     "autofocus_ucurve算法/Urcurve算法流程-AIGC.md",

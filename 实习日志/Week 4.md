@@ -40,7 +40,7 @@ git clone --branch master --depth 1 https://gh-proxy.com/https://github.com/nelv
 - 默认通过远程订阅获取配置，远程订阅地址请自行在机场查看
 - 验证是否连通外网：`wget www.google.com`
 
-## 命令一览
+## 命令
 执行`clashhelp` 列出开箱即用的快捷命令
 ```
 eds@eds-MotherBoard-Series:~$ clashhelp
@@ -67,7 +67,7 @@ Commands:
 # 嵌入式 Linux 交叉编译与远程调试 SOP
 
 **项目路径:** `~/code/seeing`
-**目标板 IP:** `192.168.124.248`
+**目标板 IP:** `192.168.124.12`
 **工具链:** `arm-buildroot-linux-gnueabihf-` (Linux x86_64 Host)
 
 ---
