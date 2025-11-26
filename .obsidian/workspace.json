@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "实习日志/Week 5.md",
+                "file": "实习日志/Week 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Week 5"
+              "title": "Week 1"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "实习日志/Week 5.md",
+                "file": "实习日志/Week 1.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Week 5 的大纲"
+              "title": "Week 1 的大纲"
             }
           }
         ],
@@ -186,9 +186,9 @@
   },
   "active": "42015c7f2cbde2e0",
   "lastOpenFiles": [
+    "实习日志/Week 5.md",
     "实习日志/Week 4.md",
     "README.md",
-    "实习日志/Week 5.md",
     "实习日志/Week 1.md",
     "实习日志/Week 3.md",
     "autofocus_ucurve算法/关于autofocus_ucurve的个人改进想法.md",
