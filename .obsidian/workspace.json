@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "Week 4"
             }
+          },
+          {
+            "id": "8081eb8de9f01f38",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.10.6"
+              },
+              "icon": "lucide-book-up",
+              "title": "版本说明 1.10.6"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -156,13 +169,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "实习日志/Week 4.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Week 4 的大纲"
+              "title": "大纲"
             }
           }
         ],
@@ -184,7 +196,7 @@
       "bases:创建新数据库": false
     }
   },
-  "active": "42015c7f2cbde2e0",
+  "active": "8081eb8de9f01f38",
   "lastOpenFiles": [
     "实习日志/Week 1.md",
     "实习日志/Week 3.md",
