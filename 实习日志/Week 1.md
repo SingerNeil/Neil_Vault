@@ -102,7 +102,7 @@ scp -r ./output/usr/local/bin/* root@192.168.124.12:/usr/local/bin/
 scp -r ./output/usr/local/* root@192.168.124.12:/usr/local/
 ```
 ### 开始debug
-1. 完成同步后，还需要在VSCode的terminal内输入 **`make all`** 来编译代码，在此之后才可以正常使用。
+1. 完成同步前，需要在VSCode的terminal内输入 **`make all`** 来编译代码。
 2. 在VSCode里点击debug图标，选择***Debug edscap(gdbserver)*** 后直接设置断点，启动即可（无需再在root账户下重复start indigo，因为按下debug的时候已经开启了设备）。
 3. 回到网页[192.168.124.12:7624](http://192.168.124.12:7624)上，重新按照前文内容配置INDIGO Server Manager，随后照常操作、调试。
 
