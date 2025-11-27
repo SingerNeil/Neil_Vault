@@ -90,11 +90,11 @@ gdbserver :2333 /usr/local/bin/indigo_server --
 ### 代码同步
  若存在代码内容的修改，则需要在Visual Studio Code的terminal里输入两条命令（位于~/code/seeing下）：
 ```
-scp -r ./output/usr/local/lib/* root@192.168.124.12:/usr/local/lib/
+scp -O -r ./output/usr/local/lib/* root@192.168.124.12:/usr/local/lib/
 ```
 
 ```
-scp -r ./output/usr/local/bin/* root@192.168.124.12:/usr/local/bin/
+scp -O -r ./output/usr/local/bin/* root@192.168.124.12:/usr/local/bin/
 ```
 做到将 **设备板子内的代码**和 **个人账户上的修改过的代码** 同步。
 或直接输入以下命令来粗暴地替换全部（不建议）
