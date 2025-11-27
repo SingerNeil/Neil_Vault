@@ -96,7 +96,7 @@ scp -O -r ./output/usr/local/lib/* root@192.168.124.12:/usr/local/lib/
 ```
 scp -O -r ./output/usr/local/bin/* root@192.168.124.12:/usr/local/bin/
 ```
-做到将 **设备板子内的代码**和 **个人账户上的修改过的代码** 同步。
+做到把 **个人机子上编译完成的执行文件** 替换  **设备板子内的执行文件**。
 或直接输入以下命令来粗暴地替换全部（不建议）
 ```
 scp -r ./output/usr/local/* root@192.168.124.12:/usr/local/
