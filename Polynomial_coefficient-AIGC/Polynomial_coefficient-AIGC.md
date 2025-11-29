@@ -1,4 +1,4 @@
-test
+testing
 这段代码正是 U-Curve 自动对焦算法里用于“拟合出清晰度曲线”的核心数学部分——
 ****多项式最小二乘拟合（Polynomial Least Squares Fitting）***。
 
