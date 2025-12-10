@@ -24,46 +24,6 @@ sudo apt install ./包名.deb
 - 它可以自动处理依赖关系
 - 注意：必须加上`./` ，否则apt会去软件源里面找！
 
-# 在Linux上 优雅地部署基于 clash/mihomo 的代理环境
-详细完整版请查看：[Gitee开源地址](https://gitee.com/tools-repo/clash-for-linux-install)
-
-## 环境要求
-- 需要root或sudo权限
-
-## 一键安装
-以下命令适用于`x86_64`架构
-``` 
-git clone --branch master --depth 1 https://gh-proxy.com/https://github.com/nelvko/clash-for-linux-install.git \
-  && cd clash-for-linux-install \
-  && sudo bash -c '. install.sh; exec bash'
-```
-- 默认通过远程订阅获取配置，远程订阅地址请自行在机场查看
-- 验证是否连通外网：`wget www.google.com`
-
-## 命令
-执行`clashhelp` 列出开箱即用的快捷命令
-```
-eds@eds-MotherBoard-Series:~$ clashhelp
-    
-Usage:
-    clashctl COMMAND  [OPTION]
-
-Commands:
-    on                      开启代理
-    off                     关闭代理
-    proxy    [on|off]       系统代理
-    ui                      面板地址
-    status                  内核状况
-    tun      [on|off]       Tun 模式
-    mixin    [-e|-r]        Mixin 配置
-    secret   [SECRET]       Web 密钥
-    update   [auto|log]     更新订阅
-    upgrade                 升级内核
-
-
-
-```
-
 # 嵌入式 Linux 交叉编译与远程调试 SOP
 
 **项目路径:** `~/code/seeing`
@@ -156,3 +116,5 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib && gdbserver :2333 /usr/l
     
 - **GDB 缺库 (libpython2.7):** 在 `launch.json` 中将 `miDebuggerPath` 改为 `/usr/bin/gdb-multiarch`。
 
+# 在Linux上 优雅地部署基于 clash/mihomo 的代理环境
+详细完整版请查看：[Gitee开源地址](https://gitee.com/tools-repo/clash-for-linux-install)
