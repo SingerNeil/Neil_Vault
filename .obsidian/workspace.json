@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PULSAR_11_ONSTEP_V1.0.md",
+                "file": "嵌入式硬件规格书/PULSAR_11_ONSTEP_V1.0.md",
                 "mode": "source",
                 "source": false
               },
@@ -171,7 +171,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PULSAR_11_ONSTEP_V1.0.md",
+                "file": "嵌入式硬件规格书/PULSAR_11_ONSTEP_V1.0.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -209,38 +209,39 @@
       "bases:创建新数据库": false
     }
   },
-  "active": "3e9e138fc9e714b5",
+  "active": "04733a6b4ea12b83",
   "lastOpenFiles": [
+    "嵌入式硬件规格书/assets/PULSAR_11_ONSTEP_V1.0",
+    "嵌入式硬件规格书/assets",
+    "嵌入式硬件规格书",
+    "嵌入式硬件规格书/assets/PULSAR_11_ONSTEP_V1.0/PULSAR_11_ONSTEP_V1.0_20251224.pdf",
+    "嵌入式硬件规格书/PULSAR_11_ONSTEP_V1.0.md",
+    "Polynomial_coefficient-AIGC/Polynomial_coefficient-AIGC.md",
+    "README.md",
+    "assets/PULSAR_11_ONSTEP_V1.0",
+    "assets",
     "实习日志/Week7.md",
-    "PULSAR_11_ONSTEP_V1.0.md",
     "嵌入式",
     "实习日志/Documents",
     "实习日志/Week 4.md",
     "实习日志/Week 3.md",
     "实习日志/Week 1.md",
     "实习日志/TODOs.md",
-    "Polynomial_coefficient-AIGC/Polynomial_coefficient-AIGC.md",
     "autofocus_ucurve算法/Urcurve算法流程-AIGC.md",
     "autofocus_ucurve算法/关于autofocus_ucurve的个人改进想法.md",
     "实习日志/assets/Week 3/file-20251124145534751.png",
     "实习日志/Week 6.md",
     "autofocus_ucurve算法/assets/关于autofocus_ucurve的个人改进想法/file-20251124145559695.pdf",
-    "README.md",
     "autofocus_ucurve算法/assets/关于autofocus_ucurve的个人改进想法",
     "autofocus_ucurve算法/assets",
     "实习日志/assets/Week 3/file-20251124145528520.png",
     "实习日志/assets/Week 3/file-20251124145514652.png",
-    "实习日志/assets/Week 3",
     "实习日志/assets/Week 1/file-20251124145444722.png",
     "实习日志/assets/Week 1/file-20251124145405278.png",
-    "实习日志/assets/Week 1",
-    "实习日志/assets",
-    "contents/autofocus_ucurve算法_contents/autofocus_ucurve.pdf",
     "contents/实习日志_contents/Week1_INDIGO Server Manager配置.png",
     "contents/实习日志_contents/Week3_INDIGO Control Panel-Backlash setting.png",
     "contents/实习日志_contents/Week3_HFDs Positions Excel.png",
     "contents/实习日志_contents/Week3_HFDs-Positions Polynomial U-curve.png",
-    "contents/实习日志_contents/Week1_kill gdb-server.png",
-    "Polynomial_coefficient-AIGC"
+    "contents/实习日志_contents/Week1_kill gdb-server.png"
   ]
 }
