@@ -232,4 +232,4 @@ PULSAR_11的机械尺寸如下：
 
 ---
 
-以上是根据RING_CAA规格书结构，为PULSAR_11_ONSTEP_V1.0板子撰写的硬件规格书。你可以根据这个框架进一步细化每个模块的功能和设计细节，确保规格书全面、清晰。如果需要更多帮助或修改建议，请告诉我！![](assets/PULSAR_11_ONSTEP_V1.0/PULSAR_11_ONSTEP_V1.0_20251224.pdf)![](assets/PULSAR_11_ONSTEP_V1.0/光环RING_CAA_V1.0硬件规格书.pdf)
+以上是根据RING_CAA规格书结构，为PULSAR_11_ONSTEP_V1.0板子撰写的硬件规格书。你可以根据这个框架进一步细化每个模块的功能和设计细节，确保规格书全面、清晰。如果需要更多帮助或修改建议，请告诉我！![](assets/AIGC-PULSAR_11_ONSTEP_V1.0/PULSAR_11_ONSTEP_V1.0_20251224.pdf)![](assets/AIGC-PULSAR_11_ONSTEP_V1.0/光环RING_CAA_V1.0硬件规格书.pdf)
