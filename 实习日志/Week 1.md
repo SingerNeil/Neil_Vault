@@ -16,18 +16,18 @@ password: ***20210929***
 ## root账户
 在terminal通过命令 
 有线网络:
-```
-ssh root@192.168.124.12
+```bash
+ssh root@192.168.124.31
 ``` 
 WIFI:
-```
+```bash
 ssh root@192.168.124.248
 ```
 进入管理员账户；
 password: **`zynq`**。
 
 若登陆别的账号，有时候需要加上端口（例如7624）：
-```
+```bash
 ssh [username]@192.168.124.12 -p 7624
 ```
 
@@ -60,15 +60,14 @@ ssh [username]@192.168.124.12 -p 7624
 ## debug准备步骤（在root账户下）
 ### 1. 检验HOME路径是否正确
 执行 `echo $HOME` ，若是输出 /root ，代表HOME路径恢复了默认，需要执行：
-``
-```
+```bash
 export HOME=/media/ssd
 ````
 ### 2. 开放ndigo设备上的server端口
 #### 在使用端口前，先确定目标端口是否被占用
 
 监测查看indigo的gdb-server：
-```	
+```	bash
 ps aux |grep gdbserver
 ```
 
@@ -77,11 +76,11 @@ ps aux |grep gdbserver
 
 #### **开启gdb-server的端口**
 确认端口未被占用后，执行
-```
+```bash
 gdbserver :2333 /usr/local/bin/indigo_server
 ```
 或
-```
+```bash
 gdbserver :2333 /usr/local/bin/indigo_server --
 ```
 （以我个人选择的端口为==[2333]==为例）。
@@ -89,16 +88,16 @@ gdbserver :2333 /usr/local/bin/indigo_server --
 ## 在 Visual Studio Code 上进行debug
 ### 代码同步
  若存在代码内容的修改，则需要在Visual Studio Code的terminal里输入两条命令（位于~/code/seeing下）：
-```
+```bash
 scp -O -r ./output/usr/local/lib/* root@192.168.124.12:/usr/local/lib/
 ```
 
-```
+```bash
 scp -O -r ./output/usr/local/bin/* root@192.168.124.12:/usr/local/bin/
 ```
 做到把 **个人机子上编译完成的执行文件** 替换  **设备板子内的执行文件**。
 或直接输入以下命令来粗暴地替换全部（不建议）
-```
+```bash
 scp -r ./output/usr/local/* root@192.168.124.12:/usr/local/
 ```
 ### 开始debug

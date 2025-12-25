@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "实习日志/TODOs.md",
+                "file": "实习日志/Week 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TODOs"
+              "title": "Week 1"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "实习日志/TODOs.md",
+                "file": "实习日志/Week 1.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "TODOs 的大纲"
+              "title": "Week 1 的大纲"
             }
           },
           {
@@ -194,13 +194,13 @@
       "bases:创建新数据库": false
     }
   },
-  "active": "230a7068ae1de48c",
+  "active": "42015c7f2cbde2e0",
   "lastOpenFiles": [
+    "实习日志/TODOs.md",
     "实习日志/Week 4.md",
     "实习日志/Week 3.md",
     "实习日志/Week 1.md",
     "实习日志/assets/Week 3/file-20251124145534751.png",
-    "实习日志/TODOs.md",
     "实习日志/Week 6.md",
     "autofocus_ucurve算法/关于autofocus_ucurve的个人改进想法.md",
     "autofocus_ucurve算法/assets/关于autofocus_ucurve的个人改进想法/file-20251124145559695.pdf",

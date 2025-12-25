@@ -60,7 +60,7 @@ make CROSS_COMPILE=$(pwd)/toolchain/bin/arm-buildroot-linux-gnueabihf-
 
 Bash
 
-```
+```bash
 # 1. 杀掉板子上的旧进程
 ssh root@192.168.124.248 "killall -9 indigo_server"
 
@@ -81,7 +81,7 @@ scp -O -r ./output/usr/local/lib/* root@192.168.124.248:/usr/local/lib/
 
 Bash
 
-```
+```bash
 # 设置环境变量并启动监听 (端口 2333)
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib && gdbserver :2333 /usr/local/bin/indigo_server
 ```
