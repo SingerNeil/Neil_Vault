@@ -2,6 +2,6 @@
   "theme": "system",
   "cssTheme": "Things",
   "baseFontSizeAction": true,
-  "baseFontSize": 20,
+  "baseFontSize": 16,
   "nativeMenus": false
 }
