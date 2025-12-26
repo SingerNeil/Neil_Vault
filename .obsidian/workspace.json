@@ -93,7 +93,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "c9a118fc8541b218",
@@ -195,7 +196,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 243.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -209,7 +210,7 @@
       "bases:创建新数据库": false
     }
   },
-  "active": "04733a6b4ea12b83",
+  "active": "3e9e138fc9e714b5",
   "lastOpenFiles": [
     "嵌入式硬件规格书/assets/AIGC-PULSAR_11_ONSTEP_V1.0",
     "嵌入式硬件规格书/assets/AIGC-PULSAR_11_ONSTEP_V1.0/光环RING_CAA_V1.0硬件规格书.pdf",
