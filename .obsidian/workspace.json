@@ -28,7 +28,7 @@
               "type": "markdown",
               "state": {
                 "file": "嵌入式硬件规格书/AIGC-PULSAR_11_ONSTEP_V1.0.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
@@ -93,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "c9a118fc8541b218",
@@ -212,10 +211,11 @@
   },
   "active": "3e9e138fc9e714b5",
   "lastOpenFiles": [
+    "实习日志/Week 4.md",
+    "嵌入式硬件规格书/AIGC-PULSAR_11_ONSTEP_V1.0.md",
     "嵌入式硬件规格书/assets/AIGC-PULSAR_11_ONSTEP_V1.0",
     "嵌入式硬件规格书/assets/AIGC-PULSAR_11_ONSTEP_V1.0/光环RING_CAA_V1.0硬件规格书.pdf",
     "嵌入式硬件规格书/assets/AIGC-PULSAR_11_ONSTEP_V1.0/PULSAR_11_ONSTEP_V1.0_20251224.pdf",
-    "嵌入式硬件规格书/AIGC-PULSAR_11_ONSTEP_V1.0.md",
     "嵌入式硬件规格书/assets/PULSAR_11_ONSTEP_V1.0",
     "嵌入式硬件规格书/assets",
     "嵌入式硬件规格书",
@@ -226,7 +226,6 @@
     "实习日志/Week7.md",
     "嵌入式",
     "实习日志/Documents",
-    "实习日志/Week 4.md",
     "实习日志/Week 3.md",
     "实习日志/Week 1.md",
     "实习日志/TODOs.md",
@@ -234,7 +233,6 @@
     "autofocus_ucurve算法/关于autofocus_ucurve的个人改进想法.md",
     "实习日志/assets/Week 3/file-20251124145534751.png",
     "实习日志/Week 6.md",
-    "autofocus_ucurve算法/assets/关于autofocus_ucurve的个人改进想法/file-20251124145559695.pdf",
     "实习日志/assets/Week 3/file-20251124145528520.png",
     "实习日志/assets/Week 3/file-20251124145514652.png",
     "实习日志/assets/Week 1/file-20251124145444722.png",
