@@ -15,13 +15,10 @@
 
 建议将以下代码添加到 `~/.zshrc` 中，实现一键切换。
 
-Bash
-
 ```bash
 # 编辑配置文件
 nano ~/.zshrc
 ```
-
  *粘贴以下内容
  ThinkBook Battery Mode Switch*
  ```bash
