@@ -20,12 +20,16 @@ Bash
 ```bash
 # 编辑配置文件
 nano ~/.zshrc
+```
 
-# 粘贴以下内容
-# ThinkBook Battery Mode Switch
+ *粘贴以下内容
+ ThinkBook Battery Mode Switch*
+ ```bash
 alias bat-full='echo 0 | sudo tee /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode && echo "🚀 Mode: Full Charge (100%)"'
 alias bat-save='echo 1 | sudo tee /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode && echo "🛡️ Mode: Conservation (80%)"'
+```
 
+```bash
 # 生效配置
 source ~/.zshrc
 ```
