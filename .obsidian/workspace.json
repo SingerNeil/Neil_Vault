@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
-                "mode": "source",
+                "file": "Git 冲突处理与手动同步核心手册.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Git 冲突处理与手动同步核心手册"
             }
           },
           {
@@ -170,13 +170,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
+                "file": "Git 冲突处理与手动同步核心手册.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "README 的大纲"
+              "title": "Git 冲突处理与手动同步核心手册 的大纲"
             }
           },
           {
@@ -210,8 +210,9 @@
   },
   "active": "3e9e138fc9e714b5",
   "lastOpenFiles": [
-    "Polynomial_coefficient-AIGC/Polynomial_coefficient-AIGC.md",
     "README.md",
+    "Git 冲突处理与手动同步核心手册.md",
+    "Polynomial_coefficient-AIGC/Polynomial_coefficient-AIGC.md",
     "实习日志/TODOs.md",
     "嵌入式硬件规格书/PULSAR_11_V1.0_ONSTEP/assets/AIGC-PULSAR_11_ONSTEP_V1.0",
     "嵌入式硬件规格书/PULSAR_11_V1.0_ONSTEP/assets",
