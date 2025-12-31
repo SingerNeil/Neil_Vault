@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "实习日志/TODOs.md",
+                "file": "Polynomial_coefficient-AIGC/Polynomial_coefficient-AIGC.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TODOs"
+              "title": "Polynomial_coefficient-AIGC"
             }
           },
           {
@@ -170,13 +170,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "实习日志/TODOs.md",
+                "file": "Polynomial_coefficient-AIGC/Polynomial_coefficient-AIGC.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "TODOs 的大纲"
+              "title": "Polynomial_coefficient-AIGC 的大纲"
             }
           },
           {
@@ -210,8 +210,8 @@
   },
   "active": "3e9e138fc9e714b5",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
     "实习日志/TODOs.md",
+    "conflict-files-obsidian-git.md",
     "实习日志/Week 3.md",
     "实习日志/Week 1.md",
     "实习日志/Week 4.md",
