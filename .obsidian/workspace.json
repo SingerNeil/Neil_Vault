@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "3e9e138fc9e714b5",
+            "id": "99ae4f8b98267556",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300
   },
   "right": {
     "id": "c9a118fc8541b218",
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "实习日志/Week 4.md",
+                "file": "Polynomial_coefficient-AIGC/Polynomial_coefficient-AIGC.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Week 4 的反向链接列表"
+              "title": "Polynomial_coefficient-AIGC 的反向链接列表"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "实习日志/Week 4.md",
+                "file": "Polynomial_coefficient-AIGC/Polynomial_coefficient-AIGC.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Week 4 的出链列表"
+              "title": "Polynomial_coefficient-AIGC 的出链列表"
             }
           },
           {
@@ -164,67 +164,58 @@
               "icon": "lucide-list",
               "title": "markdown笔记云端储存与同步 的大纲"
             }
-          },
-          {
-            "id": "75754e2586bbadcf",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
-            }
           }
         ],
         "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 243.5
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-git:Open Git source control": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "bases:创建新数据库": false
+      "bases:创建新数据库": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3e9e138fc9e714b5",
+  "active": "99ae4f8b98267556",
   "lastOpenFiles": [
     "README.md",
     "markdown笔记云端储存与同步.md",
-    "Polynomial_coefficient-AIGC/Polynomial_coefficient-AIGC.md",
-    "实习日志/TODOs.md",
-    "嵌入式硬件规格书/PULSAR_11_V1.0_ONSTEP/assets/AIGC-PULSAR_11_ONSTEP_V1.0",
-    "嵌入式硬件规格书/PULSAR_11_V1.0_ONSTEP/assets",
-    "嵌入式硬件规格书/PULSAR_11_V1.0_ONSTEP",
     "conflict-files-obsidian-git.md",
-    "实习日志/Week 3.md",
-    "实习日志/Week 1.md",
-    "实习日志/Week 4.md",
+    "未命名.md",
+    "Polynomial_coefficient-AIGC/Polynomial_coefficient-AIGC.md",
     "Linux ThinkBook 相关/限制充电-full&save.md",
-    "Linux ThinkBook 相关",
-    "实习日志/未命名",
-    "实习日志/assets/Week 1/file-20251124145405278.png",
-    "嵌入式硬件规格书/PULSAR_11_V1.0_ONSTEP/AIGC-PULSAR_11_ONSTEP_V1.0.md",
-    "嵌入式硬件规格书/assets/AIGC-PULSAR_11_ONSTEP_V1.0",
     "嵌入式硬件规格书/PULSAR_11_V1.0_ONSTEP/assets/AIGC-PULSAR_11_ONSTEP_V1.0/光环RING_CAA_V1.0硬件规格书.pdf",
     "嵌入式硬件规格书/PULSAR_11_V1.0_ONSTEP/assets/AIGC-PULSAR_11_ONSTEP_V1.0/PULSAR_11_ONSTEP_V1.0_20251224.pdf",
-    "嵌入式硬件规格书/assets/PULSAR_11_ONSTEP_V1.0",
+    "嵌入式硬件规格书/PULSAR_11_V1.0_ONSTEP/assets/AIGC-PULSAR_11_ONSTEP_V1.0",
+    "嵌入式硬件规格书/PULSAR_11_V1.0_ONSTEP/assets",
+    "嵌入式硬件规格书/PULSAR_11_V1.0_ONSTEP/AIGC-PULSAR_11_ONSTEP_V1.0.md",
+    "嵌入式硬件规格书/PULSAR_11_V1.0_ONSTEP",
+    "嵌入式硬件规格书/AIGC-PULSAR_11_ONSTEP_V1.0.md",
+    "嵌入式硬件规格书/assets/AIGC-PULSAR_11_ONSTEP_V1.0/PULSAR_11_ONSTEP_V1.0_20251224.pdf",
+    "嵌入式硬件规格书/assets/AIGC-PULSAR_11_ONSTEP_V1.0/光环RING_CAA_V1.0硬件规格书.pdf",
+    "嵌入式硬件规格书/assets/AIGC-PULSAR_11_ONSTEP_V1.0",
     "嵌入式硬件规格书/assets",
-    "实习日志/Week7.md",
-    "autofocus_ucurve算法/Urcurve算法流程-AIGC.md",
+    "嵌入式硬件规格书",
+    "实习日志/TODOs.md",
+    "实习日志/Week 1.md",
+    "实习日志/Week 4.md",
+    "实习日志/Week 3.md",
+    "实习日志/Week 5.md",
     "autofocus_ucurve算法/关于autofocus_ucurve的个人改进想法.md",
+    "autofocus_ucurve算法/Urcurve算法流程-AIGC.md",
     "实习日志/assets/Week 3/file-20251124145534751.png",
-    "实习日志/Week 6.md",
     "实习日志/assets/Week 3/file-20251124145528520.png",
     "实习日志/assets/Week 3/file-20251124145514652.png",
     "实习日志/assets/Week 1/file-20251124145444722.png",
+    "实习日志/assets/Week 1/file-20251124145405278.png",
     "contents/实习日志_contents/Week1_INDIGO Server Manager配置.png",
     "contents/实习日志_contents/Week3_INDIGO Control Panel-Backlash setting.png",
     "contents/实习日志_contents/Week3_HFDs Positions Excel.png",
