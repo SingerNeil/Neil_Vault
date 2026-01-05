@@ -3,8 +3,24 @@
 
 # 基于Github的Obsidian库免费同步方案
 
-## 1.下载Obsidian，
+[B站视频教程](https://www.bilibili.com/video/BV1fZCyBYEuT/?spm_id_from=333.1387.favlist.content.click&vd_source=4a26dae16046c52dd00442733da50418)
 
+---
+## 背景
+***Obsidian***是本人目前用过最流畅的免费笔记软件，它拥有十分强大的笔记间连接功能和海量的第三方插件库，十分适合个人用户使用。
+同时其笔记均以**库的形式**存储在本地，没有对运营方跑路和个人隐私泄露的担忧（反观一些云笔记软件），且在Windows、MacOS、Linux各大发行版、Android、IOS上均有稳定可靠的版本可供使用。
+
+要说其唯一不足便是没有同样免费的笔记云同步服务，***Obsidian***自带的云同步笔记服务需要充值会员才可使用。
+但众所周知，GitHub现如今已然成为计算机科学相关产业的基础设施之一。于是本篇笔记，受B站up主**技术爬爬虾**启发，为解决前文提到的困难而给出一种方案——**提供一个基于GitHub的Obsidian云同步方案**。
+
+---
+## 1. 下载Obsidian
+- 前往[Obsidian官网下载页面](https://obsidian.md/download)下载符合自己操作系统的版本
+
+---
+## 2. 在GitHub上为笔记库建立repository
+- 登录自己的[GitHub](https://github.com/dashboard)账户
+- 创建一个新的repository
 
 
 
@@ -50,7 +66,7 @@ git clean -fd
 1. **定位冲突**：在 Obsidian 中找到出现 `<<<<<<< HEAD` 标记的文件。
     
 2. **编辑文件**：手动删除 Git 的标记符，保留需要的内容：
-    
+    /
     - `<<<<<<< HEAD` (本地内容开始)
         
     - `=======` (本地与云端的分隔线)
