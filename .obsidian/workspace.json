@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "markdown笔记云端储存与同步异常处理.md",
-                "mode": "source",
+                "file": "markdown笔记云端储存与同步异常处理/markdown笔记云端储存与同步异常处理.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -156,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "markdown笔记云端储存与同步异常处理.md",
+                "file": "markdown笔记云端储存与同步异常处理/markdown笔记云端储存与同步异常处理.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -196,8 +196,15 @@
   },
   "active": "3e9e138fc9e714b5",
   "lastOpenFiles": [
+    "markdown笔记云端储存与同步异常处理/assets/markdown笔记云端储存与同步异常处理/file-20260105232641088.png",
+    "markdown笔记云端储存与同步异常处理/assets/markdown笔记云端储存与同步异常处理/file-20260105231442728.png",
+    "markdown笔记云端储存与同步异常处理/markdown笔记云端储存与同步异常处理.md",
+    "markdown笔记云端储存与同步异常处理/assets/markdown笔记云端储存与同步异常处理",
+    "markdown笔记云端储存与同步异常处理/assets",
+    "markdown笔记云端储存与同步异常处理",
+    "assets/markdown笔记云端储存与同步异常处理",
+    "assets",
     "().md",
-    "markdown笔记云端储存与同步异常处理.md",
     "Polynomial_coefficient-AIGC/Polynomial_coefficient-AIGC.md",
     "autofocus_ucurve算法/关于autofocus_ucurve的个人改进想法.md",
     "autofocus_ucurve算法/Urcurve算法流程-AIGC.md",
@@ -215,11 +222,6 @@
     "实习日志/未命名",
     "实习日志/assets/Week 1/file-20251124145405278.png",
     "嵌入式硬件规格书/PULSAR_11_V1.0_ONSTEP/AIGC-PULSAR_11_ONSTEP_V1.0.md",
-    "嵌入式硬件规格书/assets/AIGC-PULSAR_11_ONSTEP_V1.0",
-    "嵌入式硬件规格书/PULSAR_11_V1.0_ONSTEP/assets/AIGC-PULSAR_11_ONSTEP_V1.0/光环RING_CAA_V1.0硬件规格书.pdf",
-    "嵌入式硬件规格书/PULSAR_11_V1.0_ONSTEP/assets/AIGC-PULSAR_11_ONSTEP_V1.0/PULSAR_11_ONSTEP_V1.0_20251224.pdf",
-    "嵌入式硬件规格书/assets/PULSAR_11_ONSTEP_V1.0",
-    "嵌入式硬件规格书/assets",
     "实习日志/Week7.md",
     "实习日志/assets/Week 3/file-20251124145534751.png",
     "实习日志/Week 6.md",
@@ -229,7 +231,6 @@
     "contents/实习日志_contents/Week1_INDIGO Server Manager配置.png",
     "contents/实习日志_contents/Week3_INDIGO Control Panel-Backlash setting.png",
     "contents/实习日志_contents/Week3_HFDs Positions Excel.png",
-    "contents/实习日志_contents/Week3_HFDs-Positions Polynomial U-curve.png",
-    "contents/实习日志_contents/Week1_kill gdb-server.png"
+    "contents/实习日志_contents/Week3_HFDs-Positions Polynomial U-curve.png"
   ]
 }
