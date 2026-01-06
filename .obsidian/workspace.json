@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "6df8a5a4f4563708",
+        "id": "0afb75509b68d1e8",
         "type": "tabs",
         "children": [
           {
-            "id": "3e9e138fc9e714b5",
+            "id": "495b9c593487e398",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "markdown笔记云端储存与同步异常处理/markdown笔记云端储存与同步异常处理.md",
-                "mode": "preview",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "markdown笔记云端储存与同步异常处理"
+              "title": "新标签页"
             }
           }
         ]
@@ -94,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "实习日志/Week 4.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +99,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Week 4 的反向链接列表"
+              "title": "反向链接"
             }
           },
           {
@@ -113,12 +108,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "实习日志/Week 4.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Week 4 的出链列表"
+              "title": "出链"
             }
           },
           {
@@ -156,13 +150,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "markdown笔记云端储存与同步异常处理/markdown笔记云端储存与同步异常处理.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "markdown笔记云端储存与同步异常处理 的大纲"
+              "title": "大纲"
             }
           },
           {
@@ -176,7 +169,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -194,11 +187,14 @@
       "bases:创建新数据库": false
     }
   },
-  "active": "3e9e138fc9e714b5",
+  "active": "0a151553477e4569",
   "lastOpenFiles": [
-    "markdown笔记云端储存与同步异常处理/assets/markdown笔记云端储存与同步异常处理/file-20260105232641088.png",
-    "markdown笔记云端储存与同步异常处理/assets/markdown笔记云端储存与同步异常处理/file-20260105231442728.png",
-    "markdown笔记云端储存与同步异常处理/markdown笔记云端储存与同步异常处理.md",
+    "markdown笔记云端储存与同步异常处理/assets/基于Github的Obsidian库免费同步方案/file-20260105232641088.png",
+    "markdown笔记云端储存与同步异常处理/assets/基于Github的Obsidian库免费同步方案/file-20260105231442728.png",
+    "Linux ThinkBook/限制充电-full&save.md",
+    "markdown笔记云端储存与同步异常处理/基于Github的Obsidian库免费同步方案.md",
+    "markdown笔记云端储存与同步异常处理/Git 冲突处理与手动同步核心手册.md",
+    "markdown笔记云端储存与同步异常处理/assets/基于Github的Obsidian库免费同步方案",
     "markdown笔记云端储存与同步异常处理/assets/markdown笔记云端储存与同步异常处理",
     "markdown笔记云端储存与同步异常处理/assets",
     "markdown笔记云端储存与同步异常处理",
@@ -208,7 +204,6 @@
     "Polynomial_coefficient-AIGC/Polynomial_coefficient-AIGC.md",
     "autofocus_ucurve算法/关于autofocus_ucurve的个人改进想法.md",
     "autofocus_ucurve算法/Urcurve算法流程-AIGC.md",
-    "Linux ThinkBook 相关/限制充电-full&save.md",
     "README.md",
     "实习日志/Week 4.md",
     "实习日志/Week 3.md",
@@ -218,8 +213,7 @@
     "嵌入式硬件规格书/PULSAR_11_V1.0_ONSTEP/assets",
     "嵌入式硬件规格书/PULSAR_11_V1.0_ONSTEP",
     "conflict-files-obsidian-git.md",
-    "Linux ThinkBook 相关",
-    "实习日志/未命名",
+    "Linux ThinkBook",
     "实习日志/assets/Week 1/file-20251124145405278.png",
     "嵌入式硬件规格书/PULSAR_11_V1.0_ONSTEP/AIGC-PULSAR_11_ONSTEP_V1.0.md",
     "实习日志/Week7.md",
@@ -230,7 +224,6 @@
     "实习日志/assets/Week 1/file-20251124145444722.png",
     "contents/实习日志_contents/Week1_INDIGO Server Manager配置.png",
     "contents/实习日志_contents/Week3_INDIGO Control Panel-Backlash setting.png",
-    "contents/实习日志_contents/Week3_HFDs Positions Excel.png",
-    "contents/实习日志_contents/Week3_HFDs-Positions Polynomial U-curve.png"
+    "contents/实习日志_contents/Week3_HFDs Positions Excel.png"
   ]
 }
