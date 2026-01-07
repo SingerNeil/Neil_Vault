@@ -11,12 +11,14 @@
             "id": "99ae4f8b98267556",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "企业系统复习/企业系统.pdf"
+                "file": "企业系统复习/企业系统复习.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "企业系统"
+              "icon": "lucide-file",
+              "title": "企业系统复习"
             }
           }
         ]
@@ -76,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "c9a118fc8541b218",
@@ -154,13 +157,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "企业系统复习/企业系统.pdf",
+                "file": "企业系统复习/企业系统复习.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "企业系统 的大纲"
+              "title": "企业系统复习 的大纲"
             }
           }
         ],
@@ -168,8 +171,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -185,8 +187,9 @@
   },
   "active": "99ae4f8b98267556",
   "lastOpenFiles": [
-    "企业系统复习/企业系统复习.md",
+    "企业系统复习/~$1第一章管理信息系统概述.pptx",
     "企业系统复习/企业系统.pdf",
+    "企业系统复习/企业系统复习.md",
     "企业系统复习/1第一章管理信息系统概述.pptx",
     "企业系统复习/2第二章MIS的研制途径.ppt",
     "企业系统复习/3第三章管理信息系统规划.ppt",
