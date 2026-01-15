@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "实习日志/Week 4.md",
+                "file": "autofocus_ucurve算法/Urcurve算法流程-AIGC.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Week 4"
+              "title": "Urcurve算法流程-AIGC"
             }
           }
         ]
@@ -112,12 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "实习日志/Week 4.md",
+                "file": "autofocus_ucurve算法/Urcurve算法流程-AIGC.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Week 4"
+              "title": "Outgoing links from Urcurve算法流程-AIGC"
             }
           },
           {
@@ -194,10 +194,17 @@
   },
   "active": "986d1049e077dedd",
   "lastOpenFiles": [
+    "autofocus_ucurve算法/Polynomial_coefficient-AIGC.md",
+    "autofocus_ucurve算法/关于autofocus_ucurve的个人改进想法.md",
+    "autofocus_ucurve算法/Urcurve算法流程-AIGC.md",
+    "markdown笔记云端储存与同步异常处理/基于Github的Obsidian库免费同步方案.md",
+    "markdown笔记云端储存与同步异常处理/Git 冲突处理与手动同步核心手册.md",
+    "Linux ThinkBook/限制充电-full&save.md",
+    "实习日志/Week 3.md",
+    "实习日志/Week 4.md",
+    "实习日志/Week 1.md",
     "企业系统复习/企业系统.pdf",
     "企业系统复习/企业系统复习.md",
-    "markdown笔记云端储存与同步异常处理/Git 冲突处理与手动同步核心手册.md",
-    "markdown笔记云端储存与同步异常处理/基于Github的Obsidian库免费同步方案.md",
     "conflict-files-obsidian-git.md",
     "README.md",
     "企业系统复习/~$7第七章 系统运营与维护.pptx",
@@ -209,16 +216,9 @@
     "企业系统复习/4第四章系统分析.pptx",
     "企业系统复习/3第三章管理信息系统规划.ppt",
     "企业系统复习/2第二章MIS的研制途径.ppt",
-    "Polynomial_coefficient-AIGC/Polynomial_coefficient-AIGC.md",
-    "Linux ThinkBook/限制充电-full&save.md",
     "markdown笔记云端储存与同步异常处理/assets/基于Github的Obsidian库免费同步方案/file-20260105231442728.png",
-    "实习日志/Week 4.md",
-    "实习日志/Week 1.md",
-    "实习日志/Week 3.md",
     "markdown笔记云端储存与同步异常处理/assets/基于Github的Obsidian库免费同步方案/file-20260105232641088.png",
     "().md",
-    "autofocus_ucurve算法/关于autofocus_ucurve的个人改进想法.md",
-    "autofocus_ucurve算法/Urcurve算法流程-AIGC.md",
     "实习日志/TODOs.md",
     "实习日志/assets/Week 1/file-20251124145405278.png",
     "嵌入式硬件规格书/PULSAR_11_V1.0_ONSTEP/AIGC-PULSAR_11_ONSTEP_V1.0.md",
