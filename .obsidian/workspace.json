@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "嵌入式/PULSAR_11_V1.0_ONSTEP/U1_引脚定义.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -89,24 +89,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "280d78837965c5fb",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "collapseAll": true,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "反向链接"
-            }
-          },
-          {
             "id": "0a151553477e4569",
             "type": "leaf",
             "state": {
@@ -173,8 +155,7 @@
               "title": "git-view"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -192,7 +173,51 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "04733a6b4ea12b83",
+  "floating": {
+    "id": "c9c81fcdd2f38b4b",
+    "type": "floating",
+    "children": [
+      {
+        "id": "1b35c4448a325987",
+        "type": "window",
+        "children": [
+          {
+            "id": "c5a391fa5271b682",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "280d78837965c5fb",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "嵌入式/PULSAR_11_V1.0_ONSTEP/U1_引脚定义.md",
+                    "collapseAll": true,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-coming-in",
+                  "title": "Backlinks for U1_引脚定义"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 1216,
+        "y": 81,
+        "width": 600,
+        "height": 600,
+        "maximize": false,
+        "zoom": 1
+      }
+    ]
+  },
+  "active": "280d78837965c5fb",
   "lastOpenFiles": [
     "嵌入式/PULSAR_11_V1.0_ONSTEP/PULSAR规格书.md",
     "嵌入式/PULSAR_11_V1.0_ONSTEP/U1_引脚定义.md",
