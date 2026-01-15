@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "嵌入式/PULSAR/PULSAR_11_V1.0_ONSTEP/AIGC-PULSAR_11_ONSTEP_V1.0.md",
+                "file": "嵌入式/PULSAR_11_V1.0_ONSTEP/PULSAR规格书/AIGC-PULSAR_11_ONSTEP_V1.0.md",
                 "mode": "source",
                 "source": false
               },
@@ -112,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "嵌入式/PULSAR/PULSAR_11_V1.0_ONSTEP/AIGC-PULSAR_11_ONSTEP_V1.0.md",
+                "file": "嵌入式/PULSAR_11_V1.0_ONSTEP/PULSAR规格书/AIGC-PULSAR_11_ONSTEP_V1.0.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -194,7 +194,7 @@
   },
   "active": "04733a6b4ea12b83",
   "lastOpenFiles": [
-    "嵌入式/PULSAR",
+    "嵌入式/PULSAR_11_V1.0_ONSTEP",
     "autofocus_ucurve算法/Urcurve算法流程-AIGC.md",
     "autofocus_ucurve算法/Polynomial_coefficient-AIGC.md",
     "autofocus_ucurve算法/关于autofocus_ucurve的个人改进想法.md",
@@ -222,7 +222,7 @@
     "().md",
     "实习日志/TODOs.md",
     "实习日志/assets/Week 1/file-20251124145405278.png",
-    "嵌入式/PULSAR/PULSAR_11_V1.0_ONSTEP/AIGC-PULSAR_11_ONSTEP_V1.0.md",
+    "嵌入式/PULSAR_11_V1.0_ONSTEP/PULSAR规格书/AIGC-PULSAR_11_ONSTEP_V1.0.md",
     "实习日志/Week7.md",
     "实习日志/assets/Week 3/file-20251124145534751.png",
     "实习日志/Week 6.md",
