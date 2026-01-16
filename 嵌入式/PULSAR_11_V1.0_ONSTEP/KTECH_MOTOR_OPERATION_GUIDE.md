@@ -387,10 +387,3 @@ MSG: CanPlus, CAN_ESP32 (TWAI) Start... FAILED! twai_driver_install err=265
 ```
 
 ---
-
-## 有用的链接
-
-- [OnStep LX200 命令文档](https://groups.io/g/onstep/wiki/Commands)
-- [KTECH CAN协议文档](https://github.com/onstep/OnStepX/wiki/CAN-Bus-Integration)
-- [ESP32 TWAI驱动文档](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/peripherals/twai.html)
-
