@@ -13,30 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "嵌入式/PULSAR_11_V1.0_ONSTEP/U1_引脚定义.md",
+                "file": "嵌入式/PULSAR_11_V1.0_ONSTEP/KTECH_MOTOR_OPERATION_GUIDE.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "U1_引脚定义"
-            }
-          },
-          {
-            "id": "04738afce9e3f1fe",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "嵌入式/PULSAR_11_V1.0_ONSTEP/CAN总线测试说明.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "CAN总线测试说明"
+              "title": "KTECH_MOTOR_OPERATION_GUIDE"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -109,12 +94,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "嵌入式/PULSAR_11_V1.0_ONSTEP/CAN总线测试说明.md",
+                "file": "嵌入式/PULSAR_11_V1.0_ONSTEP/KTECH_MOTOR_OPERATION_GUIDE.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from CAN总线测试说明"
+              "title": "Outgoing links from KTECH_MOTOR_OPERATION_GUIDE"
             }
           },
           {
@@ -152,13 +137,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "嵌入式/PULSAR_11_V1.0_ONSTEP/CAN总线测试说明.md",
+                "file": "嵌入式/PULSAR_11_V1.0_ONSTEP/KTECH_MOTOR_OPERATION_GUIDE.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of CAN总线测试说明"
+              "title": "Outline of KTECH_MOTOR_OPERATION_GUIDE"
             }
           },
           {
@@ -177,7 +162,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "嵌入式/PULSAR_11_V1.0_ONSTEP/CAN总线测试说明.md",
+                "file": "嵌入式/PULSAR_11_V1.0_ONSTEP/KTECH_MOTOR_OPERATION_GUIDE.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +172,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for CAN总线测试说明"
+              "title": "Backlinks for KTECH_MOTOR_OPERATION_GUIDE"
             }
           }
         ],
@@ -210,12 +195,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "04738afce9e3f1fe",
+  "active": "9f4a4957c8f40fb7",
   "lastOpenFiles": [
-    "嵌入式/PULSAR_11_V1.0_ONSTEP/Untitled.md",
-    "嵌入式/PULSAR_11_V1.0_ONSTEP/CAN总线测试说明.md",
     "嵌入式/PULSAR_11_V1.0_ONSTEP/U1_引脚定义.md",
     "嵌入式/PULSAR_11_V1.0_ONSTEP/PULSAR规格书.md",
+    "嵌入式/PULSAR_11_V1.0_ONSTEP/KTECH_MOTOR_OPERATION_GUIDE.md",
+    "嵌入式/PULSAR_11_V1.0_ONSTEP/CAN总线测试说明.md",
+    "嵌入式/PULSAR_11_V1.0_ONSTEP/Untitled.md",
     "嵌入式/PULSAR_11_V1.0_ONSTEP/assets/PULSAR规格书",
     "嵌入式/PULSAR_11_V1.0_ONSTEP/assets/AIGC-PULSAR_11_ONSTEP_V1.0",
     "嵌入式/PULSAR_11_V1.0_ONSTEP/assets",
