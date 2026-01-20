@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "嵌入式/PULSAR_11_V1.0_ONSTEP/KTECH_MOTOR_OPERATION_GUIDE.md",
+                "file": "TempFiles/MCU1_WORK_SUMMARY.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "KTECH_MOTOR_OPERATION_GUIDE"
+              "title": "MCU1_WORK_SUMMARY"
             }
           }
         ]
@@ -197,9 +197,11 @@
   },
   "active": "9f4a4957c8f40fb7",
   "lastOpenFiles": [
+    "嵌入式/PULSAR_11_V1.0_ONSTEP/KTECH_MOTOR_OPERATION_GUIDE.md",
+    "TempFiles/MCU1_WORK_SUMMARY.md",
+    "TempFiles",
     "嵌入式/PULSAR_11_V1.0_ONSTEP/U1_引脚定义.md",
     "嵌入式/PULSAR_11_V1.0_ONSTEP/PULSAR规格书.md",
-    "嵌入式/PULSAR_11_V1.0_ONSTEP/KTECH_MOTOR_OPERATION_GUIDE.md",
     "嵌入式/PULSAR_11_V1.0_ONSTEP/CAN总线测试说明.md",
     "嵌入式/PULSAR_11_V1.0_ONSTEP/Untitled.md",
     "嵌入式/PULSAR_11_V1.0_ONSTEP/assets/PULSAR规格书",
@@ -223,7 +225,6 @@
     "企业系统复习/~$1第一章管理信息系统概述.pptx",
     "企业系统复习/8第八章Web信息系统开发.pptx",
     "企业系统复习/7第七章 系统运营与维护.pptx",
-    "企业系统复习/6第六章管理信息系统的实施.pptx",
     "markdown笔记云端储存与同步异常处理/assets/基于Github的Obsidian库免费同步方案/file-20260105231442728.png",
     "markdown笔记云端储存与同步异常处理/assets/基于Github的Obsidian库免费同步方案/file-20260105232641088.png",
     "().md",
