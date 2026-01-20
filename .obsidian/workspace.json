@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TempFiles/MCU1_WORK_SUMMARY.md",
+                "file": "Git操作/Git_Workflow_SOP.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MCU1_WORK_SUMMARY"
+              "title": "Git_Workflow_SOP"
             }
           }
         ]
@@ -137,13 +137,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "嵌入式/PULSAR_11_V1.0_ONSTEP/KTECH_MOTOR_OPERATION_GUIDE.md",
+                "file": "Git操作/Git_Workflow_SOP.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of KTECH_MOTOR_OPERATION_GUIDE"
+              "title": "Outline of Git_Workflow_SOP"
             }
           },
           {
@@ -180,8 +180,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 243.5,
-    "collapsed": true
+    "width": 243.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -197,8 +196,13 @@
   },
   "active": "9f4a4957c8f40fb7",
   "lastOpenFiles": [
-    "嵌入式/PULSAR_11_V1.0_ONSTEP/KTECH_MOTOR_OPERATION_GUIDE.md",
     "TempFiles/MCU1_WORK_SUMMARY.md",
+    "Git操作/Git_Workflow_SOP.md",
+    "Git操作",
+    "README.md",
+    "markdown笔记云端储存与同步异常处理/Git 冲突处理与手动同步核心手册.md",
+    "markdown笔记云端储存与同步异常处理/基于Github的Obsidian库免费同步方案.md",
+    "嵌入式/PULSAR_11_V1.0_ONSTEP/KTECH_MOTOR_OPERATION_GUIDE.md",
     "TempFiles",
     "嵌入式/PULSAR_11_V1.0_ONSTEP/U1_引脚定义.md",
     "嵌入式/PULSAR_11_V1.0_ONSTEP/PULSAR规格书.md",
@@ -211,8 +215,6 @@
     "autofocus_ucurve算法/Urcurve算法流程-AIGC.md",
     "autofocus_ucurve算法/Polynomial_coefficient-AIGC.md",
     "autofocus_ucurve算法/关于autofocus_ucurve的个人改进想法.md",
-    "markdown笔记云端储存与同步异常处理/基于Github的Obsidian库免费同步方案.md",
-    "markdown笔记云端储存与同步异常处理/Git 冲突处理与手动同步核心手册.md",
     "Linux ThinkBook/限制充电-full&save.md",
     "实习日志/Week 3.md",
     "实习日志/Week 4.md",
@@ -220,11 +222,9 @@
     "企业系统复习/企业系统.pdf",
     "企业系统复习/企业系统复习.md",
     "conflict-files-obsidian-git.md",
-    "README.md",
     "企业系统复习/~$7第七章 系统运营与维护.pptx",
     "企业系统复习/~$1第一章管理信息系统概述.pptx",
     "企业系统复习/8第八章Web信息系统开发.pptx",
-    "企业系统复习/7第七章 系统运营与维护.pptx",
     "markdown笔记云端储存与同步异常处理/assets/基于Github的Obsidian库免费同步方案/file-20260105231442728.png",
     "markdown笔记云端储存与同步异常处理/assets/基于Github的Obsidian库免费同步方案/file-20260105232641088.png",
     "().md",
