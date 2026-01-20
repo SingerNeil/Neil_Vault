@@ -4,24 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "ec72ebfb98807fc2",
+        "id": "6df8a5a4f4563708",
         "type": "tabs",
         "children": [
           {
-            "id": "9f4a4957c8f40fb7",
+            "id": "99ae4f8b98267556",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Git操作/Git_Workflow_SOP.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
               "title": "Git_Workflow_SOP"
             }
+          },
+          {
+            "id": "dccfe025f65332d3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "markdown笔记云端储存与同步异常处理/Git 冲突处理与手动同步核心手册.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Git 冲突处理与手动同步核心手册"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -44,7 +59,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "文件列表"
             }
           },
           {
@@ -89,17 +104,36 @@
         "type": "tabs",
         "children": [
           {
+            "id": "280d78837965c5fb",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Polynomial_coefficient-AIGC/Polynomial_coefficient-AIGC.md",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Polynomial_coefficient-AIGC 的反向链接列表"
+            }
+          },
+          {
             "id": "0a151553477e4569",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "嵌入式/PULSAR_11_V1.0_ONSTEP/KTECH_MOTOR_OPERATION_GUIDE.md",
-                "linksCollapsed": true,
+                "file": "Polynomial_coefficient-AIGC/Polynomial_coefficient-AIGC.md",
+                "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from KTECH_MOTOR_OPERATION_GUIDE"
+              "title": "Polynomial_coefficient-AIGC 的出链列表"
             }
           },
           {
@@ -114,7 +148,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-tags",
-              "title": "Tags"
+              "title": "标签"
             }
           },
           {
@@ -137,105 +171,78 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Git操作/Git_Workflow_SOP.md",
+                "file": "markdown笔记云端储存与同步异常处理/Git 冲突处理与手动同步核心手册.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Git_Workflow_SOP"
-            }
-          },
-          {
-            "id": "75754e2586bbadcf",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "lucide-ghost",
-              "title": "git-view"
-            }
-          },
-          {
-            "id": "17791bd7f64f0075",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "嵌入式/PULSAR_11_V1.0_ONSTEP/KTECH_MOTOR_OPERATION_GUIDE.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "Backlinks for KTECH_MOTOR_OPERATION_GUIDE"
+              "title": "Git 冲突处理与手动同步核心手册 的大纲"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 243.5
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "bases:Create new base": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:创建新数据库": false,
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "04733a6b4ea12b83",
+  "active": "dccfe025f65332d3",
   "lastOpenFiles": [
-    "TempFiles/MCU1_WORK_SUMMARY.md",
-    "Linux ThinkBook/限制充电-full&save.md",
-    "实习日志/Week 4.md",
-    "实习日志/Week 3.md",
-    "实习日志/Week 1.md",
-    "实习日志/assets/Week 1/file-20251124145405278.png",
-    "Git操作/Git_Workflow_SOP.md",
-    "Git操作",
-    "README.md",
+    "conflict-files-obsidian-git.md",
     "markdown笔记云端储存与同步异常处理/Git 冲突处理与手动同步核心手册.md",
-    "markdown笔记云端储存与同步异常处理/基于Github的Obsidian库免费同步方案.md",
-    "嵌入式/PULSAR_11_V1.0_ONSTEP/KTECH_MOTOR_OPERATION_GUIDE.md",
-    "TempFiles",
+    "Git操作/Git_Workflow_SOP.md",
+    "企业系统复习/企业系统.pdf",
+    "README.md",
+    "企业系统复习/企业系统复习.md",
+    "嵌入式/PULSAR_11_V1.0_ONSTEP/assets/PULSAR规格书/光环RING_CAA_V1.0硬件规格书.pdf",
+    "嵌入式/PULSAR_11_V1.0_ONSTEP/assets/PULSAR规格书/PULSAR_11_ONSTEP_V1.0_20251224.pdf",
+    "嵌入式/PULSAR_11_V1.0_ONSTEP/assets/PULSAR规格书",
+    "嵌入式/PULSAR_11_V1.0_ONSTEP/assets",
     "嵌入式/PULSAR_11_V1.0_ONSTEP/U1_引脚定义.md",
     "嵌入式/PULSAR_11_V1.0_ONSTEP/PULSAR规格书.md",
-    "嵌入式/PULSAR_11_V1.0_ONSTEP/CAN总线测试说明.md",
-    "嵌入式/PULSAR_11_V1.0_ONSTEP/Untitled.md",
-    "嵌入式/PULSAR_11_V1.0_ONSTEP/assets/PULSAR规格书",
-    "嵌入式/PULSAR_11_V1.0_ONSTEP/assets/AIGC-PULSAR_11_ONSTEP_V1.0",
-    "嵌入式/PULSAR_11_V1.0_ONSTEP/assets",
+    "嵌入式/PULSAR_11_V1.0_ONSTEP/KTECH_MOTOR_OPERATION_GUIDE.md",
     "嵌入式/PULSAR_11_V1.0_ONSTEP",
-    "autofocus_ucurve算法/Urcurve算法流程-AIGC.md",
+    "嵌入式",
     "autofocus_ucurve算法/Polynomial_coefficient-AIGC.md",
-    "autofocus_ucurve算法/关于autofocus_ucurve的个人改进想法.md",
-    "企业系统复习/企业系统.pdf",
-    "企业系统复习/企业系统复习.md",
-    "conflict-files-obsidian-git.md",
+    "TempFiles/MCU1_WORK_SUMMARY.md",
+    "TempFiles",
+    "Git操作",
     "企业系统复习/~$7第七章 系统运营与维护.pptx",
-    "企业系统复习/~$1第一章管理信息系统概述.pptx",
-    "企业系统复习/8第八章Web信息系统开发.pptx",
-    "markdown笔记云端储存与同步异常处理/assets/基于Github的Obsidian库免费同步方案/file-20260105231442728.png",
+    "markdown笔记云端储存与同步.md",
     "markdown笔记云端储存与同步异常处理/assets/基于Github的Obsidian库免费同步方案/file-20260105232641088.png",
-    "().md",
+    "markdown笔记云端储存与同步异常处理/assets/基于Github的Obsidian库免费同步方案/file-20260105231442728.png",
+    "markdown笔记云端储存与同步异常处理/基于Github的Obsidian库免费同步方案.md",
+    "Linux ThinkBook/限制充电-full&save.md",
+    "未命名.md",
+    "Polynomial_coefficient-AIGC/Polynomial_coefficient-AIGC.md",
+    "Linux ThinkBook 相关/限制充电-full&save.md",
+    "嵌入式硬件规格书/PULSAR_11_V1.0_ONSTEP/AIGC-PULSAR_11_ONSTEP_V1.0.md",
+    "嵌入式硬件规格书/AIGC-PULSAR_11_ONSTEP_V1.0.md",
     "实习日志/TODOs.md",
-    "实习日志/Week7.md",
+    "实习日志/Week 1.md",
+    "实习日志/Week 4.md",
+    "实习日志/Week 3.md",
+    "实习日志/Week 5.md",
+    "autofocus_ucurve算法/关于autofocus_ucurve的个人改进想法.md",
+    "autofocus_ucurve算法/Urcurve算法流程-AIGC.md",
     "实习日志/assets/Week 3/file-20251124145534751.png",
-    "实习日志/Week 6.md",
     "实习日志/assets/Week 3/file-20251124145528520.png",
     "实习日志/assets/Week 3/file-20251124145514652.png",
     "实习日志/assets/Week 1/file-20251124145444722.png",
+    "实习日志/assets/Week 1/file-20251124145405278.png",
     "contents/实习日志_contents/Week1_INDIGO Server Manager配置.png",
     "contents/实习日志_contents/Week3_INDIGO Control Panel-Backlash setting.png",
     "contents/实习日志_contents/Week3_HFDs Positions Excel.png"
