@@ -11,14 +11,14 @@
             "id": "402fbd865c3f0022",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": "Config.h.md",
-                "bFile": "Config.h.md",
-                "aRef": ""
+                "file": "嵌入式/PULSAR_11_V1.0_ONSTEP/Pulsar 项目 OTA 功能设计与实现文档 (MCU2).md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: Config.h  (Working Tree)"
+              "icon": "lucide-file",
+              "title": "Pulsar 项目 OTA 功能设计与实现文档 (MCU2)"
             }
           }
         ]
@@ -94,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "嵌入式/PULSAR_11_V1.0_ONSTEP/Pulsar 项目 OTA 功能设计与实现文档 (MCU2).md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "反向链接"
+              "title": "Pulsar 项目 OTA 功能设计与实现文档 (MCU2) 的反向链接列表"
             }
           },
           {
@@ -112,11 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "嵌入式/PULSAR_11_V1.0_ONSTEP/Pulsar 项目 OTA 功能设计与实现文档 (MCU2).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "出链"
+              "title": "Pulsar 项目 OTA 功能设计与实现文档 (MCU2) 的出链列表"
             }
           },
           {
@@ -154,12 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "嵌入式/PULSAR_11_V1.0_ONSTEP/Pulsar 项目 OTA 功能设计与实现文档 (MCU2).md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "Pulsar 项目 OTA 功能设计与实现文档 (MCU2) 的大纲"
             }
           },
           {
@@ -191,13 +194,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "cfda43f87bd8a651",
+  "active": "402fbd865c3f0022",
   "lastOpenFiles": [
-    "嵌入式/PULSAR_11_V1.0_ONSTEP/Pulsar 项目 OTA 功能设计与实现文档 (MCU2).md",
     "嵌入式/PULSAR_11_V1.0_ONSTEP/PULSAR规格书.md",
+    "嵌入式/PULSAR_11_V1.0_ONSTEP/Pulsar 项目 OTA 功能设计与实现文档 (MCU2).md",
+    "嵌入式/PULSAR_11_V1.0_ONSTEP/KTECH_MOTOR_OPERATION_GUIDE.md",
     "未命名.base",
     "Config.h.md",
-    "嵌入式/PULSAR_11_V1.0_ONSTEP/KTECH_MOTOR_OPERATION_GUIDE.md",
     "嵌入式/PULSAR_11_V1.0_ONSTEP/U1_引脚定义.md",
     "README.md",
     "markdown笔记云端储存与同步异常处理/Git 冲突处理与手动同步核心手册.md",
