@@ -1,9 +1,7 @@
 # Pulsar 项目 OTA 功能设计与实现文档 (MCU2)
 
-**文档版本**：v1.0  
-**撰写人**：[你的名字]  
-**日期**：202X-XX-XX  
-**适用模块**：MCU2 (SmartWebServer / WiFi模块)
+**日期**：2026.01.23
+**适用模块**：PulsarMCU2 (SmartWebServer / WiFi模块)
 
 ---
 
