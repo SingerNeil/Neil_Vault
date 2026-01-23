@@ -11,13 +11,14 @@
             "id": "2e57367e257b661c",
             "type": "leaf",
             "state": {
-              "type": "bases",
+              "type": "markdown",
               "state": {
-                "file": "未命名.base",
-                "viewName": "表格"
+                "file": "嵌入式/PULSAR_11_V1.0_ONSTEP/KTECH_MOTOR_OPERATION_GUIDE.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-table",
-              "title": "未命名"
+              "icon": "lucide-file",
+              "title": "KTECH_MOTOR_OPERATION_GUIDE"
             }
           }
         ]
@@ -193,11 +194,13 @@
   "active": "2e57367e257b661c",
   "lastOpenFiles": [
     "嵌入式/PULSAR_11_V1.0_ONSTEP/Pulsar 项目 OTA 功能设计与实现文档 (MCU2).md",
-    "嵌入式/PULSAR_11_V1.0_ONSTEP/PULSAR规格书.md",
     "嵌入式/PULSAR_11_V1.0_ONSTEP/U1_引脚定义.md",
-    "Config.h.md",
     "嵌入式/PULSAR_11_V1.0_ONSTEP/KTECH_MOTOR_OPERATION_GUIDE.md",
+    "TempFiles/MCU1_WORK_SUMMARY.md",
     "未命名.base",
+    "实习日志/assets/Week 3/file-20251124145528520.png",
+    "嵌入式/PULSAR_11_V1.0_ONSTEP/PULSAR规格书.md",
+    "Config.h.md",
     "README.md",
     "markdown笔记云端储存与同步异常处理/Git 冲突处理与手动同步核心手册.md",
     "Git操作/Git_Workflow_SOP.md",
@@ -211,7 +214,6 @@
     "嵌入式/PULSAR_11_V1.0_ONSTEP",
     "嵌入式",
     "autofocus_ucurve算法/Polynomial_coefficient-AIGC.md",
-    "TempFiles/MCU1_WORK_SUMMARY.md",
     "TempFiles",
     "Git操作",
     "markdown笔记云端储存与同步.md",
@@ -230,7 +232,6 @@
     "实习日志/Week 3.md",
     "实习日志/Week 5.md",
     "实习日志/assets/Week 3/file-20251124145534751.png",
-    "实习日志/assets/Week 3/file-20251124145528520.png",
     "实习日志/assets/Week 3/file-20251124145514652.png",
     "实习日志/assets/Week 1/file-20251124145444722.png",
     "实习日志/assets/Week 1/file-20251124145405278.png",
