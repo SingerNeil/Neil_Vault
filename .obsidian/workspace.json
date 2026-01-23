@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "嵌入式/PULSAR_11_V1.0_ONSTEP/KTECH_MOTOR_OPERATION_GUIDE.md",
+                "file": "嵌入式/PULSAR_11_V1.0_ONSTEP/Pulsar 项目 OTA 功能设计与实现文档 (MCU2).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "KTECH_MOTOR_OPERATION_GUIDE"
+              "title": "Pulsar 项目 OTA 功能设计与实现文档 (MCU2)"
             }
           }
         ]
@@ -193,9 +193,9 @@
   },
   "active": "2e57367e257b661c",
   "lastOpenFiles": [
+    "嵌入式/PULSAR_11_V1.0_ONSTEP/KTECH_MOTOR_OPERATION_GUIDE.md",
     "嵌入式/PULSAR_11_V1.0_ONSTEP/Pulsar 项目 OTA 功能设计与实现文档 (MCU2).md",
     "嵌入式/PULSAR_11_V1.0_ONSTEP/U1_引脚定义.md",
-    "嵌入式/PULSAR_11_V1.0_ONSTEP/KTECH_MOTOR_OPERATION_GUIDE.md",
     "TempFiles/MCU1_WORK_SUMMARY.md",
     "未命名.base",
     "实习日志/assets/Week 3/file-20251124145528520.png",
