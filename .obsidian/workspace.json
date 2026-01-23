@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "6df8a5a4f4563708",
+        "id": "45cd25252ecdb361",
         "type": "tabs",
         "children": [
           {
-            "id": "99ae4f8b98267556",
+            "id": "a8132e44e2715501",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Git操作/Git_Workflow_SOP.md",
+                "file": "嵌入式/PULSAR_11_V1.0_ONSTEP/U1_引脚定义.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Git_Workflow_SOP"
-            }
-          },
-          {
-            "id": "dccfe025f65332d3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "markdown笔记云端储存与同步异常处理/Git 冲突处理与手动同步核心手册.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Git 冲突处理与手动同步核心手册"
+              "title": "U1_引脚定义"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -171,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "markdown笔记云端储存与同步异常处理/Git 冲突处理与手动同步核心手册.md",
+                "file": "嵌入式/PULSAR_11_V1.0_ONSTEP/U1_引脚定义.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Git 冲突处理与手动同步核心手册 的大纲"
+              "title": "U1_引脚定义 的大纲"
             }
           }
         ],
@@ -189,31 +174,31 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:新建数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "bases:创建新数据库": false,
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "dccfe025f65332d3",
+  "active": "a8132e44e2715501",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
+    "嵌入式/PULSAR_11_V1.0_ONSTEP/PULSAR规格书.md",
+    "嵌入式/PULSAR_11_V1.0_ONSTEP/KTECH_MOTOR_OPERATION_GUIDE.md",
+    "README.md",
     "markdown笔记云端储存与同步异常处理/Git 冲突处理与手动同步核心手册.md",
     "Git操作/Git_Workflow_SOP.md",
+    "conflict-files-obsidian-git.md",
     "企业系统复习/企业系统.pdf",
-    "README.md",
     "企业系统复习/企业系统复习.md",
     "嵌入式/PULSAR_11_V1.0_ONSTEP/assets/PULSAR规格书/光环RING_CAA_V1.0硬件规格书.pdf",
     "嵌入式/PULSAR_11_V1.0_ONSTEP/assets/PULSAR规格书/PULSAR_11_ONSTEP_V1.0_20251224.pdf",
     "嵌入式/PULSAR_11_V1.0_ONSTEP/assets/PULSAR规格书",
     "嵌入式/PULSAR_11_V1.0_ONSTEP/assets",
     "嵌入式/PULSAR_11_V1.0_ONSTEP/U1_引脚定义.md",
-    "嵌入式/PULSAR_11_V1.0_ONSTEP/PULSAR规格书.md",
-    "嵌入式/PULSAR_11_V1.0_ONSTEP/KTECH_MOTOR_OPERATION_GUIDE.md",
     "嵌入式/PULSAR_11_V1.0_ONSTEP",
     "嵌入式",
     "autofocus_ucurve算法/Polynomial_coefficient-AIGC.md",
