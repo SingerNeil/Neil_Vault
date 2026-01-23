@@ -1,13 +1,13 @@
 # Pulsar 项目 OTA 功能设计与实现文档 (MCU2)
 
 **日期**：2026.01.23
-**适用模块**：PulsarMCU2 (SmartWebServer / WiFi模块)
+**适用模块**：Pulsar - MCU2 (SmartWebServer / WiFi模块)
 
 ---
 
 ## 1. 概述
 
-本项目旨在为 Pulsar 板载的 MCU2 (ESP32-PICO-MINI-02U) 实现基于 Web 的 OTA (Over-The-Air) 固件升级功能。该功能允许用户通过 WiFi 连接设备热点，在浏览器端直接上传编译好的 .bin 文件完成固件更新，无需拆机连接 USB 线或使用编程器。
+本项目旨在为 Pulsar 板载的 MCU2 (ESP32-PICO-MINI-02U) 实现基于 Web 的 OTA (Over-The-Air) 固件升级功能。该功能允许用户通过 WiFi 连接MCU2的设备热点，在浏览器端直接上传编译好的 .bin 文件完成固件更新，无需拆机连接 USB 线或使用编程器。
 
 ## 2. 技术实现方案
 
