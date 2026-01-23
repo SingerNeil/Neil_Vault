@@ -4,21 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "954341a917777f72",
+        "id": "f567195022021d36",
         "type": "tabs",
         "children": [
           {
-            "id": "1f5988dc9807023a",
+            "id": "2e57367e257b661c",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "bases",
               "state": {
-                "aFile": ".obsidian/workspace.json",
-                "bFile": ".obsidian/workspace.json",
-                "aRef": ""
+                "file": "未命名.base",
+                "viewName": "表格"
               },
-              "icon": "diff",
-              "title": "Diff: workspace.json  (Working Tree)"
+              "icon": "lucide-table",
+              "title": "未命名"
             }
           }
         ]
@@ -191,14 +190,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1f5988dc9807023a",
+  "active": "2e57367e257b661c",
   "lastOpenFiles": [
     "嵌入式/PULSAR_11_V1.0_ONSTEP/Pulsar 项目 OTA 功能设计与实现文档 (MCU2).md",
-    "Config.h.md",
     "嵌入式/PULSAR_11_V1.0_ONSTEP/PULSAR规格书.md",
+    "嵌入式/PULSAR_11_V1.0_ONSTEP/U1_引脚定义.md",
+    "Config.h.md",
     "嵌入式/PULSAR_11_V1.0_ONSTEP/KTECH_MOTOR_OPERATION_GUIDE.md",
     "未命名.base",
-    "嵌入式/PULSAR_11_V1.0_ONSTEP/U1_引脚定义.md",
     "README.md",
     "markdown笔记云端储存与同步异常处理/Git 冲突处理与手动同步核心手册.md",
     "Git操作/Git_Workflow_SOP.md",
