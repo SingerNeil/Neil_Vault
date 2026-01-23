@@ -28,7 +28,7 @@
 
 - **基础库**：ArduinoOTA / Update.h (ESP32 Core自带的标准库)。
     
-- **Web 服务**：集成于现有的 SmartWebServer，新增 /update 路由节点。
+- **Web 服务**：集成于OnStepX项目现有的 SmartWebServer，新增 /update 路由节点。
     
 - **前端实现**：纯 HTML/JS 实现，包含文件选择器和基于 XMLHttpRequest 的上传进度条。
     
