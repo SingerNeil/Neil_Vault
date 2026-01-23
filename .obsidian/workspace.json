@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "指数星空/PULSAR_11_V1.0_ONSTEP/MCU1-引脚定义.md",
-                "mode": "preview",
+                "file": "指数星空/PULSAR_11_V1.0_ONSTEP/Pulsar-OTA 功能设计与实现文档 (MCU2).md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MCU1-引脚定义"
+              "title": "Pulsar-OTA 功能设计与实现文档 (MCU2)"
             }
           }
         ]
@@ -193,6 +193,7 @@
   },
   "active": "2e57367e257b661c",
   "lastOpenFiles": [
+    "指数星空/PULSAR_11_V1.0_ONSTEP/MCU1-引脚定义.md",
     "指数星空/PULSAR_11_V1.0_ONSTEP/Pulsar-OTA 功能设计与实现文档 (MCU2).md",
     "指数星空/PULSAR_11_V1.0_ONSTEP/KTECH操作指令.md",
     "实习日志/Week 4.md",
@@ -206,7 +207,6 @@
     "autofocus_ucurve算法/Urcurve算法流程-AIGC.md",
     "autofocus_ucurve算法/Polynomial_coefficient-AIGC.md",
     "autofocus_ucurve算法/关于autofocus_ucurve的个人改进想法.md",
-    "指数星空/PULSAR_11_V1.0_ONSTEP/MCU1-引脚定义.md",
     "嵌入式/PULSAR_11_V1.0_ONSTEP/PULSAR规格书.md",
     "指数星空",
     "嵌入式/PULSAR_11_V1.0_ONSTEP/Pulsar 项目 OTA 功能设计与实现文档 (MCU2).md",
