@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "45cd25252ecdb361",
+        "id": "91896c99e167880b",
         "type": "tabs",
         "children": [
           {
-            "id": "a8132e44e2715501",
+            "id": "402fbd865c3f0022",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "嵌入式/PULSAR_11_V1.0_ONSTEP/Pulsar 项目 OTA 功能设计与实现文档 (MCU2).md",
-                "mode": "source",
-                "source": false
+                "aFile": "Config.h.md",
+                "bFile": "Config.h.md",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "Pulsar 项目 OTA 功能设计与实现文档 (MCU2)"
+              "icon": "diff",
+              "title": "Diff: Config.h  (Working Tree)"
             }
           }
         ]
@@ -94,17 +94,16 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Polynomial_coefficient-AIGC/Polynomial_coefficient-AIGC.md",
                 "collapseAll": true,
-                "extraContext": false,
+                "extraContext": true,
                 "sortOrder": "alphabetical",
-                "showSearch": false,
+                "showSearch": true,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Polynomial_coefficient-AIGC 的反向链接列表"
+              "title": "反向链接"
             }
           },
           {
@@ -113,12 +112,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Polynomial_coefficient-AIGC/Polynomial_coefficient-AIGC.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Polynomial_coefficient-AIGC 的出链列表"
+              "title": "出链"
             }
           },
           {
@@ -127,8 +125,8 @@
             "state": {
               "type": "tag",
               "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true,
+                "sortOrder": "alphabetical",
+                "useHierarchy": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
@@ -156,17 +154,26 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "嵌入式/PULSAR_11_V1.0_ONSTEP/Pulsar 项目 OTA 功能设计与实现文档 (MCU2).md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Pulsar 项目 OTA 功能设计与实现文档 (MCU2) 的大纲"
+              "title": "大纲"
+            }
+          },
+          {
+            "id": "cfda43f87bd8a651",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -184,12 +191,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a8132e44e2715501",
+  "active": "cfda43f87bd8a651",
   "lastOpenFiles": [
-    "嵌入式/PULSAR_11_V1.0_ONSTEP/U1_引脚定义.md",
     "嵌入式/PULSAR_11_V1.0_ONSTEP/Pulsar 项目 OTA 功能设计与实现文档 (MCU2).md",
     "嵌入式/PULSAR_11_V1.0_ONSTEP/PULSAR规格书.md",
+    "未命名.base",
+    "Config.h.md",
     "嵌入式/PULSAR_11_V1.0_ONSTEP/KTECH_MOTOR_OPERATION_GUIDE.md",
+    "嵌入式/PULSAR_11_V1.0_ONSTEP/U1_引脚定义.md",
     "README.md",
     "markdown笔记云端储存与同步异常处理/Git 冲突处理与手动同步核心手册.md",
     "Git操作/Git_Workflow_SOP.md",
@@ -206,7 +215,6 @@
     "TempFiles/MCU1_WORK_SUMMARY.md",
     "TempFiles",
     "Git操作",
-    "企业系统复习/~$7第七章 系统运营与维护.pptx",
     "markdown笔记云端储存与同步.md",
     "markdown笔记云端储存与同步异常处理/assets/基于Github的Obsidian库免费同步方案/file-20260105232641088.png",
     "markdown笔记云端储存与同步异常处理/assets/基于Github的Obsidian库免费同步方案/file-20260105231442728.png",
@@ -222,8 +230,6 @@
     "实习日志/Week 4.md",
     "实习日志/Week 3.md",
     "实习日志/Week 5.md",
-    "autofocus_ucurve算法/关于autofocus_ucurve的个人改进想法.md",
-    "autofocus_ucurve算法/Urcurve算法流程-AIGC.md",
     "实习日志/assets/Week 3/file-20251124145534751.png",
     "实习日志/assets/Week 3/file-20251124145528520.png",
     "实习日志/assets/Week 3/file-20251124145514652.png",
