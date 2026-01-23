@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TempFiles/MCU1_WORK_SUMMARY.md",
+                "file": "指数星空/PULSAR_11_V1.0_ONSTEP/MCU1-引脚定义.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MCU1_WORK_SUMMARY"
+              "title": "MCU1-引脚定义"
             }
           }
         ]
@@ -191,8 +191,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "04733a6b4ea12b83",
+  "active": "2e57367e257b661c",
   "lastOpenFiles": [
+    "指数星空/PULSAR_11_V1.0_ONSTEP/Pulsar-OTA 功能设计与实现文档 (MCU2).md",
+    "指数星空/PULSAR_11_V1.0_ONSTEP/KTECH操作指令.md",
+    "实习日志/Week 4.md",
+    "实习日志/Week 3.md",
+    "实习日志/Week 1.md",
+    "TempFiles/MCU1_WORK_SUMMARY.md",
     "markdown笔记云端储存与同步异常处理/Git 冲突处理与手动同步核心手册.md",
     "markdown笔记云端储存与同步异常处理/基于Github的Obsidian库免费同步方案.md",
     "Linux ThinkBook/限制充电-full&save.md",
@@ -200,13 +206,10 @@
     "autofocus_ucurve算法/Urcurve算法流程-AIGC.md",
     "autofocus_ucurve算法/Polynomial_coefficient-AIGC.md",
     "autofocus_ucurve算法/关于autofocus_ucurve的个人改进想法.md",
-    "指数星空/PULSAR_11_V1.0_ONSTEP/KTECH操作指令.md",
-    "指数星空/PULSAR_11_V1.0_ONSTEP/Pulsar-OTA 功能设计与实现文档 (MCU2).md",
     "指数星空/PULSAR_11_V1.0_ONSTEP/MCU1-引脚定义.md",
     "嵌入式/PULSAR_11_V1.0_ONSTEP/PULSAR规格书.md",
     "指数星空",
     "嵌入式/PULSAR_11_V1.0_ONSTEP/Pulsar 项目 OTA 功能设计与实现文档 (MCU2).md",
-    "TempFiles/MCU1_WORK_SUMMARY.md",
     "未命名.base",
     "实习日志/assets/Week 3/file-20251124145528520.png",
     "Config.h.md",
@@ -229,9 +232,6 @@
     "Linux ThinkBook 相关/限制充电-full&save.md",
     "嵌入式硬件规格书/PULSAR_11_V1.0_ONSTEP/AIGC-PULSAR_11_ONSTEP_V1.0.md",
     "嵌入式硬件规格书/AIGC-PULSAR_11_ONSTEP_V1.0.md",
-    "实习日志/TODOs.md",
-    "实习日志/Week 1.md",
-    "实习日志/Week 4.md",
     "实习日志/assets/Week 3/file-20251124145534751.png",
     "实习日志/assets/Week 3/file-20251124145514652.png",
     "实习日志/assets/Week 1/file-20251124145444722.png",
