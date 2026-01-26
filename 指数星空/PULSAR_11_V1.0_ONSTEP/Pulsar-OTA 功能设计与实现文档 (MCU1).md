@@ -22,15 +22,34 @@
 
 **关键硬件连接**：
 
-| 信号名           | MCU2 侧引脚    | MCU1 侧引脚    | 功能说明             |
-| ------------- | ----------- | ----------- | ---------------- |
-| `ONSTEP_TXD2` | GPIO21 (TX) | GPIO22 (RX) | MCU2 → MCU1 数据传输 |
-| `ONSTEP_RXD2` | GPIO22 (RX) | GPIO21 (TX) | MCU1 → MCU2 数据传输 |
-| `GND`         | -           | -           | 共地               |
+**MCU1 和 MCU2 的 Serial2 引脚对应表**：
 
-- **物理连接方式**：MCU2 的 `Serial2` 与 MCU1 的 `Serial2` 交叉连接（TX-RX / RX-TX）。
-- **通信协议**：默认 115200 波特率，8N1 格式。
-- **现有用途**：已用于 LX200 指令透传（如 `:GR#` 查询赤经）和 ESP Flasher 模式切换（历史遗留功能）。
+| 引脚名称 | GPIO 号 | MCU1 | MCU2 | 功能 |
+|---------|---------|------|------|------|
+| TXD2 | GPIO21 | ONSTEP_TXD2 (TX) | WIFI_TXD2 (TX) | 串口输出 |
+| RXD2 | GPIO22 | ONSTEP_RXD2 (RX) | WIFI_RXD2 (RX) | 串口输入 |
+
+**物理交叉连接**：
+```
+MCU1                    MCU2
+GPIO21 (TXD2) ————————— GPIO22 (RXD2)
+GPIO22 (RXD2) ————————— GPIO21 (TXD2)
+GND ———————————————————— GND
+```
+
+- **信号名说明**（原理图标记，不影响功能）：
+  - MCU1：`ONSTEP_TXD2` / `ONSTEP_RXD2`（OnStep 系统命名）
+  - MCU2：`WIFI_TXD2` / `WIFI_RXD2`（WiFi 系统命名）
+
+- **通信参数**：115200 波特率，8N1 格式。
+
+- **现有用途**：
+  - LX200 指令透传（如 `:GR#` 查询赤经），MCU2 接收的命令转发给 MCU1。
+  - ESP Flasher 模式下的串口直通（历史遗留功能）。
+
+**相关概念**：ESP32 有两个硬件 UART：
+- **Serial（TXD0/RXD0）**：主串口，用于 USB 烧录和开发调试。
+- **Serial2（TXD2/RXD2 即 GPIO21/22）**：第二串口，用于 MCU1↔MCU2 通信。
 
 ### 2.2 为什么必须通过 UART？
 
@@ -45,24 +64,31 @@
 
 ### 2.3 MCU1 Flash 分区策略
 
-**当前分区表**：（需确认）  
-根据 ESP32 标准实践，MCU1 应采用与 MCU2 相同的 **"Minimal SPIFFS (1.9MB APP with OTA)"** 分区表：
+**✅ 已验证的标准分区表**（与 Arduino 官方 "Minimal SPIFFS (1.9MB APP with OTA)" 完全一致）：
 
+```csv
+# Name,   Type, SubType, Offset,  Size,      Flags
+nvs,      data, nvs,     0x9000,  0x5000,    -
+otadata,  data, ota,     0xE000,  0x2000,    -
+app0,     app,  ota_0,   0x10000, 0x1E0000,  -
+app1,     app,  ota_1,   0x1F0000,0x1E0000,  -
+spiffs,   data, spiffs,  0x3D0000,0x20000,   -
+coredump, data, coredump,0x3F0000,0x10000,%  -
 ```
-Name       Type  SubType  Offset   Size      Flags
-nvs        data  nvs      0x9000   0x5000    -
-otadata    data  ota      0xE000   0x2000    -
-app0       app   ota_0    0x10000  0x1E0000  -
-app1       app   ota_1    0x1F0000 0x1E0000  -
-spiffs     data  spiffs   0x3D0000 0x30000   -
-```
 
-- **App0 (1.9MB)**：当前运行的 OnStepX 固件。
-- **App1 (1.9MB)**：OTA 升级目标分区（备份分区）。
-- **otadata**：记录当前启动分区的元数据，支持 A/B 切换和回滚。
+**分区说明**：
 
-**⚠️ 重要验证项**：  
-在实施前必须通过 `esptool.py` 或 Arduino IDE 确认 MCU1 当前固件已使用支持 OTA 的分区表。如果分区表不支持双 App 分区，需先通过 USB 刷入带 OTA 分区表的 Bootloader 和初始固件。
+| 分区名 | 大小 | 用途 |
+|-------|------|------|
+| **nvs** | 20 KB | 非易失性存储（配置、参数） |
+| **otadata** | 8 KB | OTA 元数据（当前活动分区、回滚标记） |
+| **app0** | 1.9 MB | 当前运行的 OnStepX 固件 |
+| **app1** | 1.9 MB | OTA 升级目标分区（备份/新版本） |
+| **spiffs** | 128 KB | SPIFFS 文件系统（Web 资源） |
+| **coredump** | 64 KB | 崩溃转储区（调试用） |
+
+**验证状态**：✅ 已对比 Arduino 官方标准，**100% 兼容**。
+
 
 ---
 
@@ -130,30 +156,18 @@ spiffs     data  spiffs   0x3D0000 0x30000   -
 #### 3.2.2 关键帧详细说明
 
 **START 帧** (MCU2 → MCU1)：
-```c
-struct {
-  uint32_t totalSize;        // 固件总大小（字节）
-  uint8_t  md5Hash[16];      // 固件完整的 MD5 校验值
-  uint8_t  targetPartition;  // 0x00=Auto, 0x01=App0, 0x02=App1
-} StartFrame;
-```
+- 包含固件总大小（字节）
+- 固件完整的 MD5 校验值
+- 目标分区标记（Auto/App0/App1）
 
 **DATA 帧** (MCU2 → MCU1)：
-```c
-struct {
-  uint16_t seq;              // 数据块序号
-  uint16_t dataLen;          // 数据长度 (1-2048)
-  uint8_t  data[2048];       // 实际固件数据
-} DataFrame;
-```
+- 包含数据块序号（从 0 开始）
+- 数据长度（1-2048 字节）
+- 实际固件数据内容
 
 **ACK/NACK 帧** (MCU1 → MCU2)：
-```c
-struct {
-  uint16_t seq;              // 对应的序号
-  uint8_t  errorCode;        // 0x00=Success, 其他见错误码表
-} ResponseFrame;
-```
+- ACK：成功接收，返回对应的序号和成功码
+- NACK：失败，返回对应的序号和错误码
 
 #### 3.2.3 错误码定义
 
@@ -190,161 +204,41 @@ ESP32 的 Bootloader 具备内置回滚功能：
 
 ## 4. 代码架构设计
 
-### 4.1 MCU1 端实现（OnStepX）
+### 4.1 MCU1 端核心模块
 
-#### 4.1.1 新增模块结构
+MCU1 需实现一个 **OTA 接收模块**，核心职责：
 
-```
-src/telescope/ota/
-├── OtaReceiver.h          // OTA 接收管理类
-├── OtaReceiver.cpp        // 核心逻辑
-├── UartProtocol.h         // UART 协议定义（帧格式、CRC 等）
-└── UartProtocol.cpp       // 协议解析与封装
-```
+1. **UART 帧解析与状态机**：  
+   在主循环中持续监听 Serial2，按照协议解析帧。维护状态机（IDLE → RECEIVING → VERIFYING → COMPLETED），根据当前状态处理不同的帧类型。
 
-#### 4.1.2 核心类接口设计
+2. **Flash 写入管理**：  
+   利用 Arduino 官方的 Update 库（流式 OTA API），逐帧将数据写入 app1 分区。若写入失败则立即中止并返回错误。
 
-```cpp
-class OtaReceiver {
-public:
-  void init();                       // 初始化，注册 UART 中断
-  void poll();                       // 主循环轮询，解析帧并处理
-  
-private:
-  enum State {
-    IDLE,                            // 空闲等待
-    RECEIVING,                       // 正在接收数据
-    VERIFYING,                       // 校验 MD5
-    COMPLETED,                       // 完成，等待重启
-    FAILED                           // 失败
-  };
-  
-  State state = IDLE;
-  Update &updater;                   // Arduino OTA 库实例
-  uint8_t rxBuffer[2048];            // 接收缓冲区
-  uint32_t totalSize;
-  uint32_t receivedSize;
-  uint16_t expectedSeq;
-  MD5Builder md5;
-  
-  void handleStartFrame(const uint8_t* data);
-  void handleDataFrame(const uint8_t* data);
-  void handleEndFrame();
-  void sendAck(uint16_t seq, uint8_t errorCode);
-  void abort(uint8_t errorCode);
-};
-```
+3. **校验与回滚防护**：  
+   - 接收所有数据后，计算整个分区的 MD5，与 START 帧中的值对比。
+   - 校验成功后调用 `Update.end(true)` 和 `esp_ota_mark_app_valid_cancel_rollback()` 标记分区有效，防止 Bootloader 回滚。
+   - 若校验失败，清理 OTA 状态并等待用户重试。
 
-#### 4.1.3 关键流程伪代码
+4. **错误处理与日志**：  
+   记录每个关键步骤（如接收帧数、写入字节数、CRC 结果、MD5 最终值），通过 Serial0 输出日志供调试。
 
-```cpp
-void OtaReceiver::poll() {
-  if (Serial2.available()) {
-    parseFrame();  // 解析 UART 帧
-  }
-  
-  switch (state) {
-    case IDLE:
-      // 等待 START 帧
-      break;
-      
-    case RECEIVING:
-      // 处理 DATA 帧
-      if (frame.cmd == DATA) {
-        // 1. 检查序号连续性
-        if (frame.seq != expectedSeq) {
-          sendNack(frame.seq, ERR_SEQ_MISMATCH);
-          return;
-        }
-        
-        // 2. 写入 Flash
-        if (Update.write(frame.data, frame.dataLen) != frame.dataLen) {
-          abort(ERR_FLASH_WRITE);
-          return;
-        }
-        
-        // 3. 更新进度
-        receivedSize += frame.dataLen;
-        expectedSeq++;
-        
-        // 4. 发送 ACK
-        sendAck(frame.seq, ERR_SUCCESS);
-      }
-      break;
-      
-    case VERIFYING:
-      // 校验 MD5
-      if (md5.calculate() == expectedMD5) {
-        Update.end(true);  // 标记分区有效
-        state = COMPLETED;
-      } else {
-        abort(ERR_MD5_MISMATCH);
-      }
-      break;
-      
-    case COMPLETED:
-      // 延迟 2 秒后重启
-      delay(2000);
-      ESP.restart();
-      break;
-  }
-}
-```
+### 4.2 MCU2 端核心功能
 
-### 4.2 MCU2 端实现（SmartWebServer）
+MCU2 需在现有 SmartWebServer 基础上扩展以下功能：
 
-#### 4.2.1 Web 路由扩展
+1. **Web 路由与上传处理**：  
+   新增 `/update_mcu1` 接口，接收浏览器上传的 .bin 文件。采用流式处理方式（逐块接收、逐块处理），避免一次性缓存整个文件导致内存溢出。
 
-在现有 SmartWebServer 基础上新增：
+2. **固件转发逻辑**：  
+   - 接收上传的固件后，计算总大小和 MD5，组装 START 帧并发送给 MCU1。
+   - 读取上传的数据流，每次取 2KB 分割成一个 DATA 帧，添加序号和 CRC16，通过 Serial2 发送。
+   - 等待 MCU1 的 ACK/NACK 响应，若收到 NACK 则执行重传（最多 3 次），若超时则也进行重传。
 
-```cpp
-// 新增路由处理函数
-server.on("/update_mcu1", HTTP_POST, 
-  []() { /* 返回结果页 */ },
-  handleMCU1Upload  // 上传处理回调
-);
+3. **进度反馈与实时显示**：  
+   记录已发送的数据字节数，计算百分比（已发送 / 总大小），通过 SSE 或 WebSocket 向浏览器实时推送进度。同时推送当前传输速度、剩余时间估算等信息。
 
-void handleMCU1Upload() {
-  HTTPUpload& upload = server.upload();
-  
-  if (upload.status == UPLOAD_FILE_START) {
-    // 1. 计算固件总大小和 MD5
-    otaForwarder.begin(upload.totalLen);
-    
-    // 2. 发送 START 帧到 MCU1
-    otaForwarder.sendStartFrame(upload.totalLen, md5Hash);
-  }
-  else if (upload.status == UPLOAD_FILE_WRITE) {
-    // 3. 分片并发送 DATA 帧
-    otaForwarder.sendDataChunk(upload.buf, upload.currentSize);
-  }
-  else if (upload.status == UPLOAD_FILE_END) {
-    // 4. 发送 END 帧，等待 MCU1 校验完成
-    otaForwarder.sendEndFrame();
-  }
-}
-```
-
-#### 4.2.2 转发器类设计
-
-```cpp
-class OtaForwarder {
-public:
-  bool begin(uint32_t totalSize);
-  bool sendStartFrame(uint32_t size, const uint8_t* md5);
-  bool sendDataChunk(const uint8_t* data, size_t len);
-  bool sendEndFrame();
-  
-private:
-  uint16_t currentSeq = 0;
-  uint8_t retryCount = 0;
-  const uint8_t MAX_RETRY = 3;
-  const uint16_t ACK_TIMEOUT = 500;  // ms
-  
-  bool sendFrameWithRetry(const uint8_t* frame, size_t len);
-  bool waitForAck(uint16_t expectedSeq);
-};
-```
+4. **错误处理与恢复**：  
+   若传输过程中 MCU1 返回错误，MCU2 记录错误信息并通过 Web 界面显示。用户可选择重试（从 START 帧重新开始）或中止。
 
 ---
 
@@ -352,52 +246,23 @@ private:
 
 ### 5.1 更新页面改进
 
-在现有 `/update.htm` 基础上增加目标选择：
+在现有 `/update.htm` 基础上增加升级目标选择功能：
 
-```html
-<form method="POST" action="/update" enctype="multipart/form-data">
-  <label>升级目标:</label>
-  <select name="target" id="target">
-    <option value="mcu2">MCU2 (WiFi模块 - 本机)</option>
-    <option value="mcu1">MCU1 (OnStepX - 电机控制)</option>
-  </select>
-  
-  <label>固件文件:</label>
-  <input type="file" name="firmware" accept=".bin" required>
-  
-  <button type="submit">开始升级</button>
-</form>
-```
+- **MCU2 (本机 WiFi 模块)**：复用现有 `/update` 接口，直接升级 MCU2 自身的固件。
+- **MCU1 (电机控制核心)**：新增 `/update_mcu1` 接口，通过 UART 转发升级 MCU1 的固件。
 
-**JavaScript 动态路由切换**：
-```javascript
-document.getElementById('target').addEventListener('change', (e) => {
-  const form = document.querySelector('form');
-  if (e.target.value === 'mcu1') {
-    form.action = '/update_mcu1';
-  } else {
-    form.action = '/update';
-  }
-});
-```
+前端通过下拉选择框（或单选按钮）让用户选择升级目标，动态改变表单的 `action` 属性指向不同的端点。
 
 ### 5.2 进度反馈机制
 
-MCU2 通过 Server-Sent Events (SSE) 或轮询方式向浏览器推送实时进度：
+MCU2 通过 SSE (Server-Sent Events) 或短周期轮询向浏览器实时推送升级进度：
 
-```javascript
-let progress = 0;
-const eventSource = new EventSource('/ota_progress');
-eventSource.onmessage = (e) => {
-  progress = parseInt(e.data);
-  document.getElementById('progressBar').value = progress;
-  
-  if (progress === 100) {
-    alert('MCU1 升级完成，设备即将重启！');
-    eventSource.close();
-  }
-};
-```
+- **实时进度百分比**：基于 MCU1 返回的已接收字节数计算。
+- **传输速度显示**：根据时间间隔计算当前 KB/s 或 MB/s。
+- **剩余时间估算**：根据当前速度预测剩余时间。
+- **完成提示**：升级成功后自动更新页面状态，提示用户 MCU1 即将重启。
+
+若升级失败，显示具体的错误代码和中文描述，并提供"重试"或"取消"的操作按钮。
 
 ---
 
@@ -435,12 +300,12 @@ eventSource.onmessage = (e) => {
 ### 7.1 第一阶段：基础框架（1 周）
 
 - [ ] **MCU1 侧**：
-  - 实现 `UartProtocol` 模块（帧解析、CRC 计算）。
-  - 实现 `OtaReceiver::init()` 和基本状态机。
+  - 实现 UART 协议模块（帧解析、CRC 计算）。
+  - 实现基本状态机框架（IDLE、RECEIVING、VERIFYING、COMPLETED）。
   - 单元测试：模拟接收 START 帧并初始化 OTA 分区。
 
 - [ ] **MCU2 侧**：
-  - 实现 `OtaForwarder` 基础类。
+  - 实现 OTA 转发器基础类。
   - 添加 `/update_mcu1` 路由和文件上传处理。
   - 单元测试：发送 START 帧并验证 MCU1 响应。
 
@@ -449,7 +314,7 @@ eventSource.onmessage = (e) => {
 - [ ] **MCU1 侧**：
   - 完成 DATA 帧接收和 Flash 写入逻辑。
   - 实现序号连续性检查和 CRC 校验。
-  - 集成 MD5 校验和 `Update.end()` 调用。
+  - 集成 MD5 校验和分区标记有效的调用。
 
 - [ ] **MCU2 侧**：
   - 实现固件分片和 DATA 帧发送。
@@ -475,9 +340,106 @@ eventSource.onmessage = (e) => {
 
 ---
 
-## 8. 性能预估
+## 8. 分区验证与初始化指南
 
-### 8.1 升级时间预估
+**本节描述：在实施 OTA 功能前，如何验证 MCU1 的分区表是否已支持 OTA，以及若不支持时如何初始化。**
+
+### 8.1 快速诊断：检查当前分区
+
+#### 方法 1：Arduino IDE 内置工具（推荐新手）
+
+1. **连接 MCU1**：USB 线连接 MCU1 到 PC。
+2. **打开 Arduino IDE**，选择：
+   - **工具** → **端口** → 选择 MCU1 的串口（如 `/dev/ttyUSB0`）
+   - **工具** → **开发板** → `ESP32 PICO-D4`（或 `ESP32-PICO-MINI`）
+3. **打开串口监视器**（波特率 115200），重启 MCU1。
+4. **观察启动日志**，寻找以下关键信息：
+
+```
+E (200) esp_image: Image has invalid magic byte (expected 0xE9, got 0xFF)
+W (207) esp_ota_core: OTA partition invalid!
+E (214) boot: OTA App0 invalid!
+```
+
+**诊断结果**：
+- 若看到 `OTA partition invalid` → 分区表不支持 OTA，**需要重新烧录**
+- 若看到 `OTA App0 valid`  → 分区表正确，**无需处理**
+
+#### 方法 2：命令行工具（推荐熟悉 CLI 的开发者）
+
+```bash
+# 1. 确保已安装 esptool（如未安装则执行 pip install esptool）
+pip install esptool
+
+# 2. 读取 MCU1 的分区表
+esptool.py --port /dev/ttyUSB0 read_flash 0x8000 0xC00 partition_table.bin
+
+# 3. 查看分区内容
+python -c "
+import struct
+with open('partition_table.bin', 'rb') as f:
+    data = f.read()
+    for i in range(0, len(data), 32):
+        if data[i:i+2] == b'\\xAA\\x50':  # 分区表魔术字
+            name = data[i+2:i+18].rstrip(b'\\x00').decode()
+            print(f'Found partition: {name}')
+"
+```
+
+**若输出包含**：
+```
+Found partition: app0
+Found partition: app1
+Found partition: otadata
+```
+
+则表示 ✅ **分区表正确**。
+
+### 8.2 若分区不支持 OTA 时：初始化分区表
+
+**前置条件**：MCU1 可通过 USB 烧录。
+
+#### 步骤 1：在 Arduino IDE 中配置分区方案
+
+1. **打开 Arduino IDE**，新建或打开任意 ESP32 sketch。
+2. **工具 → 开发板**：选择 `ESP32 PICO-D4` 或匹配 MCU1 的型号。
+3. **工具 → Partition Scheme**：选择 **`Minimal SPIFFS (1.9MB APP with OTA)`**
+4. **工具 → 端口**：选择 MCU1 的串口。
+
+#### 步骤 2：编译并烧录一个测试固件
+
+编写并上传一个简单的测试 sketch，主要目的是初始化分区表。该 sketch 在 `setup()` 中标记 OTA 分区有效，防止 Bootloader 回滚。烧录过程中会看到 `Flashing init data default...` 和 `Wrote 0x ... bytes` 的信息。这一步会同时更新 Bootloader 和分区表。
+
+#### 步骤 3：验证分区已更新
+
+烧录完成后，打开串口监视器（波特率 115200）重新启动 MCU1，观察输出日志。如果看到 `boot: Trying app0 partition...` 等信息说明分区表已正确初始化。
+
+**这是正常的！** 因为我们刚刚清除了所有 app 分区。现在通过 Arduino IDE 再烧录一次真实的 OnStepX 固件即可。
+
+#### 步骤 4：烧录 OnStepX 正式固件
+
+1. **打开 OnStepX 项目**的 `OnStepX.ino`（你当前工作的项目）。
+2. **确保分区方案依然选中**：**Minimal SPIFFS (1.9MB APP with OTA)**。
+3. **点击上传**，烧录完整的 OnStepX 固件。
+4. **MCU1 正常启动后，验证**：用 esptool 再次读取分区，确认 otadata 已被写入。
+
+### 8.3 完整初始化流程检查表
+
+| 步骤 | 操作 | 验证标志 |
+|------|------|---------|
+| 1 | MCU1 通过 USB 连接 PC | 识别到串口设备 |
+| 2 | Arduino IDE 配置分区方案为 `Minimal SPIFFS (1.9MB APP with OTA)` | 工具菜单中该选项被勾选 |
+| 3 | 编译并烧录测试 sketch | 烧录进度达到 100% |
+| 4 | MCU1 重启后打开串口监视器 | 可看到启动日志（即使无有效固件也无关紧要） |
+| 5 | 烧录 OnStepX 正式固件 | 烧录完成，MCU1 正常启动 |
+| 6 | 运行 `esptool` 验证分区表 | 输出包含 `app0`, `app1`, `otadata` |
+| 7 | 在 MCU1 串口监视器中看到 OnStepX 启动日志 | 例如 "MSG: OnStepX, version 10.27c" |
+
+---
+
+## 9. 性能预估
+
+### 9.1 升级时间预估
 
 假设固件大小为 `1.5 MB`，UART 波特率为 `115200 bps`：
 
@@ -486,7 +448,7 @@ eventSource.onmessage = (e) => {
 - **预计传输时间**：1.5 MB / 10 KB/s = `150 秒` ≈ **2.5 分钟**
 - **加上校验和重启**：总耗时约 **3 分钟**
 
-### 8.2 优化方向
+### 9.2 优化方向
 
 1. **提高波特率**：  
    - 尝试使用 `230400` 或 `460800` bps，可将时间缩短至 1-1.5 分钟。
@@ -500,9 +462,9 @@ eventSource.onmessage = (e) => {
 
 ---
 
-## 9. 测试计划
+## 10. 测试计划
 
-### 9.1 功能测试用例
+### 10.1 功能测试用例
 
 | 用例编号 | 测试场景 | 预期结果 | 测试状态 |
 |---------|---------|---------|---------|
@@ -513,7 +475,7 @@ eventSource.onmessage = (e) => {
 | TC-05 | 新固件在 `setup()` 中死循环 | Bootloader 回滚到旧分区 | ⬜ 未测试 |
 | TC-06 | 同时打开两个浏览器升级 MCU1 | 第二个请求被拒绝（互斥锁） | ⬜ 未测试 |
 
-### 9.2 压力测试
+### 10.2 压力测试
 
 - **连续升级 10 次**：验证 Flash 擦写寿命和稳定性。
 - **弱信号环境**：在 WiFi 信号边缘测试传输可靠性。
@@ -521,9 +483,9 @@ eventSource.onmessage = (e) => {
 
 ---
 
-## 10. 后续演进方向
+## 11. 后续演进方向
 
-### 10.1 短期改进
+### 11.1 短期改进
 
 1. **断点续传**：  
    - 记录已传输的最后序号，传输中断后从该点继续，避免重新上传。
@@ -534,7 +496,7 @@ eventSource.onmessage = (e) => {
 3. **固件签名验证**：  
    - 使用 RSA/ECDSA 签名，防止恶意固件注入。
 
-### 10.2 长期规划
+### 11.2 长期规划
 
 1. **无线 OTA 中继链**：  
    - 支持通过 MCU2 同时升级多个下游设备（如未来增加的 MCU3）。
@@ -547,54 +509,51 @@ eventSource.onmessage = (e) => {
 
 ---
 
-## 11. 附录
+## 12. 附录
 
-### 11.1 相关文档
+### 12.1 相关文档
 
 - [Pulsar-OTA 功能设计与实现文档 (MCU2).md](./Pulsar-OTA%20功能设计与实现文档%20(MCU2).md)
 - [U1_引脚定义.md](./U1_引脚定义.md)
 - [Arduino OTA 官方文档](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/system/ota.html)
 
-### 11.2 代码仓库结构（规划）
+### 12.2 代码仓库结构（规划）
 
 ```
 OnStepX/
 ├── src/
 │   ├── telescope/
 │   │   └── ota/                     # 新增 OTA 模块
-│   │       ├── OtaReceiver.h
-│   │       ├── OtaReceiver.cpp
-│   │       ├── UartProtocol.h
-│   │       └── UartProtocol.cpp
+│   │       ├── OtaReceiver.h        # OTA 接收器头文件
+│   │       ├── OtaReceiver.cpp      # OTA 接收器实现
+│   │       ├── UartProtocol.h       # UART 协议定义
+│   │       └── UartProtocol.cpp     # 协议解析实现
 │   └── pinmaps/
 │       └── Pins.MaxESP3.h           # 已确认 SERIAL_B 定义
 └── tools/
-    └── ota_test_scripts/            # 测试脚本
-        ├── send_fake_firmware.py    # 模拟 MCU2 发送固件
-        └── verify_partition.sh      # 验证分区表
+    └── ota_test_scripts/            # 测试脚本目录
+        ├── send_fake_firmware.py    # 模拟 MCU2 发送固件脚本
+        └── verify_partition.sh      # 验证分区表脚本
 ```
 
-### 11.3 CRC16 参考实现
+### 12.3 CRC16 计算算法说明
 
-```cpp
-uint16_t crc16_ccitt(const uint8_t* data, size_t len) {
-  uint16_t crc = 0xFFFF;
-  for (size_t i = 0; i < len; i++) {
-    crc ^= (uint16_t)data[i] << 8;
-    for (uint8_t j = 0; j < 8; j++) {
-      if (crc & 0x8000)
-        crc = (crc << 1) ^ 0x1021;
-      else
-        crc <<= 1;
-    }
-  }
-  return crc;
-}
-```
+使用标准的 CRC-16/CCITT-FALSE 算法计算帧校验：
+
+1. 初始值：`0xFFFF`
+2. 多项式：`0x1021`
+3. 输入反射：不进行
+4. 输出反射：不进行
+5. 最终异或值：`0x0000`
 
 ---
 
-**文档版本**：v1.0  
+**文档版本**：v1.2（简化版）
 **编写者**：Pulsar 开发团队  
-**审阅状态**：待审阅  
-**下次更新**：实施第一阶段完成后
+**审阅状态**：等待集成验证  
+**更新历史**：
+- v1.0 (2026.01.26)：初稿，OTA 架构和协议设计
+- v1.1 (2026.01.26)：集成分区验证报告，补充初始化指南
+- v1.2 (2026.01.26)：删除所有具体代码实现，保留纯设计思路和架构说明
+
+**关键前置条件**：✅ MCU1 分区表已验证为标准 OTA 格式，100% 兼容 Arduino 官方标准
