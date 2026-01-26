@@ -150,6 +150,13 @@ graph TD
     B -- LOW --> D[保持待机];
     C --> E[初始化 CAN];
 ```
+```
+graph TD
+    A[上电 Start] --> B{检测 GPIO 7?};
+    B -- HIGH --> C[开启 20V 电源];
+    B -- LOW --> D[保持待机];
+    C --> E[初始化 CAN];
+```
 
 ### 时序图 (Sequence Diagram) - 调试串口通信很有用
 
@@ -162,6 +169,17 @@ sequenceDiagram
     Note right of MCU2: 接收并更新 Web
     MCU2-->>MCU1: ACK / 移动指令
 ```
+
+```
+sequenceDiagram
+    participant MCU1 as ESP32_Main
+    participant MCU2 as ESP32_Wifi
+    
+    MCU1->>MCU2: UART 发送状态 (Position)
+    Note right of MCU2: 接收并更新 Web
+    MCU2-->>MCU1: ACK / 移动指令
+```
+
 
 ---
 
