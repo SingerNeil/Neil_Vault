@@ -217,7 +217,11 @@ $$
 1.  **关于 Mermaid**：在你需要梳理 **CAN 总线初始化逻辑** 或者 **MCU1 与 MCU2 的交互流程** 时，直接在笔记里写 Mermaid 比画图再截图要快得多，而且方便后期修改。
 2.  **关于表格**：记录引脚映射（Pin Map）时，Markdown 表格是最好的选择。
 3.  **关于 Callouts (Obsidian 特有)**：如果你使用 Obsidian，可以使用更漂亮的警告块：
-    ```markdown
-    > [!WARNING] 注意
-    > U6 芯片已被移除，不要操作 GPIO 4。
-    ```
+
+> [!WARNING] 注意
+> U6 芯片已被移除，不要操作 GPIO 4。
+
+```
+> [!WARNING] 注意
+> U6 芯片已被移除，不要操作 GPIO 4。
+```
