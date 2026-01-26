@@ -64,7 +64,7 @@ GND ———————————————————— GND
 
 ### 2.3 MCU1 Flash 分区策略
 
-**✅ 已验证的标准分区表**（与 Arduino 官方 "Minimal SPIFFS (1.9MB APP with OTA)" 一致）：
+**✅ 已验证标准分区表**（与 Arduino 官方 "Minimal SPIFFS (1.9MB APP with OTA)" 一致）：
 
 ```csv
 # Name,   Type, SubType, Offset,  Size,      Flags
@@ -78,17 +78,14 @@ coredump, data, coredump,0x3F0000,0x10000,%  -
 
 **分区说明**：
 
-| 分区名          | 大小           | 用途                   |
-| ------------ | ------------ | -------------------- |
-| **nvs**      | 20 KB        | 非易失性存储（配置、参数）        |
-| **otadata**  | 8 KB         | OTA 元数据（当前活动分区、回滚标记） |
-| ***app0***   | ***1.9 MB*** | 当前运行的 OnStepX 固件     |
-| ***app1***   | ***1.9 MB*** | OTA 升级目标分区（备份/新版本）   |
-| **spiffs**   | 128 KB       | SPIFFS 文件系统（Web 资源）  |
-| **coredump** | 64 KB        | 崩溃转储区（调试用）           |
-
-**验证状态**：✅ 已对比 Arduino 官方标准，**100% 兼容**。
-
+| 分区名        | 大小           | 用途                       |
+| ---------- | ------------ | ------------------------ |
+| nvs        | 20 KB        | 非易失性存储（配置、参数）            |
+| otadata    | 8 KB         | OTA 元数据（当前活动分区、回滚标记）     |
+| ***app0*** | ***1.9 MB*** | ***当前运行的 OnStepX 固件***   |
+| ***app1*** | ***1.9 MB*** | ***OTA 升级目标分区（备份/新版本）*** |
+| spiffs     | 128 KB       | SPIFFS 文件系统（Web 资源）      |
+| coredump   | 64 KB        | 崩溃转储区（调试用）               |
 
 ---
 
