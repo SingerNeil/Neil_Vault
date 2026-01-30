@@ -292,7 +292,7 @@ MCU2 通过 SSE (Server-Sent Events) 或短周期轮询向浏览器实时推送�
 
 ## 7. 实施步骤与里程碑
 
-### 7.1 第一阶段：基础框架（1 周）
+### 7.1 第一阶段：基础框架
 
 - [ ] **MCU1 侧**：
   - 实现 UART 协议模块（帧解析、CRC 计算）。
@@ -304,7 +304,7 @@ MCU2 通过 SSE (Server-Sent Events) 或短周期轮询向浏览器实时推送�
   - 添加 `/update_mcu1` 路由和文件上传处理。
   - 单元测试：发送 START 帧并验证 MCU1 响应。
 
-### 7.2 第二阶段：数据传输与校验（1 周）
+### 7.2 第二阶段：数据传输与校验
 
 - [ ] **MCU1 侧**：
   - 完成 DATA 帧接收和 Flash 写入逻辑。
@@ -316,7 +316,7 @@ MCU2 通过 SSE (Server-Sent Events) 或短周期轮询向浏览器实时推送�
   - 实现 ACK/NACK 响应解析和重传逻辑。
   - 计算并传递固件 MD5 值。
 
-### 7.3 第三阶段：前端集成与测试（3 天）
+### 7.3 第三阶段：前端集成与测试
 
 - [ ] 更新 Web 页面，增加 MCU1/MCU2 选择器。
 - [ ] 实现进度条和错误提示 UI。
@@ -326,7 +326,7 @@ MCU2 通过 SSE (Server-Sent Events) 或短周期轮询向浏览器实时推送�
   - 故意中断（拔掉电源）验证回滚。
   - 刷入错误固件验证错误提示。
 
-### 7.4 第四阶段：优化与文档（2 天）
+### 7.4 第四阶段：优化与文档
 
 - [ ] 日志完善：MCU1 和 MCU2 的详细日志输出。
 - [ ] 性能优化：调整分片大小以平衡速度和稳定性。
@@ -335,106 +335,9 @@ MCU2 通过 SSE (Server-Sent Events) 或短周期轮询向浏览器实时推送�
 
 ---
 
-## 8. 分区验证与初始化指南
+## 8. 性能预估
 
-**本节描述：在实施 OTA 功能前，如何验证 MCU1 的分区表是否已支持 OTA，以及若不支持时如何初始化。**
-
-### 8.1 快速诊断：检查当前分区
-
-#### 方法 1：Arduino IDE 内置工具（推荐新手）
-
-1. **连接 MCU1**：USB 线连接 MCU1 到 PC。
-2. **打开 Arduino IDE**，选择：
-   - **工具** → **端口** → 选择 MCU1 的串口（如 `/dev/ttyUSB0`）
-   - **工具** → **开发板** → `ESP32 PICO-D4`（或 `ESP32-PICO-MINI`）
-3. **打开串口监视器**（波特率 115200），重启 MCU1。
-4. **观察启动日志**，寻找以下关键信息：
-
-```
-E (200) esp_image: Image has invalid magic byte (expected 0xE9, got 0xFF)
-W (207) esp_ota_core: OTA partition invalid!
-E (214) boot: OTA App0 invalid!
-```
-
-**诊断结果**：
-- 若看到 `OTA partition invalid` → 分区表不支持 OTA，**需要重新烧录**
-- 若看到 `OTA App0 valid`  → 分区表正确，**无需处理**
-
-#### 方法 2：命令行工具（推荐熟悉 CLI 的开发者）
-
-```bash
-# 1. 确保已安装 esptool（如未安装则执行 pip install esptool）
-pip install esptool
-
-# 2. 读取 MCU1 的分区表
-esptool.py --port /dev/ttyUSB0 read_flash 0x8000 0xC00 partition_table.bin
-
-# 3. 查看分区内容
-python -c "
-import struct
-with open('partition_table.bin', 'rb') as f:
-    data = f.read()
-    for i in range(0, len(data), 32):
-        if data[i:i+2] == b'\\xAA\\x50':  # 分区表魔术字
-            name = data[i+2:i+18].rstrip(b'\\x00').decode()
-            print(f'Found partition: {name}')
-"
-```
-
-**若输出包含**：
-```
-Found partition: app0
-Found partition: app1
-Found partition: otadata
-```
-
-则表示 ✅ **分区表正确**。
-
-### 8.2 若分区不支持 OTA 时：初始化分区表
-
-**前置条件**：MCU1 可通过 USB 烧录。
-
-#### 步骤 1：在 Arduino IDE 中配置分区方案
-
-1. **打开 Arduino IDE**，新建或打开任意 ESP32 sketch。
-2. **工具 → 开发板**：选择 `ESP32 PICO-D4` 或匹配 MCU1 的型号。
-3. **工具 → Partition Scheme**：选择 **`Minimal SPIFFS (1.9MB APP with OTA)`**
-4. **工具 → 端口**：选择 MCU1 的串口。
-
-#### 步骤 2：编译并烧录一个测试固件
-
-编写并上传一个简单的测试 sketch，主要目的是初始化分区表。该 sketch 在 `setup()` 中标记 OTA 分区有效，防止 Bootloader 回滚。烧录过程中会看到 `Flashing init data default...` 和 `Wrote 0x ... bytes` 的信息。这一步会同时更新 Bootloader 和分区表。
-
-#### 步骤 3：验证分区已更新
-
-烧录完成后，打开串口监视器（波特率 115200）重新启动 MCU1，观察输出日志。如果看到 `boot: Trying app0 partition...` 等信息说明分区表已正确初始化。
-
-**这是正常的！** 因为我们刚刚清除了所有 app 分区。现在通过 Arduino IDE 再烧录一次真实的 OnStepX 固件即可。
-
-#### 步骤 4：烧录 OnStepX 正式固件
-
-1. **打开 OnStepX 项目**的 `OnStepX.ino`（你当前工作的项目）。
-2. **确保分区方案依然选中**：**Minimal SPIFFS (1.9MB APP with OTA)**。
-3. **点击上传**，烧录完整的 OnStepX 固件。
-4. **MCU1 正常启动后，验证**：用 esptool 再次读取分区，确认 otadata 已被写入。
-
-### 8.3 完整初始化流程检查表
-
-| 步骤 | 操作 | 验证标志 |
-|------|------|---------|
-| 1 | MCU1 通过 USB 连接 PC | 识别到串口设备 |
-| 2 | Arduino IDE 配置分区方案为 `Minimal SPIFFS (1.9MB APP with OTA)` | 工具菜单中该选项被勾选 |
-| 3 | 编译并烧录测试 sketch | 烧录进度达到 100% |
-| 4 | MCU1 重启后打开串口监视器 | 可看到启动日志（即使无有效固件也无关紧要） |
-| 5 | 烧录 OnStepX 正式固件 | 烧录完成，MCU1 正常启动 |
-| 6 | 运行 `esptool` 验证分区表 | 输出包含 `app0`, `app1`, `otadata` |
-| 7 | 在 MCU1 串口监视器中看到 OnStepX 启动日志 | 例如 "MSG: OnStepX, version 10.27c" |
-
----
-
-## 9. 性能预估
-
-### 9.1 升级时间预估
+### 8.1 升级时间预估
 
 假设固件大小为 `1.5 MB`，UART 波特率为 `115200 bps`：
 
@@ -443,7 +346,7 @@ Found partition: otadata
 - **预计传输时间**：1.5 MB / 10 KB/s = `150 秒` ≈ **2.5 分钟**
 - **加上校验和重启**：总耗时约 **3 分钟**
 
-### 9.2 优化方向
+### 8.2 优化方向
 
 1. **提高波特率**：  
    - 尝试使用 `230400` 或 `460800` bps，可将时间缩短至 1-1.5 分钟。
@@ -457,20 +360,20 @@ Found partition: otadata
 
 ---
 
-## 10. 测试计划
+## 9. 测试计划
 
-### 10.1 功能测试用例
+### 9.1 功能测试用例
 
-| 用例编号 | 测试场景 | 预期结果 | 测试状态 |
-|---------|---------|---------|---------|
-| TC-01 | 正常升级 1.0 MB 固件 | 成功写入，重启运行新版本 | ⬜ 未测试 |
-| TC-02 | 上传 2.0 MB 固件（超限） | MCU1 拒绝并返回错误码 `0x04` | ⬜ 未测试 |
-| TC-03 | 传输中故意断电 MCU2 | MCU1 超时中止，旧固件继续运行 | ⬜ 未测试 |
-| TC-04 | 发送错误 CRC 的 DATA 帧 | MCU1 返回 NACK，MCU2 重传 | ⬜ 未测试 |
-| TC-05 | 新固件在 `setup()` 中死循环 | Bootloader 回滚到旧分区 | ⬜ 未测试 |
-| TC-06 | 同时打开两个浏览器升级 MCU1 | 第二个请求被拒绝（互斥锁） | ⬜ 未测试 |
+| 用例编号  | 测试场景                | 预期结果                 | 测试状态  |
+| ----- | ------------------- | -------------------- | ----- |
+| TC-01 | 正常升级 1.0 MB 固件      | 成功写入，重启运行新版本         | ⬜ 未测试 |
+| TC-02 | 上传 2.0 MB 固件（超限）    | MCU1 拒绝并返回错误码 `0x04` | ⬜ 未测试 |
+| TC-03 | 传输中故意断电 MCU2        | MCU1 超时中止，旧固件继续运行    | ⬜ 未测试 |
+| TC-04 | 发送错误 CRC 的 DATA 帧   | MCU1 返回 NACK，MCU2 重传 | ⬜ 未测试 |
+| TC-05 | 新固件在 `setup()` 中死循环 | Bootloader 回滚到旧分区    | ⬜ 未测试 |
+| TC-06 | 同时打开两个浏览器升级 MCU1    | 第二个请求被拒绝（互斥锁）        | ⬜ 未测试 |
 
-### 10.2 压力测试
+### 9.2 压力测试
 
 - **连续升级 10 次**：验证 Flash 擦写寿命和稳定性。
 - **弱信号环境**：在 WiFi 信号边缘测试传输可靠性。
@@ -478,9 +381,9 @@ Found partition: otadata
 
 ---
 
-## 11. 后续演进方向
+## 10. 后续演进方向
 
-### 11.1 短期改进
+### 10.1 短期改进
 
 1. **断点续传**：  
    - 记录已传输的最后序号，传输中断后从该点继续，避免重新上传。
@@ -491,7 +394,7 @@ Found partition: otadata
 3. **固件签名验证**：  
    - 使用 RSA/ECDSA 签名，防止恶意固件注入。
 
-### 11.2 长期规划
+### 10.2 长期规划
 
 1. **无线 OTA 中继链**：  
    - 支持通过 MCU2 同时升级多个下游设备（如未来增加的 MCU3）。
@@ -504,15 +407,9 @@ Found partition: otadata
 
 ---
 
-## 12. 附录
+## 11. 附录
 
-### 12.1 相关文档
-
-- [Pulsar-OTA 功能设计与实现文档 (MCU2).md](./Pulsar-OTA%20功能设计与实现文档%20(MCU2).md)
-- [U1_引脚定义.md](./U1_引脚定义.md)
-- [Arduino OTA 官方文档](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/system/ota.html)
-
-### 12.2 代码仓库结构（规划）
+### 11.1 代码仓库结构（规划）
 
 ```
 OnStepX/
@@ -531,7 +428,7 @@ OnStepX/
         └── verify_partition.sh      # 验证分区表脚本
 ```
 
-### 12.3 CRC16 计算算法说明
+### 11.2 CRC16 计算算法说明
 
 使用标准的 CRC-16/CCITT-FALSE 算法计算帧校验：
 
@@ -542,13 +439,3 @@ OnStepX/
 5. 最终异或值：`0x0000`
 
 ---
-
-**文档版本**：v1.2（简化版）
-**编写者**：Pulsar 开发团队  
-**审阅状态**：等待集成验证  
-**更新历史**：
-- v1.0 (2026.01.26)：初稿，OTA 架构和协议设计
-- v1.1 (2026.01.26)：集成分区验证报告，补充初始化指南
-- v1.2 (2026.01.26)：删除所有具体代码实现，保留纯设计思路和架构说明
-
-**关键前置条件**：✅ MCU1 分区表已验证为标准 OTA 格式，100% 兼容 Arduino 官方标准
