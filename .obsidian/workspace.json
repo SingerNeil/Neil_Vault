@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TempFiles/KTech CAN 指令.md",
-                "mode": "preview",
+                "file": "Markdown 语法速查表.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "KTech CAN 指令"
+              "title": "Markdown 语法速查表"
             }
           }
         ]
@@ -155,13 +155,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TempFiles/KTech CAN 指令.md",
+                "file": "Markdown 语法速查表.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "KTech CAN 指令 的大纲"
+              "title": "Markdown 语法速查表 的大纲"
             }
           },
           {
@@ -196,8 +196,8 @@
   "active": "9eefa4d2ccfdc12c",
   "lastOpenFiles": [
     "TempFiles/MCU1_WORK_SUMMARY.md",
-    "src/lib/axis/motor/kTech/KTech.cpp.md",
     "TempFiles/KTech CAN 指令.md",
+    "src/lib/axis/motor/kTech/KTech.cpp.md",
     "src/lib/axis/motor/kTech",
     "src/lib/axis/motor",
     "src/lib/axis",
