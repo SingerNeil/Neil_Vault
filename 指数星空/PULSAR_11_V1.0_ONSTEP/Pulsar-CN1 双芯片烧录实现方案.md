@@ -78,5 +78,3 @@ $$ \text{OTA Chunk Size (512 B)} = 2 \times \text{Flash Page Size (256 B)} $$
 - [ ] **确认 UART FIFO**: 引用 *ESP32 Technical Reference Manual* 对应章节作为数据来源。
 
 ---
-
-**文档结束**
