@@ -11,14 +11,12 @@
             "id": "9eefa4d2ccfdc12c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "README.md",
-                "mode": "preview",
-                "source": false
+                "file": "指数星空/PULSAR_11_V1.0_ONSTEP/assets/PULSAR规格书/PULSAR_11_ONSTEP_V1.0_20251224.pdf"
               },
-              "icon": "lucide-file",
-              "title": "README"
+              "icon": "lucide-file-text",
+              "title": "PULSAR_11_ONSTEP_V1.0_20251224"
             }
           }
         ]
@@ -155,13 +153,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
+                "file": "指数星空/PULSAR_11_V1.0_ONSTEP/assets/PULSAR规格书/PULSAR_11_ONSTEP_V1.0_20251224.pdf",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "README 的大纲"
+              "title": "PULSAR_11_ONSTEP_V1.0_20251224 的大纲"
             }
           },
           {
@@ -195,6 +193,7 @@
   },
   "active": "9eefa4d2ccfdc12c",
   "lastOpenFiles": [
+    "README.md",
     "Git操作/Git_Workflow_SOP.md",
     "指数星空/PULSAR_11_V1.0_ONSTEP/Pulsar-OTA 功能设计与实现文档 (MCU1).md",
     "指数星空/PULSAR_11_V1.0_ONSTEP/Pulsar-OTA 功能设计与实现文档 (MCU2).md",
@@ -202,7 +201,6 @@
     "TempFiles/MCU1_WORK_SUMMARY.md",
     "TempFiles/KTech CAN 指令.md",
     "src/lib/axis/motor/kTech/KTech.cpp.md",
-    "README.md",
     "src/lib/axis/motor/kTech",
     "src/lib/axis/motor",
     "src/lib/axis",
