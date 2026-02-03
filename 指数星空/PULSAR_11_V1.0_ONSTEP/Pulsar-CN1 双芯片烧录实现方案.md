@@ -16,7 +16,7 @@
 
 SPI Flash 的物理写入具有以下特性：
 
-*   **页 (Page) 大小**: **256 Bytes** (典型值)
+*   **页 (Page) 大小**: **256 Bytes** (标准 SPI NOR Flash 工业规范及 ESP32 技术参考手册，本模组 Datasheet 未详列)
     *   这是 Flash 内部编程（Program）操作的最小高效单元。
 *   **扇区 (Sector) 大小**: **4 KB (4096 Bytes)**
     *   这是 Flash 擦除（Erase）的最小单元。在写入新数据前，必须先擦除。
