@@ -1,4 +1,4 @@
-# Pulsar (MCU1) 硬件存储参数与 OTA 策略分析
+# MCU 硬件存储参数与 OTA 策略分析
 
 ## 1. 硬件资源概览 (基于 Datasheet)
 
