@@ -68,12 +68,3 @@ $$ \text{OTA Chunk Size (512 B)} = 2 \times \text{Flash Page Size (256 B)} $$
 2.  **软件搬运**: ESP32 的驱动层处理速度（240 MHz 主频）远高于串口传输速度（1 Mbps），在数据填满硬件 FIFO 前即可将其移入 RAM。
 
 ---
-
-## 5. 遗留确认事项 (To-Do)
-
-为了确保文档的绝对严谨，建议针对 Datasheet 未列出的参数进行二次确认：
-
-- [ ] **确认 Flash Page Size**: 需查找 *ESP32-PICO-V3-02* 内部封装的 Flash 具体型号手册，确认其 Page Size 是否严格为 256 Bytes。
-- [ ] **确认 UART FIFO**: 引用 *ESP32 Technical Reference Manual* 对应章节作为数据来源。
-
----
