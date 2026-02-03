@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Git操作/Git_Workflow_SOP.md",
+                "file": "README.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Git_Workflow_SOP"
+              "title": "README"
             }
           }
         ]
@@ -155,13 +155,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Git操作/Git_Workflow_SOP.md",
+                "file": "README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Git_Workflow_SOP 的大纲"
+              "title": "README 的大纲"
             }
           },
           {
@@ -195,6 +195,7 @@
   },
   "active": "9eefa4d2ccfdc12c",
   "lastOpenFiles": [
+    "Git操作/Git_Workflow_SOP.md",
     "指数星空/PULSAR_11_V1.0_ONSTEP/Pulsar-OTA 功能设计与实现文档 (MCU1).md",
     "指数星空/PULSAR_11_V1.0_ONSTEP/Pulsar-OTA 功能设计与实现文档 (MCU2).md",
     "Markdown 语法速查表.md",
@@ -216,7 +217,6 @@
     "markdown笔记云端储存与同步异常处理/Git 冲突处理与手动同步核心手册.md",
     "markdown笔记云端储存与同步异常处理/基于Github的Obsidian库免费同步方案.md",
     "Linux ThinkBook/限制充电-full&save.md",
-    "Git操作/Git_Workflow_SOP.md",
     "autofocus_ucurve算法/Polynomial_coefficient-AIGC.md",
     "autofocus_ucurve算法/关于autofocus_ucurve的个人改进想法.md",
     "嵌入式/PULSAR_11_V1.0_ONSTEP/PULSAR规格书.md",
