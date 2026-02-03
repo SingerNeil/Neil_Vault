@@ -25,7 +25,7 @@ OTA 的核心是将数据写入 SPI Flash。为了保证写入效率和稳定性
 
 ### 2.1 物理页大小 (Page Size)
 *   **规格**: **256 Bytes** `[基于通用 SPI NOR Flash 标准，Datasheet 未明确]`
-*   **说明**: 本 Datasheet 仅给出了 Flash 总容量 (8 MB)，未详细列出 Flash 芯片的内部架构参数（Page/Sector/Block Size）。
+*   **说明**: Datasheet 仅给出了 Flash 总容量 (8 MB)，未详细列出 Flash 芯片的内部架构参数（Page/Sector/Block Size）。
     *   *注：ESP32 系列集成的 Flash 通常遵循 JEDEC 标准，编程（Program）的最小原子单位为 1 页 (256 字节)。*
 *   **待验证项**: 建议查阅 *ESP32-PICO-V3-02* 芯片手册或 *ESP32 Technical Reference Manual* 以获取官方背书。
 
