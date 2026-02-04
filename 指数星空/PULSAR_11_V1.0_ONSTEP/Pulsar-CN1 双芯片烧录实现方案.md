@@ -85,8 +85,16 @@ $$ \text{OTA Chunk Size (512 B)} = 2 \times \text{Flash Page Size (256 B)} $$
 *   **触发机制**: 上位机发送指令 **`:PASSTHROUGH#`** (或类似自定义指令)。
 *   **执行流程**:
     1.  **建立桥梁**: MCU1 收到指令后，进入 **透传模式 (Passthrough Loop)**。
-        *   *逻辑*: ``` 
-        * while(1) { if(Serial.available) Serial2.write(); if(Serial2.available) Serial.write(); }```
+        *   *逻辑*: 
+        * ```c
+        while(1) 
+        { 
+        if(Serial.available) 
+	        Serial2.write(); 
+        if(Serial2.available) 
+	        Serial.write(); 
+        }
+          ```
         *   此时 MCU1 不再解析任何指令，纯粹做字节搬运工。
     2.  **远程唤醒**: 上位机再次发送 **`:UPDATE_MODE#`**。
         *   数据穿过 MCU1，到达 MCU2。
