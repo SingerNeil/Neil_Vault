@@ -37,14 +37,14 @@
 
 ### 3.1 帧结构 (Frame Structure)
 
-| 偏移 | 字段 | 长度 | 值/类型 | 说明 |
-| :--- | :--- | :--- | :--- | :--- |
-| 0 | Header | 2B | `0x55 0xAA` | 固定帧头 |
-| 2 | Command | 1B | `uint8_t` | 命令字 (见 3.2) |
-| 3 | Sequence | 2B | `uint16_t` | 包序号 (0 ~ 65535) |
-| 5 | Length | 2B | `uint16_t` | **Payload** 的长度 |
-| 7 | Payload | N | `uint8_t[]` | 数据载荷 (见 4.0) |
-| 7+N | CRC16 | 2B | `uint16_t` | 校验码 |
+| 偏移  | 字段       | 长度  | 值/类型        | 说明              |
+| :-- | :------- | :-- | :---------- | :-------------- |
+| 0   | Header   | 2B  | `0x55 0xAA` | 固定帧头            |
+| 2   | Command  | 1B  | `uint8_t`   | 命令字 (见 3.2)     |
+| 3   | Sequence | 2B  | `uint16_t`  | 包序号 (0 ~ 65535) |
+| 5   | Length   | 2B  | `uint16_t`  | **Payload** 的长度 |
+| 7   | Payload  | N   | `uint8_t[]` | 数据载荷 (见 4.0)    |
+| 7+N | CRC16    | 2B  | `uint16_t`  | 校验码             |
 
 *   **CRC 算法**: CRC16-CCITT-FALSE (Poly: `0x1021`, Init: `0xFFFF`)。
 *   **校验范围**: 从 **Command** 字节开始，至 **Payload** 结束 (即跳过 `0x55 0xAA` 帧头)。
