@@ -12,8 +12,8 @@
 
 本方案通过单一物理接口 (CN1) 实现对板载两颗 MCU 的固件更新。系统基于 **应用层 OTA (Application OTA)** 机制，通过软件指令触发，无需物理操作 Boot 键。
 
-*   **MCU1 烧录**: PC 直接与 MCU1 握手，MCU1 进入 OTA 接收模式。
-*   **MCU2 烧录**: PC 命令 MCU1 进入**透传模式 (Passthrough)**，建立 PC 与 MCU2 的虚拟直连通道，进而触发 MCU2 的 OTA 接收模式。
+*   **MCU1 烧录**: 上位机 直接与 MCU1 握手，MCU1 进入 OTA 接收模式。
+*   **MCU2 烧录**: 上位机 命令 MCU1 进入**透传模式 (Passthrough)**，建立 上位机 与 MCU2 的虚拟直连通道，进而触发 MCU2 的 OTA 接收模式。
 
 ---
 
