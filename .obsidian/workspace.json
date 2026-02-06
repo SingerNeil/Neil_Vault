@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "指数星空/PULSAR_11_V1.0_ONSTEP/Pulsar-CN1 双芯片烧录实现方案.md",
+                "file": "指数星空/PULSAR_11_V1.0_ONSTEP/Pulsar-CN2 双芯片烧录实现方案.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Pulsar-CN1 双芯片烧录实现方案"
+              "title": "Pulsar-CN2 双芯片烧录实现方案"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "指数星空/PULSAR_11_V1.0_ONSTEP/Pulsar-CN1 双芯片烧录实现方案.md",
+                "file": "指数星空/PULSAR_11_V1.0_ONSTEP/Pulsar-CN2 双芯片烧录实现方案.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Pulsar-CN1 双芯片烧录实现方案 的大纲"
+              "title": "Pulsar-CN2 双芯片烧录实现方案 的大纲"
             }
           },
           {
@@ -199,7 +199,7 @@
     "指数星空/PULSAR_11_V1.0_ONSTEP/Pulsar-OTA 功能设计与实现文档 (MCU1).md",
     "指数星空/PULSAR_11_V1.0_ONSTEP/Pulsar-OTA 功能设计与实现文档 (MCU2).md",
     "markdown笔记云端储存与同步异常处理/基于Github的Obsidian库免费同步方案.md",
-    "指数星空/PULSAR_11_V1.0_ONSTEP/Pulsar-CN1 双芯片烧录实现方案.md",
+    "指数星空/PULSAR_11_V1.0_ONSTEP/Pulsar-CN2 双芯片烧录实现方案.md",
     "指数星空/PULSAR_11_V1.0_ONSTEP/assets/PULSAR规格书/PULSAR_11_ONSTEP_V1.0_20251224.pdf",
     "README.md",
     "Git操作/Git_Workflow_SOP.md",
