@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "指数星空/PULSAR_11_V1.0_ONSTEP/Pulsar-Upgrade-Tool/Pulsar-CN2 双芯片烧录实现方案.md",
+                "file": "指数星空/PULSAR_11_V1.0_ONSTEP/Pulsar-Upgrade-Tool/Pulsar-CN1 单口双芯固件烧录协议规范 (v1.0).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Pulsar-CN2 双芯片烧录实现方案"
+              "title": "Pulsar-CN1 单口双芯固件烧录协议规范 (v1.0)"
             }
           }
         ],
@@ -185,13 +185,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "指数星空/PULSAR_11_V1.0_ONSTEP/Pulsar-Upgrade-Tool/Pulsar-CN2 双芯片烧录实现方案.md",
+                "file": "指数星空/PULSAR_11_V1.0_ONSTEP/Pulsar-Upgrade-Tool/Pulsar-CN1 单口双芯固件烧录协议规范 (v1.0).md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Pulsar-CN2 双芯片烧录实现方案 的大纲"
+              "title": "Pulsar-CN1 单口双芯固件烧录协议规范 (v1.0) 的大纲"
             }
           },
           {
@@ -225,9 +225,10 @@
   },
   "active": "d7c014dbc991cae8",
   "lastOpenFiles": [
+    "指数星空/PULSAR_11_V1.0_ONSTEP/Pulsar-Upgrade-Tool/Pulsar-CN2 双芯片烧录实现方案.md",
+    "指数星空/PULSAR_11_V1.0_ONSTEP/Pulsar-Upgrade-Tool/Pulsar-CN1 单口双芯固件烧录协议规范 (v1.0).md",
     "指数星空/PULSAR_11_V1.0_ONSTEP/KTECH操作指令.md",
     "指数星空/PULSAR_11_V1.0_ONSTEP/MCU1-引脚定义.md",
-    "指数星空/PULSAR_11_V1.0_ONSTEP/Pulsar-Upgrade-Tool/Pulsar-CN2 双芯片烧录实现方案.md",
     "指数星空/PULSAR_11_V1.0_ONSTEP/Pulsar-Upgrade-Tool",
     "指数星空/PULSAR_11_V1.0_ONSTEP/Pulsar-OTA/Pulsar-OTA 功能设计与实现文档 (MCU2).md",
     "指数星空/PULSAR_11_V1.0_ONSTEP/Pulsar-OTA/Pulsar-OTA 功能设计与实现文档 (MCU1).md",
