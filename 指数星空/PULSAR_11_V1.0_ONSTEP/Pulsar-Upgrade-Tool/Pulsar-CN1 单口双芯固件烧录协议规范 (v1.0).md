@@ -155,7 +155,7 @@ FILE_PATH_MCU1 = "..."        # 固件路径
 
 ### 7.3 烧录 MCU2
 1.  设置 `TARGET_CHIP = 2`。
-2. 等待Pulsar的mcu1成功启动
+2. 等待Pulsar的 MCU1 MCU2 成功启动
 3.  运行脚本。
 4.  脚本将自动执行：开启 MCU1 透传 -> 唤醒 MCU2 -> 传输数据。
 5.  等待 MCU2 重启完成。
