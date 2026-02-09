@@ -48,9 +48,21 @@
               "icon": "lucide-file",
               "title": "Pulsar-CN1 单口双芯固件烧录协议规范 (v1.0)"
             }
+          },
+          {
+            "id": "66bfe62153ee7083",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.11.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "版本说明 1.11.7"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -185,13 +197,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "指数星空/PULSAR_11_V1.0_ONSTEP/Pulsar-Upgrade-Tool/Pulsar-CN1 单口双芯固件烧录协议规范 (v1.0).md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Pulsar-CN1 单口双芯固件烧录协议规范 (v1.0) 的大纲"
+              "title": "大纲"
             }
           },
           {
@@ -223,7 +234,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d7c014dbc991cae8",
+  "active": "66bfe62153ee7083",
   "lastOpenFiles": [
     "指数星空/PULSAR_11_V1.0_ONSTEP/Pulsar-Upgrade-Tool/Pulsar-CN2 双芯片烧录实现方案.md",
     "指数星空/PULSAR_11_V1.0_ONSTEP/Pulsar-Upgrade-Tool/Pulsar-CN1 单口双芯固件烧录协议规范 (v1.0).md",
