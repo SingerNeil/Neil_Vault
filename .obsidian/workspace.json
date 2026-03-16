@@ -53,12 +53,14 @@
             "id": "d81d33dd17f1e757",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.12.4"
+                "file": "TempFiles/KTech CAN 指令.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-book-up",
-              "title": "版本说明 1.12.4"
+              "icon": "lucide-file",
+              "title": "KTech CAN 指令"
             }
           }
         ],
@@ -119,7 +121,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 460.5004348754883
+    "width": 244.5040512084961
   },
   "right": {
     "id": "c9a118fc8541b218",
@@ -197,12 +199,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "TempFiles/KTech CAN 指令.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "KTech CAN 指令 的大纲"
             }
           },
           {
@@ -236,8 +239,9 @@
   },
   "active": "d81d33dd17f1e757",
   "lastOpenFiles": [
-    "markdown笔记云端储存与同步异常处理/Git 冲突处理与手动同步核心手册.md",
     "TempFiles/CAN_UPGRADE_PROTOCOL.md",
+    "TempFiles/KTech CAN 指令.md",
+    "markdown笔记云端储存与同步异常处理/Git 冲突处理与手动同步核心手册.md",
     "Markdown 语法速查表.md",
     "指数星空/PULSAR_11_V1.0_ONSTEP/Pulsar-Upgrade-Tool/Pulsar-CN1 单口双芯固件烧录协议规范 (v1.0).md",
     "指数星空/PULSAR_11_V1.0_ONSTEP/Pulsar-Upgrade-Tool/Pulsar-CN2 双芯片烧录实现方案.md",
@@ -252,7 +256,6 @@
     "README.md",
     "Git操作/Git_Workflow_SOP.md",
     "TempFiles/MCU1_WORK_SUMMARY.md",
-    "TempFiles/KTech CAN 指令.md",
     "src/lib/axis/motor/kTech/KTech.cpp.md",
     "src/lib/axis/motor/kTech",
     "src/lib/axis/motor",
