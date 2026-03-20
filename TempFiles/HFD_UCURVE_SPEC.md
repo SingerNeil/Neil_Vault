@@ -458,15 +458,15 @@ for (let i = 0; i <= 50; i++) {
 ## 9. 完整数据流时序
 
 ```
-Client                                  Server (Imager Agent)
-  │                                          │
+Client                                        Server (Imager Agent)
+  │                                                │
   │─── newSwitchVector ─────────────────────▶│ AGENT_START_PROCESS.FOCUSING=true
-  │                                          │
-  │    （Agent 开始 U-Curve 对焦流程）          │
-  │                                          │
-  │◀── setSwitchVector ─────────────────────│ AGENT_START_PROCESS.state="Busy"
-  │                                          │
-  │    ┌─── 循环：移动调焦器 → 拍摄 → 计算 HFD ───┐
+  │                                              │
+  │    （Agent 开始 U-Curve 对焦流程）                │
+  │                                                │
+  │◀── setSwitchVector ────────────────────────────│ AGENT_START_PROCESS.state="Busy"
+  │                                                │
+  │    ┌─── 循环：移动调焦器 → 拍摄 → 计算 HFD ────────┐
   │    │                                           │
   │◀── setNumberVector ────────────────────│ AGENT_IMAGER_STATS
   │    │  FOCUS_POSITION = 16820                   │  ← 数据点 1
