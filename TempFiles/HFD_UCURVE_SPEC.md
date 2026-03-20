@@ -458,45 +458,45 @@ for (let i = 0; i <= 50; i++) {
 ## 9. 完整数据流时序
 
 ```
-Client                                        Server (Imager Agent)
+Client                                     Server (Imager Agent)
   │                                                │
-  │─── newSwitchVector ─────────────────────▶│ AGENT_START_PROCESS.FOCUSING=true
-  │                                              │
+  │─── newSwitchVector ───────────────────────────▶│ AGENT_START_PROCESS.FOCUSING=true
+  │                                                │
   │    （Agent 开始 U-Curve 对焦流程）                │
   │                                                │
   │◀── setSwitchVector ────────────────────────────│ AGENT_START_PROCESS.state="Busy"
   │                                                │
   │    ┌─── 循环：移动调焦器 → 拍摄 → 计算 HFD ────────┐
   │    │                                           │
-  │◀── setNumberVector ────────────────────│ AGENT_IMAGER_STATS
+  │◀── setNumberVector ────────────────────────────│ AGENT_IMAGER_STATS
   │    │  FOCUS_POSITION = 16820                   │  ← 数据点 1
   │    │  HFD = 13.5                               │
   │    │  BEST_FOCUS_DEVIATION = 100               │  ← |dev|≥90 → 采样阶段
   │    │                                           │
-  │◀── setNumberVector ────────────────────│ AGENT_IMAGER_STATS
+  │◀── setNumberVector ────────────────────────────│ AGENT_IMAGER_STATS
   │    │  FOCUS_POSITION = 16840                   │  ← 数据点 2
   │    │  HFD = 12.3                               │
   │    │  BEST_FOCUS_DEVIATION = 100               │
   │    │                                           │
-  │    │  ... （每移动一步推送一次）...              │
+  │    │  ... （每移动一步推送一次）...                │
   │    │                                           │
-  │◀── setNumberVector ────────────────────│ AGENT_IMAGER_STATS
+  │◀── setNumberVector ────────────────────────────│ AGENT_IMAGER_STATS
   │    │  FOCUS_POSITION = 16940                   │  ← 数据点 N
   │    │  HFD = 5.1                                │
   │    │  BEST_FOCUS_DEVIATION = 100               │
   │    └───────────────────────────────────────────┘
-  │                                          │
-  │    （Agent 内部完成 4 阶多项式拟合，          │
-  │     移动到最佳焦点位置）                      │
-  │                                          │
-  │◀── setNumberVector ────────────────────│ AGENT_IMAGER_STATS
+  │                                                │
+  │    （Agent 内部完成 4 阶多项式拟合，               │
+  │     移动到最佳焦点位置）                          │
+  │                                                │
+  │◀── setNumberVector ────────────────────────────│ AGENT_IMAGER_STATS
   │    FOCUS_POSITION = 16917                      │  ← 最终位置
   │    HFD = 4.2953                                │  ← 最终 HFD
   │    BEST_FOCUS_DEVIATION = 0.11                 │  ← |dev|<90 → 结果阶段
-  │                                          │
-  │◀── setSwitchVector ─────────────────────│ AGENT_START_PROCESS.state="Ok"
-  │                                          │
-  │    对焦完成                                │
+  │                                                │
+  │◀── setSwitchVector ────────────────────────────│ AGENT_START_PROCESS.state="Ok"
+  │                                                │
+  │    对焦完成                                     │
 ```
 
 ---
