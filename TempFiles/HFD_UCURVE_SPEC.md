@@ -505,9 +505,9 @@ Client                                     Server (Imager Agent)
 
 ### 10.1 需要监听的属性
 
-| 属性 | 用途 |
-|------|------|
-| `Imager Agent` / `AGENT_IMAGER_STATS` | HFD 数据点采集 |
+| 属性                                     | 用途                    |
+| -------------------------------------- | --------------------- |
+| `Imager Agent` / `AGENT_IMAGER_STATS`  | HFD 数据点采集             |
 | `Imager Agent` / `AGENT_START_PROCESS` | 对焦流程状态（Busy/Ok/Alert） |
 
 ### 10.2 需要发送的指令
