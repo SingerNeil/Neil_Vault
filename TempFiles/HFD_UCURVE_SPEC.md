@@ -221,13 +221,13 @@ Server 回复所有设备的全量属性定义（`defNumberVector` / `defSwitchV
 
 ```
 ┌──────────────────────────────────────────────────────────┐
-│  |BEST_FOCUS_DEVIATION| ≥ 90  →  【采样阶段】          │
-│  Agent 正在移动调焦器并采集 HFD 数据                     │
-│  每条消息 = 一个数据点 (FOCUS_POSITION, HFD)             │
+│  |BEST_FOCUS_DEVIATION| ≥ 90  →  【采样阶段】              │
+│  Agent 正在移动调焦器并采集 HFD 数据                         │
+│  每条消息 = 一个数据点 (FOCUS_POSITION, HFD)                │
 │                                                          │
-│  |BEST_FOCUS_DEVIATION| < 90  →  【结果阶段】           │
-│  Agent 已完成拟合，正在移向最佳焦点                       │
-│  此时 FOCUS_POSITION = 最终位置, HFD = 最终 HFD          │
+│  |BEST_FOCUS_DEVIATION| < 90  →  【结果阶段】              │
+│  Agent 已完成拟合, 正在移向最佳焦点                           │
+│  此时 FOCUS_POSITION = 最终位置, HFD = 最终 HFD             │
 └──────────────────────────────────────────────────────────┘
 ```
 
