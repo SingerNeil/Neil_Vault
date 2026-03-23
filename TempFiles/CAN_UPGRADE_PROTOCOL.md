@@ -163,7 +163,7 @@
 ```
 
 **响应时机**:
-- 收到 `CMD_UPDATE_REQ` 后响应
+- 收到 `CMD_UPDATE_REQ` 在擦除后响应
 - 收到每个 `CMD_DATA_PACK` 后立即响应
 - 收到 `CMD_CHECK_CRC` 后，校验通过后响应
 
