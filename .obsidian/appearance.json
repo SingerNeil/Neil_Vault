@@ -1,8 +1,8 @@
 {
-  "theme": "system",
+  "theme": "obsidian",
   "cssTheme": "Dracula for Obsidian",
   "baseFontSizeAction": true,
   "baseFontSize": 19,
   "nativeMenus": false,
-  "accentColor": "#8a61ea"
+  "accentColor": ""
 }
