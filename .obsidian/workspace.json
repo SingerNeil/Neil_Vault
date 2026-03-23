@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "3e2bc748da95ccf3",
+        "id": "15c383be81683680",
         "type": "tabs",
         "children": [
           {
-            "id": "d81d33dd17f1e757",
+            "id": "232c9f09b6497f41",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TempFiles/MCU1_WORK_SUMMARY.md",
-                "mode": "preview",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "MCU1_WORK_SUMMARY"
+              "title": "新标签页"
             }
           }
         ]
@@ -156,13 +152,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TempFiles/MCU1_WORK_SUMMARY.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "MCU1_WORK_SUMMARY 的大纲"
+              "title": "大纲"
             }
           },
           {
@@ -194,8 +189,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d81d33dd17f1e757",
+  "active": "04733a6b4ea12b83",
   "lastOpenFiles": [
+    "指数星空/PULSAR_11_V1.0_ONSTEP/Pulsar-Upgrade-Tool/Pulsar-CN2 双芯片烧录实现方案.md",
+    "TempFiles/MCU1_WORK_SUMMARY.md",
     "TempFiles/KTech CAN 指令.md",
     "TempFiles/HFD_UCURVE 数据采集与拟合算法规格书v1.0.md",
     "TempFiles/CAN_UPGRADE_PROTOCOL.md",
@@ -203,13 +200,11 @@
     "TempFiles/HFD_UCURVE数据采集与拟合算法规格书.md",
     "TempFiles/HFD_UCURVE_SPEC.md",
     "TempFiles/ucurve_app_handover.md",
-    "TempFiles/MCU1_WORK_SUMMARY.md",
     "未命名 1.base",
     "未命名.base",
     "markdown笔记云端储存与同步异常处理/Git 冲突处理与手动同步核心手册.md",
     "Markdown 语法速查表.md",
     "指数星空/PULSAR_11_V1.0_ONSTEP/Pulsar-Upgrade-Tool/Pulsar-CN1 单口双芯固件烧录协议规范 (v1.0).md",
-    "指数星空/PULSAR_11_V1.0_ONSTEP/Pulsar-Upgrade-Tool/Pulsar-CN2 双芯片烧录实现方案.md",
     "指数星空/PULSAR_11_V1.0_ONSTEP/KTECH操作指令.md",
     "指数星空/PULSAR_11_V1.0_ONSTEP/MCU1-引脚定义.md",
     "指数星空/PULSAR_11_V1.0_ONSTEP/Pulsar-Upgrade-Tool",
