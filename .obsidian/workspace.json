@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Markdown 语法速查表.md",
-                "mode": "source",
+                "file": "TempFiles/HFD_UCURVE 数据采集与拟合算法规格书v1.0.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Markdown 语法速查表"
+              "title": "HFD_UCURVE 数据采集与拟合算法规格书v1.0"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Markdown 语法速查表.md",
+                "file": "TempFiles/HFD_UCURVE 数据采集与拟合算法规格书v1.0.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Markdown 语法速查表 的大纲"
+              "title": "HFD_UCURVE 数据采集与拟合算法规格书v1.0 的大纲"
             }
           },
           {
@@ -196,6 +196,7 @@
   },
   "active": "232c9f09b6497f41",
   "lastOpenFiles": [
+    "Markdown 语法速查表.md",
     "README.md",
     "TempFiles/HFD_UCURVE 数据采集与拟合算法规格书v1.0.md",
     "TempFiles/CAN_UPGRADE_PROTOCOL.md",
@@ -212,7 +213,6 @@
     "TempFiles/ucurve_app_handover.md",
     "未命名 1.base",
     "未命名.base",
-    "Markdown 语法速查表.md",
     "指数星空/PULSAR_11_V1.0_ONSTEP/Pulsar-Upgrade-Tool/Pulsar-CN1 单口双芯固件烧录协议规范 (v1.0).md",
     "指数星空/PULSAR_11_V1.0_ONSTEP/KTECH操作指令.md",
     "指数星空/PULSAR_11_V1.0_ONSTEP/MCU1-引脚定义.md",
