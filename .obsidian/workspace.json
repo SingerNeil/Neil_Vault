@@ -4,24 +4,37 @@
     "type": "split",
     "children": [
       {
-        "id": "15c383be81683680",
+        "id": "6df8a5a4f4563708",
         "type": "tabs",
         "children": [
           {
-            "id": "232c9f09b6497f41",
+            "id": "99ae4f8b98267556",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TempFiles/HFD_UCURVE 数据采集与拟合算法规格书v1.0.md",
-                "mode": "preview",
+                "file": "Git操作/Git_Workflow_SOP.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "HFD_UCURVE 数据采集与拟合算法规格书v1.0"
+              "title": "Git_Workflow_SOP"
+            }
+          },
+          {
+            "id": "a354b7d98a413551",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.11.5"
+              },
+              "icon": "lucide-book-up",
+              "title": "版本说明 1.11.5"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -78,7 +91,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 244.5040512084961
+    "width": 200
   },
   "right": {
     "id": "c9a118fc8541b218",
@@ -94,17 +107,17 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "指数星空/PULSAR_11_V1.0_ONSTEP/Pulsar-CN1 双芯片烧录实现方案.md",
+                "file": "Polynomial_coefficient-AIGC/Polynomial_coefficient-AIGC.md",
                 "collapseAll": true,
-                "extraContext": true,
+                "extraContext": false,
                 "sortOrder": "alphabetical",
-                "showSearch": true,
+                "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Pulsar-CN1 双芯片烧录实现方案 的反向链接列表"
+              "title": "Polynomial_coefficient-AIGC 的反向链接列表"
             }
           },
           {
@@ -113,12 +126,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "指数星空/PULSAR_11_V1.0_ONSTEP/Pulsar-CN1 双芯片烧录实现方案.md",
+                "file": "Polynomial_coefficient-AIGC/Polynomial_coefficient-AIGC.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Pulsar-CN1 双芯片烧录实现方案 的出链列表"
+              "title": "Polynomial_coefficient-AIGC 的出链列表"
             }
           },
           {
@@ -127,8 +140,8 @@
             "state": {
               "type": "tag",
               "state": {
-                "sortOrder": "alphabetical",
-                "useHierarchy": false,
+                "sortOrder": "frequency",
+                "useHierarchy": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
@@ -156,23 +169,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TempFiles/HFD_UCURVE 数据采集与拟合算法规格书v1.0.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "HFD_UCURVE 数据采集与拟合算法规格书v1.0 的大纲"
-            }
-          },
-          {
-            "id": "cfda43f87bd8a651",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "title": "大纲"
             }
           }
         ],
@@ -180,7 +182,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 283.5
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -194,48 +196,48 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "232c9f09b6497f41",
+  "active": "a354b7d98a413551",
   "lastOpenFiles": [
-    "Markdown 语法速查表.md",
-    "README.md",
+    "conflict-files-obsidian-git.md",
     "TempFiles/HFD_UCURVE 数据采集与拟合算法规格书v1.0.md",
-    "TempFiles/CAN_UPGRADE_PROTOCOL.md",
-    "markdown笔记云端储存与同步异常处理/Git 冲突处理与手动同步核心手册.md",
-    "markdown笔记云端储存与同步异常处理/基于Github的Obsidian库免费同步方案.md",
-    "Linux ThinkBook/限制充电-full&save.md",
-    "Git操作/Git_Workflow_SOP.md",
     "指数星空/PULSAR_11_V1.0_ONSTEP/Pulsar-Upgrade-Tool/Pulsar-CN2 双芯片烧录实现方案.md",
-    "TempFiles/MCU1_WORK_SUMMARY.md",
-    "TempFiles/KTech CAN 指令.md",
-    "TempFiles/HFD_UCURVE 数据采集与拟合算法规格书.md",
-    "TempFiles/HFD_UCURVE数据采集与拟合算法规格书.md",
-    "TempFiles/HFD_UCURVE_SPEC.md",
-    "TempFiles/ucurve_app_handover.md",
-    "未命名 1.base",
-    "未命名.base",
     "指数星空/PULSAR_11_V1.0_ONSTEP/Pulsar-Upgrade-Tool/Pulsar-CN1 单口双芯固件烧录协议规范 (v1.0).md",
-    "指数星空/PULSAR_11_V1.0_ONSTEP/KTECH操作指令.md",
-    "指数星空/PULSAR_11_V1.0_ONSTEP/MCU1-引脚定义.md",
     "指数星空/PULSAR_11_V1.0_ONSTEP/Pulsar-Upgrade-Tool",
     "指数星空/PULSAR_11_V1.0_ONSTEP/Pulsar-OTA/Pulsar-OTA 功能设计与实现文档 (MCU2).md",
     "指数星空/PULSAR_11_V1.0_ONSTEP/Pulsar-OTA/Pulsar-OTA 功能设计与实现文档 (MCU1).md",
     "指数星空/PULSAR_11_V1.0_ONSTEP/Pulsar-OTA",
+    "TempFiles/CAN_UPGRADE_PROTOCOL.md",
+    "markdown笔记云端储存与同步异常处理/Git 冲突处理与手动同步核心手册.md",
+    "指数星空/PULSAR_11_V1.0_ONSTEP/assets/PULSAR规格书/光环RING_CAA_V1.0硬件规格书.pdf",
     "指数星空/PULSAR_11_V1.0_ONSTEP/assets/PULSAR规格书/PULSAR_11_ONSTEP_V1.0_20251224.pdf",
-    "src/lib/axis/motor/kTech/KTech.cpp.md",
-    "src/lib/axis/motor/kTech",
-    "src/lib/axis/motor",
-    "src/lib/axis",
-    "src/lib",
-    "src",
-    "autofocus_ucurve算法/Urcurve算法流程-AIGC.md",
-    "实习日志/Week 4.md",
-    "实习日志/Week 3.md",
-    "实习日志/Week 1.md",
+    "指数星空/PULSAR_11_V1.0_ONSTEP/assets/PULSAR规格书",
+    "指数星空/PULSAR_11_V1.0_ONSTEP/assets",
+    "指数星空/PULSAR_11_V1.0_ONSTEP/Pulsar-OTA 功能设计与实现文档 (MCU2).md",
+    "指数星空/PULSAR_11_V1.0_ONSTEP/Pulsar-OTA 功能设计与实现文档 (MCU1).md",
+    "指数星空/PULSAR_11_V1.0_ONSTEP/Pulsar-CN1 双芯片烧录实现方案.md",
+    "指数星空/PULSAR_11_V1.0_ONSTEP/MCU1-引脚定义.md",
+    "指数星空/PULSAR_11_V1.0_ONSTEP/KTECH操作指令.md",
+    "指数星空/PULSAR_11_V1.0_ONSTEP",
+    "指数星空",
+    "TempFiles/KTech CAN 指令.md",
+    "Markdown 语法速查表.md",
+    "Git操作/Git_Workflow_SOP.md",
+    "企业系统复习/企业系统.pdf",
+    "README.md",
+    "企业系统复习/企业系统复习.md",
+    "嵌入式/PULSAR_11_V1.0_ONSTEP/assets/PULSAR规格书/光环RING_CAA_V1.0硬件规格书.pdf",
+    "嵌入式/PULSAR_11_V1.0_ONSTEP/U1_引脚定义.md",
+    "嵌入式/PULSAR_11_V1.0_ONSTEP/PULSAR规格书.md",
+    "嵌入式/PULSAR_11_V1.0_ONSTEP/KTECH_MOTOR_OPERATION_GUIDE.md",
     "autofocus_ucurve算法/Polynomial_coefficient-AIGC.md",
-    "实习日志/assets/Week 3/file-20251124145528520.png",
+    "TempFiles/MCU1_WORK_SUMMARY.md",
+    "markdown笔记云端储存与同步.md",
     "markdown笔记云端储存与同步异常处理/assets/基于Github的Obsidian库免费同步方案/file-20260105232641088.png",
     "markdown笔记云端储存与同步异常处理/assets/基于Github的Obsidian库免费同步方案/file-20260105231442728.png",
+    "markdown笔记云端储存与同步异常处理/基于Github的Obsidian库免费同步方案.md",
+    "Linux ThinkBook/限制充电-full&save.md",
     "实习日志/assets/Week 3/file-20251124145534751.png",
+    "实习日志/assets/Week 3/file-20251124145528520.png",
     "实习日志/assets/Week 3/file-20251124145514652.png",
     "实习日志/assets/Week 1/file-20251124145444722.png",
     "实习日志/assets/Week 1/file-20251124145405278.png",
