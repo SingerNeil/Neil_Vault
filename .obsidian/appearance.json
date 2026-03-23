@@ -2,7 +2,7 @@
   "theme": "obsidian",
   "cssTheme": "Dracula for Obsidian",
   "baseFontSizeAction": true,
-  "baseFontSize": 19,
+  "baseFontSize": 16,
   "nativeMenus": false,
   "accentColor": ""
 }
