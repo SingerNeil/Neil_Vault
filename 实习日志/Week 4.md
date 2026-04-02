@@ -119,4 +119,6 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib && gdbserver :2333 /usr/l
 # 在Linux上 优雅地部署基于 clash/mihomo 的代理环境
 详细完整版请查看：[Gitee开源地址](https://gitee.com/tools-repo/clash-for-linux-install)
 
-> [!Warning  又麻烦又垃圾，不如直接使用 **clash verge** 的 `linux` 版。——2026.04.02编
+> [!Warning]  二编
+> 又麻烦又垃圾，不如直接使用 **clash verge** 的 `linux` 版。
+> ——2026.04.02编
