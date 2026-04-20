@@ -147,13 +147,13 @@
 
 **数据包格式**（8字节）:
 
-| 字节位置 | 字段 | 类型 | 说明 |
-|---------|------|------|------|
-| Byte[0] | cmd | uint8 | 0xB0 |
-| Byte[1] | target_cmd | uint8 | 响应的目标命令 |
-| Byte[2] | status | uint8 | 状态码 |
-| Byte[3:6] | current_offset | uint32 | 当前写入偏移量（小端序） |
-| Byte[7] | reserved | uint8 | 保留 |
+| 字节位置      | 字段             | 类型     | 说明      |
+| --------- | -------------- | ------ | ------- |
+| Byte[0]   | cmd            | uint8  | 0xB0    |
+| Byte[1]   | target_cmd     | uint8  | 响应的目标命令 |
+| Byte[2]   | status         | uint8  | 状态码     |
+| Byte[3:6] | current_offset | uint32 | 当前写入包序号 |
+| Byte[7]   | reserved       | uint8  | 保留      |
 
 **示例**:
 ```
