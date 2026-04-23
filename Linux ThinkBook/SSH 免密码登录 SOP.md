@@ -1,7 +1,7 @@
 
 ---
 
-````markdown
+
 # SSH 免密码登录 SOP（Ubuntu → Linux / 嵌入式设备）
 
 ## 0. 前提检查
@@ -230,9 +230,7 @@ ssh root@192.168.188.6
 * `ssh-copy-id` 提示 key 已存在 → 属于正常现象
 * 真正关键在于 SSH 认证阶段（权限 / 配置 / key 匹配）
 
-```
 
 ---
 
-如果你后面要把这套东西**升级成批量设备免密（比如烧录、部署、远程调试）**，我可以:contentReference[oaicite:0]{index=0}。
-```
+
