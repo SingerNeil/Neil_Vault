@@ -2,7 +2,7 @@
 ---
 
 **U-Curve自动对焦算法（U型曲线法）**，
-![[obsidian://open?vault=Neil_Vault&file=%E5%A4%A9%E7%8B%BC%E6%98%9F%2FINDIGO%2FAuto-Focus-U-Curve%2Fassets%2F%E5%85%B3%E4%BA%8Eautofocus_ucurve%E7%9A%84%E4%B8%AA%E4%BA%BA%E6%94%B9%E8%BF%9B%E6%83%B3%E6%B3%95%2Ffile-20251124145559695.pdf]]核心思想是通过测量不同焦点位置的图像清晰度（HFD）拟合出一个“U型曲线”，然后找到曲线最低点（最清晰的焦点）。
+![[]]核心思想是通过测量不同焦点位置的图像清晰度（HFD）拟合出一个“U型曲线”，然后找到曲线最低点（最清晰的焦点）。
 
 下面将按照**算法逻辑顺序**详细为你讲解整个函数 autofocus_ucurve() 的实现原理与关键点。
 
