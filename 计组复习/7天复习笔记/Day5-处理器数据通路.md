@@ -7,7 +7,11 @@
 - 作业：`Homework4 of Chapter04 for 24H.pdf`
 - 视频：p98-p105、p106
 
+页码说明：下面的 `PPT p.X` 指 PDF 文件打开后的实际页序。
+
 ## 1. 单周期 MIPS 的核心部件
+
+PPT 对照：`Computer Organization 04 Part1 for 24H.pdf` p.21-p.33、p.55-p.60；完整图也见 `Computer Organization Chapter04 for 24H.pdf` p.61-p.65。
 
 必须会认：
 
@@ -23,6 +27,8 @@
 - Control：根据 opcode 产生控制信号。
 
 ## 2. 一条指令的基本阶段
+
+PPT 对照：`Computer Organization 04 Part1 for 24H.pdf` p.30-p.35；完整 Chapter04 的 single-cycle/pipeline 对比见 `Computer Organization Chapter04 for 24H.pdf` p.104-p.109、p.112-p.116。
 
 单周期里逻辑上仍然可以分成：
 
@@ -40,6 +46,8 @@
 
 ## 3. 常见控制信号
 
+PPT 对照：`Computer Organization 04 Part1 for 24H.pdf` p.55-p.60；执行 add/lw/sw/beq 的控制路径见 `Computer Organization Chapter04 for 24H.pdf` p.62-p.65。
+
 | 信号 | 含义 |
 |---|---|
 | RegDst | 选择写回寄存器是 `rt` 还是 `rd` |
@@ -53,6 +61,8 @@
 
 ## 4. 控制信号表
 
+PPT 对照：`Computer Organization 04 Part1 for 24H.pdf` p.57-p.60；`Computer Organization Chapter04 for 24H.pdf` p.62-p.65。
+
 | 指令 | RegDst | ALUSrc | MemtoReg | RegWrite | MemRead | MemWrite | Branch | ALUOp |
 |---|---|---|---|---|---|---|---|---|
 | R-type | 1 | 0 | 0 | 1 | 0 | 0 | 0 | 10 |
@@ -65,7 +75,11 @@ X 表示 don't care。
 
 ## 5. 各类指令的数据流
 
+PPT 对照：`Computer Organization 04 Part1 for 24H.pdf` p.37-p.51、p.55-p.60；`Computer Organization Chapter04 for 24H.pdf` p.62-p.65。
+
 ### 5.1 R-type
+
+PPT 对照：`Computer Organization 04 Part1 for 24H.pdf` p.37-p.39；`Computer Organization Chapter04 for 24H.pdf` p.62。
 
 例：
 
@@ -86,6 +100,8 @@ PC -> Instruction Memory
 
 ### 5.2 `lw`
 
+PPT 对照：`Computer Organization 04 Part1 for 24H.pdf` p.40-p.46；`Computer Organization Chapter04 for 24H.pdf` p.63。
+
 例：
 
 ```text
@@ -104,6 +120,8 @@ PC -> Instruction Memory
 ```
 
 ### 5.3 `sw`
+
+PPT 对照：`Computer Organization 04 Part1 for 24H.pdf` p.40-p.46；`Computer Organization Chapter04 for 24H.pdf` p.64。
 
 例：
 
@@ -124,6 +142,8 @@ PC -> Instruction Memory
 不会写回寄存器。
 
 ### 5.4 `beq`
+
+PPT 对照：`Computer Organization 04 Part1 for 24H.pdf` p.47-p.51、p.60；`Computer Organization Chapter04 for 24H.pdf` p.65。
 
 例：
 
@@ -148,6 +168,8 @@ PC + 4 + (sign_extend(offset) << 2)
 
 ## 6. Homework4：LWI 新指令
 
+PPT 对照：LWI 是 Homework4 扩展题；可对照单周期完整 datapath：`Computer Organization 04 Part1 for 24H.pdf` p.55-p.60。
+
 题目：
 
 ```text
@@ -166,6 +188,8 @@ Address = Reg[Rd] + Reg[Rs]
 然后从 Data Memory 读出数据写回 `Rt`。
 
 ## 7. LWI 可以复用的模块
+
+PPT 对照：`Computer Organization 04 Part1 for 24H.pdf` p.55-p.60；R/lw/sw/beq 原路径见 p.37-p.51。
 
 可以复用：
 
@@ -197,6 +221,8 @@ Reg[Rt]
 
 ## 8. LWI 需要新增或修改的地方
 
+PPT 对照：原 Register File 读端口和 mux 位置见 `Computer Organization 04 Part1 for 24H.pdf` p.35-p.39、p.57-p.60。
+
 原 datapath 的问题：
 
 标准 MIPS 的 Register File 通常读 `rs` 和 `rt`。但是 LWI 需要读 `rs` 和 `rd`，同时写回 `rt`。
@@ -223,6 +249,8 @@ ALU operation = add
 
 ## 9. 三种处理器实现对比
 
+PPT 对照：`Computer Organization Chapter04 for 24H.pdf` p.31、p.61-p.72、p.98-p.100、p.109、p.162。
+
 | 实现方式 | 优点 | 缺点 |
 |---|---|---|
 | Single-cycle | 简单，每条指令一个周期 | cycle time 被最慢指令决定 |
@@ -243,4 +271,3 @@ ALU operation = add
 3. LWI 可复用哪些模块。
 4. LWI 为什么需要新增 mux。
 5. single-cycle、multi-cycle、pipeline 优缺点。
-

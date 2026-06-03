@@ -6,7 +6,11 @@
 - 作业：`Homework1 of Chapter01 for 24H.pdf`
 - 视频：p08、p09
 
+页码说明：下面的 `PPT p.X` 指 PDF 文件打开后的实际页序。
+
 ## 1. 计算机系统主线
+
+PPT 对照：`Computer Organization 01 for 24H.pdf` p.47、p.52-p.54、p.131-p.133。
 
 一台计算机可以从高到低理解成：
 
@@ -20,6 +24,8 @@
 考试里遇到“抽象”相关问题，核心回答是：复杂系统靠分层抽象来隐藏下层细节，上层只依赖接口。
 
 ## 2. 高级语言程序如何被 CPU 执行
+
+PPT 对照：`Computer Organization 01 for 24H.pdf` p.47、p.49-p.50。
 
 标准流程：
 
@@ -42,6 +48,8 @@ C program
 
 ## 3. Great Ideas
 
+PPT 对照：`Computer Organization 01 for 24H.pdf` p.41-p.43。
+
 常见教材中的计算机体系结构思想：
 
 1. Design for Moore's Law：设计要考虑芯片资源持续增长。
@@ -57,7 +65,11 @@ C program
 
 ## 4. 性能核心公式
 
+PPT 对照：`Computer Organization 01 for 24H.pdf` p.99-p.111；公式总复习也见 `Computer Organization Chapter04 for 24H.pdf` p.160。
+
 ### 4.1 时间和性能
+
+PPT 对照：`Computer Organization 01 for 24H.pdf` p.99-p.100。
 
 ```text
 Performance = 1 / Execution Time
@@ -80,6 +92,8 @@ A 的性能 / B 的性能 = 20 / 10 = 2
 所以 A is 2 times faster than B。
 
 ### 4.2 CPU 执行时间
+
+PPT 对照：`Computer Organization 01 for 24H.pdf` p.101-p.109。
 
 ```text
 CPU Time = Instruction Count × CPI × Clock Cycle Time
@@ -106,6 +120,8 @@ CPU Time = Instruction Count × CPI / Clock Rate
 
 ### 4.3 平均 CPI
 
+PPT 对照：`Computer Organization 01 for 24H.pdf` p.109-p.110。
+
 如果有多类指令：
 
 ```text
@@ -119,6 +135,8 @@ Average CPI = sum(IC_i × CPI_i) / sum(IC_i)
 ```
 
 ## 5. 常见题型模板
+
+PPT 对照：`Computer Organization 01 for 24H.pdf` p.109-p.115、p.119。
 
 ### 5.1 求 CPU time
 
@@ -136,6 +154,8 @@ CPU Time = IC × CPI × Cycle Time
 
 ### 5.2 求 CPI
 
+PPT 对照：`Computer Organization 01 for 24H.pdf` p.109-p.111。
+
 题目给 execution time、clock cycle time、instruction count：
 
 ```text
@@ -149,6 +169,8 @@ CPI = Execution Time × Clock Rate / Instruction Count
 ```
 
 ### 5.3 比较两个编译器
+
+PPT 对照：`Computer Organization 01 for 24H.pdf` p.110-p.115、p.119。
 
 写法：
 
@@ -167,6 +189,8 @@ ClockRate_A / ClockRate_B = CPI_A / CPI_B
 ```
 
 ## 6. Frame Buffer 题
+
+PPT 对照：`Computer Organization 01 for 24H.pdf` p.84-p.85。
 
 公式：
 
@@ -205,4 +229,3 @@ bits per pixel = 8 + 8 + 8 = 24 bits
 5. Frame buffer 计算公式。
 
 能全部写出来，再去做 Homework1。
-

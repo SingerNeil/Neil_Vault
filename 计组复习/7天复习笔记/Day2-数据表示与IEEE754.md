@@ -6,7 +6,11 @@
 - 作业：`Homework3 for Chapter03 for 24H.pdf`
 - 视频：p10-p20、p25-p26
 
+页码说明：下面的 `PPT p.X` 指 PDF 文件打开后的实际页序。
+
 ## 1. 进制转换
+
+PPT 对照：`Computer Organization 03 for 24H.pdf` p.12-p.13、p.44；十六进制补充见 `Computer Organization 02 for 24H.pdf` p.78、p.81。
 
 ### 1.1 二进制转十进制
 
@@ -33,6 +37,8 @@
 
 ## 2. 无符号整数
 
+PPT 对照：`Computer Organization 03 for 24H.pdf` p.13。
+
 n 位无符号数范围：
 
 ```text
@@ -52,6 +58,8 @@ n 位无符号数范围：
 ```
 
 ## 3. 有符号整数表示
+
+PPT 对照：`Computer Organization 03 for 24H.pdf` p.15、p.17-p.23、p.32。
 
 ### 3.1 Sign-magnitude 原码
 
@@ -107,6 +115,8 @@ n 位补码范围：
 
 ## 4. Sign Extension 符号扩展
 
+PPT 对照：`Computer Organization 03 for 24H.pdf` p.32、p.37。
+
 规则：复制最高符号位。
 
 例：8 位补码扩展到 16 位。
@@ -121,6 +131,8 @@ n 位补码范围：
 如果最高位是 1，前面补 1。
 
 ## 5. 补码加减法
+
+PPT 对照：`Computer Organization 03 for 24H.pdf` p.77-p.83。
 
 减法改成加负数：
 
@@ -166,6 +178,8 @@ A - B = A + (-B)
 
 ## 6. IEEE 754 Single Precision
 
+PPT 对照：`Computer Organization 03 for 24H.pdf` p.45-p.56、p.64-p.65。
+
 单精度 32 位：
 
 ```text
@@ -184,6 +198,8 @@ bias:     127
 这是规格化数，要求 exponent 不是全 0，也不是全 1。
 
 ## 7. 十进制转 IEEE 754
+
+PPT 对照：`Computer Organization 03 for 24H.pdf` p.67-p.70。
 
 步骤：
 
@@ -213,6 +229,8 @@ Fraction = 10000000000000000000000
 ```
 
 ## 8. IEEE 754 转十进制
+
+PPT 对照：`Computer Organization 03 for 24H.pdf` p.68-p.70、p.92。
 
 步骤：
 
@@ -263,4 +281,3 @@ E = 24 - 127 = -103
 4. 补码溢出判断规则。
 5. IEEE 754 single precision 的字段位数和 bias。
 6. `-0.75` 的 IEEE 754 表示。
-

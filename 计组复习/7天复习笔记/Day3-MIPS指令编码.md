@@ -6,7 +6,11 @@
 - 作业：`Homework2 of Chapter02 for 24H.pdf`
 - 视频：p84-p87、p94
 
+页码说明：下面的 `PPT p.X` 指 PDF 文件打开后的实际页序。
+
 ## 1. ISA 是什么
+
+PPT 对照：`Computer Organization 02 for 24H.pdf` p.12、p.16-p.17；抽象接口补充见 p.4。
 
 ISA 是 Instruction Set Architecture。
 
@@ -21,6 +25,8 @@ ISA 是 Instruction Set Architecture。
 一句话：ISA 是软件和硬件之间的接口。
 
 ## 2. RISC 和 CISC
+
+PPT 对照：`Computer Organization 02 for 24H.pdf` p.13-p.14、p.25、p.141-p.142。
 
 RISC：
 
@@ -38,6 +44,8 @@ CISC：
 - x86 是典型 CISC。
 
 ## 3. MIPS 常用寄存器
+
+PPT 对照：`Computer Organization 02 for 24H.pdf` p.31-p.32。
 
 | 名称 | 编号 | 用途 |
 |---|---:|---|
@@ -67,7 +75,11 @@ $s3 = 19
 
 ## 4. MIPS 三种指令格式
 
+PPT 对照：`Computer Organization 02 for 24H.pdf` p.61-p.64、p.71、p.76-p.82、p.132-p.135。
+
 ### 4.1 R-format
+
+PPT 对照：`Computer Organization 02 for 24H.pdf` p.61-p.62、p.76-p.77、p.132。
 
 ```text
 op     rs     rt     rd     shamt  funct
@@ -88,6 +100,8 @@ R-type 的 `op` 通常是 0，真正操作由 `funct` 决定。
 
 ### 4.2 I-format
 
+PPT 对照：`Computer Organization 02 for 24H.pdf` p.63-p.64、p.82、p.133-p.134。
+
 ```text
 op     rs     rt     immediate
 6 bits 5 bits 5 bits 16 bits
@@ -107,6 +121,8 @@ ori  rt, rs, imm
 
 ### 4.3 J-format
 
+PPT 对照：`Computer Organization 02 for 24H.pdf` p.93-p.95、p.135。
+
 ```text
 op     address
 6 bits 26 bits
@@ -120,6 +136,8 @@ jal target
 ```
 
 ## 5. 常用 op / funct
+
+PPT 对照：`Computer Organization 02 for 24H.pdf` p.61、p.76、p.100、p.103-p.107、p.115-p.117、p.122。
 
 | 指令 | 类型 | op | funct |
 |---|---|---:|---:|
@@ -153,6 +171,8 @@ ori = 0x0D
 ```
 
 ## 6. 汇编转机器码步骤
+
+PPT 对照：`Computer Organization 02 for 24H.pdf` p.75-p.78、p.82、p.91、p.96、p.132-p.135。
 
 1. 判断 R/I/J 类型。
 2. 写出字段顺序。
@@ -202,6 +222,8 @@ funct = sub = 34
 
 ## 7. 机器码转汇编步骤
 
+PPT 对照：`Computer Organization 02 for 24H.pdf` p.75-p.78、p.132-p.135。
+
 1. 看前 6 位 op。
 2. 如果 op = 0，按 R-format 解析 funct。
 3. 如果 op 不是 0，按 I-format 或 J-format 解析。
@@ -239,6 +261,8 @@ add $s0, $s0, $s0
 
 ## 8. Endian
 
+PPT 对照：`Computer Organization 02 for 24H.pdf` p.49-p.53、p.85、p.101。
+
 假设从地址 0 开始存 `0xABCDEF12`。
 
 Big-endian：最高有效字节放低地址。
@@ -268,4 +292,3 @@ Address 3: AB
 3. `lw`、`sw`、`beq`、`bne`、`j` 的 op。
 4. `add`、`sub` 的 funct。
 5. `sw $t1, 32($t2)` 的机器码。
-

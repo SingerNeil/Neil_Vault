@@ -6,7 +6,11 @@
 - Lab：`Lab2 Pipelining for 24H.pdf`
 - 视频：p125-p130、p132
 
+页码说明：下面的 `PPT p.X` 指 PDF 文件打开后的实际页序。
+
 ## 1. 为什么要流水线
+
+PPT 对照：`Computer Organization Chapter04 for 24H.pdf` p.101-p.110、p.129-p.130、p.159-p.161。
 
 非流水线：
 
@@ -30,6 +34,8 @@ single instruction latency
 
 ## 2. MIPS 五级流水线
 
+PPT 对照：`Computer Organization Chapter04 for 24H.pdf` p.105-p.108、p.112、p.128。
+
 五个阶段：
 
 | 阶段 | 全称 | 作用 |
@@ -48,6 +54,8 @@ IF -> ID -> EX -> MEM -> WB
 
 ## 3. Pipeline Registers
 
+PPT 对照：`Computer Organization Chapter04 for 24H.pdf` p.114-p.125。
+
 流水线寄存器保存阶段之间的信息。
 
 | 流水线寄存器 | 位置 | 常见内容 |
@@ -61,6 +69,8 @@ Lab2 里问 pipeline register，就按这个思路答。
 
 ## 4. 理想流水线时序
 
+PPT 对照：`Computer Organization Chapter04 for 24H.pdf` p.103-p.109、p.127-p.129。
+
 假设没有 hazard：
 
 ```text
@@ -73,6 +83,8 @@ I3:             IF  ID  EX  MEM WB
 第 n 条指令每个阶段依次向右移动。
 
 ## 5. 流水线加速比
+
+PPT 对照：`Computer Organization Chapter04 for 24H.pdf` p.108-p.110、p.129、p.159-p.161。
 
 理想情况下：
 
@@ -91,7 +103,11 @@ Speedup ≈ number of pipeline stages
 
 ## 6. 三类 Hazard
 
+PPT 对照：`Computer Organization Chapter04 for 24H.pdf` p.131-p.133、p.138-p.148、p.150-p.157、p.161。
+
 ### 6.1 Structural Hazard
+
+PPT 对照：`Computer Organization Chapter04 for 24H.pdf` p.131-p.133、p.135。
 
 硬件资源冲突。
 
@@ -106,6 +122,8 @@ Speedup ≈ number of pipeline stages
 - stall。
 
 ### 6.2 Data Hazard
+
+PPT 对照：`Computer Organization Chapter04 for 24H.pdf` p.138-p.146。
 
 后一条指令需要前一条指令尚未写回的结果。
 
@@ -125,6 +143,8 @@ sub $t3, $t0, $t4
 
 ### 6.3 Control Hazard
 
+PPT 对照：`Computer Organization Chapter04 for 24H.pdf` p.147-p.158。
+
 branch/jump 改变 PC，导致已经取到的指令可能不该执行。
 
 解决：
@@ -135,6 +155,8 @@ branch/jump 改变 PC，导致已经取到的指令可能不该执行。
 - 提前计算 branch decision。
 
 ## 7. Forwarding
+
+PPT 对照：`Computer Organization Chapter04 for 24H.pdf` p.139-p.145。
 
 Forwarding 的意思：
 
@@ -156,6 +178,8 @@ sub $t3, $t0, $t4
 
 ## 8. Load-use Hazard
 
+PPT 对照：`Computer Organization Chapter04 for 24H.pdf` p.143-p.145。
+
 最经典需要 stall 的情况：
 
 ```text
@@ -170,6 +194,8 @@ add $t2, $t0, $t3
 即使用 forwarding，通常也要插入 1 个 bubble。
 
 ## 9. Stall、Bubble、Flush
+
+PPT 对照：`Computer Organization Chapter04 for 24H.pdf` p.138、p.143-p.156。
 
 Stall：
 
@@ -189,6 +215,8 @@ Flush：
 - control hazard 常用 flush。
 
 ## 10. Lab2 做题模板
+
+PPT 对照：流水线图画法见 `Computer Organization Chapter04 for 24H.pdf` p.117-p.129；Lab2 题面见 `Lab2 Pipelining for 24H.pdf` p.1-p.3。
 
 如果题目问某个 cycle 各阶段是什么：
 
@@ -219,4 +247,3 @@ I4:                 IF  ID  EX  MEM WB
 4. forwarding 是什么。
 5. load-use hazard 为什么通常要 stall。
 6. stall、bubble、flush 的区别。
-

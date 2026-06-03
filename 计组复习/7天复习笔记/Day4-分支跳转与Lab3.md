@@ -7,7 +7,11 @@
 - 已完成作业：`22H034160227-徐楚明-Lab3-ISA.docx`
 - 视频：p88-p92
 
+页码说明：下面的 `PPT p.X` 指 PDF 文件打开后的实际页序。
+
 ## 1. 三类地址计算
+
+PPT 对照：`Computer Organization 02 for 24H.pdf` p.86-p.100、p.127-p.130、p.133-p.139；Lab3 题面见 `Lab3 Task for 24H.pdf` p.1-p.4。
 
 MIPS 里最容易丢分的是：
 
@@ -16,6 +20,8 @@ MIPS 里最容易丢分的是：
 3. `j` 的 jump target。
 
 ## 2. `lw/sw` 有效地址
+
+PPT 对照：`Computer Organization 02 for 24H.pdf` p.42-p.46、p.127-p.128；数据通路角度见 `Computer Organization 04 Part1 for 24H.pdf` p.40-p.46。
 
 格式：
 
@@ -54,6 +60,8 @@ Memory[$s3 + 8] = $t0
 
 ## 3. `beq/bne` 分支地址
 
+PPT 对照：`Computer Organization 02 for 24H.pdf` p.86-p.92、p.133-p.134、p.139。
+
 格式：
 
 ```text
@@ -81,6 +89,8 @@ immediate = (Target Address - (PC + 4)) / 4
 
 ## 4. Branch 例题
 
+PPT 对照：`Computer Organization 02 for 24H.pdf` p.89-p.92、p.96、p.133-p.139。
+
 题目：
 
 ```text
@@ -104,6 +114,8 @@ Else = 0x00400060
 ```
 
 ## 5. `j` 跳转地址
+
+PPT 对照：`Computer Organization 02 for 24H.pdf` p.93-p.96、p.107、p.130、p.135。
 
 J-format：
 
@@ -144,6 +156,8 @@ Exit = 0x00400060
 ```
 
 ## 6. `lui + ori`
+
+PPT 对照：`ori` 和 logical immediate 见 `Computer Organization 02 for 24H.pdf` p.105、p.115-p.117；`lui + ori` 的具体 Lab3 空格见 `Lab3 Task for 24H.pdf` p.1-p.2。
 
 `lui`：
 
@@ -195,6 +209,8 @@ $s1 = 0x12345678
 
 ## 7. `jr $ra`
 
+PPT 对照：`Computer Organization 02 for 24H.pdf` p.107、p.130。
+
 `jr` 是 R-type。
 
 ```text
@@ -210,6 +226,8 @@ PC = Reg[$ra]
 常用于函数返回。
 
 ## 8. Lab3 做题方法
+
+PPT 对照：MIPS 指令地址/寻址模式见 `Computer Organization 02 for 24H.pdf` p.127-p.130、p.132-p.135；Lab3 题面见 `Lab3 Task for 24H.pdf` p.1-p.4。
 
 Lab3 常见空格：
 
@@ -229,7 +247,11 @@ Lab3 常见空格：
 
 ## 9. Lab3 核心提醒
 
+PPT 对照：分支/跳转见 `Computer Organization 02 for 24H.pdf` p.86-p.100、p.133-p.139；Lab3 题面见 `Lab3 Task for 24H.pdf` p.1-p.4。
+
 ### 9.1 `la`
+
+PPT 对照：pseudo-instruction 以 QtSPIM 展开结果为准；本题直接看 `Lab3 Task for 24H.pdf` p.1-p.2 和模拟器真实指令地址。
 
 `la` 是 pseudo-instruction，不一定是一条真实机器指令。
 
@@ -243,6 +265,8 @@ ori
 所以算 PC 时不要想当然，要以模拟器里真实展开后的 instruction address 为准。
 
 ### 9.2 `bne $s3, $s4, Else`
+
+PPT 对照：`Computer Organization 02 for 24H.pdf` p.86-p.92、p.133-p.139。
 
 如果：
 
@@ -262,6 +286,8 @@ $s3 == $s4
 
 ### 9.3 `sw $s0, 16($t0)`
 
+PPT 对照：`Computer Organization 02 for 24H.pdf` p.42-p.46、p.127-p.128。
+
 含义：
 
 ```text
@@ -279,4 +305,3 @@ Memory[$t0 + 16] = $s0
 3. jump target 公式。
 4. `lui $s1,0x1234` 后 `$s1` 是多少。
 5. `ori $s1,$s1,0x5678` 后 `$s1` 是多少。
-

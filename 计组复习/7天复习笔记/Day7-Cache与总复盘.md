@@ -7,7 +7,11 @@
 - Lab：`Lab4 Cache Performance for 24H.pdf`
 - 视频：p65-p76
 
+页码说明：下面的 `PPT p.X` 指 PDF 文件打开后的实际页序。
+
 ## 1. Memory Hierarchy
+
+PPT 对照：`Computer Organization 05 for 24H.pdf` p.5-p.9、p.13、p.16-p.20、p.37。
 
 存储层次从快到慢：
 
@@ -29,9 +33,13 @@ Registers -> L1 Cache -> L2 Cache -> Main Memory -> Disk
 
 ## 2. Locality
 
+PPT 对照：`Computer Organization 05 for 24H.pdf` p.13-p.18。
+
 Cache 能工作，靠 locality。
 
 ### 2.1 Temporal Locality
+
+PPT 对照：`Computer Organization 05 for 24H.pdf` p.13-p.14、p.18。
 
 时间局部性：
 
@@ -43,6 +51,8 @@ Cache 能工作，靠 locality。
 
 ### 2.2 Spatial Locality
 
+PPT 对照：`Computer Organization 05 for 24H.pdf` p.13-p.14、p.18。
+
 空间局部性：
 
 访问某个地址后，很可能访问附近地址。
@@ -52,6 +62,8 @@ Cache 能工作，靠 locality。
 顺序访问数组。
 
 ## 3. Cache 基本概念
+
+PPT 对照：`Computer Organization 05 for 24H.pdf` p.17、p.39、p.44-p.56。
 
 Block：
 
@@ -79,6 +91,8 @@ miss rate = misses / total accesses
 
 ## 4. 地址划分通用步骤
 
+PPT 对照：`Computer Organization 05 for 24H.pdf` p.42-p.55、p.59-p.68、p.78-p.82。
+
 给定：
 
 - Main memory size。
@@ -95,6 +109,8 @@ miss rate = misses / total accesses
 5. 求 tag bits。
 
 ## 5. Direct Mapped Cache
+
+PPT 对照：`Computer Organization 05 for 24H.pdf` p.42、p.44-p.55、p.67-p.68、p.79。
 
 每个 memory block 只能放到 cache 中唯一一个位置。
 
@@ -119,6 +135,8 @@ tag bits = address bits - index bits - offset bits
 
 ## 6. Fully Associative Cache
 
+PPT 对照：`Computer Organization 05 for 24H.pdf` p.59-p.61、p.67-p.68、p.79。
+
 每个 memory block 可以放到 cache 任意位置。
 
 没有 index。
@@ -137,6 +155,8 @@ tag bits = address bits - offset bits
 ```
 
 ## 7. Set Associative Cache
+
+PPT 对照：`Computer Organization 05 for 24H.pdf` p.62-p.68、p.79-p.80。
 
 n-way set associative：
 
@@ -163,6 +183,8 @@ tag bits = address bits - index bits - offset bits
 ```
 
 ## 8. Homework5 典型题
+
+PPT 对照：地址 tag/index/offset 的划分见 `Computer Organization 05 for 24H.pdf` p.44-p.55、p.67-p.68、p.79；题面见 `Homework5 of Chapter05 for 24H.pdf` p.1。
 
 题目：
 
@@ -226,6 +248,8 @@ Tag 9 | Set Index 4 | Offset 3
 
 ## 9. Valid Bit 和 Dirty Bit
 
+PPT 对照：Valid/tag 见 `Computer Organization 05 for 24H.pdf` p.44-p.47、p.55；Dirty/write-back 见 p.56、p.82。
+
 Valid bit：
 
 表示 cache block 中的数据是否有效。
@@ -235,6 +259,8 @@ Dirty bit：
 用于 write-back，表示 cache 中的数据是否已经被修改但还没写回 memory。
 
 ## 10. Replacement Policy
+
+PPT 对照：`Computer Organization 05 for 24H.pdf` p.78-p.80。
 
 Direct mapped：
 
@@ -251,7 +277,11 @@ Set associative / fully associative：
 
 ## 11. Write Policy
 
+PPT 对照：`Computer Organization 05 for 24H.pdf` p.56-p.57、p.81-p.82。
+
 ### 11.1 Write-through
+
+PPT 对照：`Computer Organization 05 for 24H.pdf` p.57、p.81。
 
 写 Cache 的同时写 Memory。
 
@@ -265,6 +295,8 @@ Set associative / fully associative：
 
 ### 11.2 Write-back
 
+PPT 对照：`Computer Organization 05 for 24H.pdf` p.56、p.82。
+
 只写 Cache，替换时再写回 Memory。
 
 优点：
@@ -277,6 +309,8 @@ Set associative / fully associative：
 - 一致性更复杂。
 
 ## 12. Lab4 趋势结论
+
+PPT 对照：Cache 映射和替换策略见 `Computer Organization 05 for 24H.pdf` p.59-p.68、p.78-p.82；Lab4 题面见 `Lab4 Cache Performance for 24H.pdf` p.1-p.5。
 
 Cache capacity 增大：
 
@@ -304,6 +338,8 @@ LRU 通常比 Random 更符合 temporal locality
 ```
 
 ## 13. 最终速记表
+
+PPT 对照：性能公式见 `Computer Organization 01 for 24H.pdf` p.99-p.111；MIPS 编码见 `Computer Organization 02 for 24H.pdf` p.61-p.82；Branch/Jump 见 p.86-p.100；IEEE 754 见 `Computer Organization 03 for 24H.pdf` p.45-p.70；Pipeline 见 `Computer Organization Chapter04 for 24H.pdf` p.101-p.161；Cache 见 `Computer Organization 05 for 24H.pdf` p.5-p.82。
 
 ### 性能
 
@@ -360,4 +396,3 @@ IF -> ID -> EX -> MEM -> WB
 4. Homework5 的 64KB / 256B / 8B 三种答案。
 5. write-through 和 write-back 区别。
 6. capacity、associativity、block size 对 miss rate 的影响。
-
