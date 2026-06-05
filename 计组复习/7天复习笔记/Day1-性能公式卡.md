@@ -4,9 +4,26 @@
 
 - 学校 PPT：`Computer Organization 01 for 24H.pdf`
 - 作业：`Homework1 of Chapter01 for 24H.pdf`
-- 视频：p08、p09
+- 视频：
+  - `1-7 计算机系统的性能指标—（1）基本性能指标`
+  - `1-7 计算机系统的性能指标—（2）与运算速度相关的性能指标`
 
 页码说明：下面的 `PPT p.X` 指 PDF 文件打开后的实际页序。
+
+## PPT 页码快速索引
+
+| 知识点 | 对应 PPT 页码 |
+|---|---|
+| 课程目标、性能影响因素 | `Computer Organization 01 for 24H.pdf` p.2-p.4、p.37-p.40 |
+| Great Ideas | `Computer Organization 01 for 24H.pdf` p.41-p.43 |
+| 程序从高级语言到机器码 | `Computer Organization 01 for 24H.pdf` p.47-p.52 |
+| ISA、软硬件接口、系统层次 | `Computer Organization 01 for 24H.pdf` p.52-p.54、p.131-p.133 |
+| object code 如何进入内存并被 CPU 执行 | `Computer Organization 01 for 24H.pdf` p.55-p.57 |
+| LCD / bit map / frame buffer 题型 | `Computer Organization 01 for 24H.pdf` p.84-p.85 |
+| execution time、relative performance | `Computer Organization 01 for 24H.pdf` p.99-p.102 |
+| clock cycle、clock rate、CPU time | `Computer Organization 01 for 24H.pdf` p.101-p.110 |
+| CPI、instruction count、编译器比较 | `Computer Organization 01 for 24H.pdf` p.109-p.117、p.119 |
+| benchmark / SPEC | `Computer Organization 01 for 24H.pdf` p.121-p.129 |
 
 ## 1. 计算机系统主线
 
@@ -25,7 +42,7 @@ PPT 对照：`Computer Organization 01 for 24H.pdf` p.47、p.52-p.54、p.131-p.1
 
 ## 2. 高级语言程序如何被 CPU 执行
 
-PPT 对照：`Computer Organization 01 for 24H.pdf` p.47、p.49-p.50。
+PPT 对照：`Computer Organization 01 for 24H.pdf` p.47、p.49-p.52。
 
 标准流程：
 

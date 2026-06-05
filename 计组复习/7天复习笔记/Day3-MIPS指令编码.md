@@ -4,9 +4,29 @@
 
 - 学校 PPT：`Computer Organization 02 for 24H.pdf`
 - 作业：`Homework2 of Chapter02 for 24H.pdf`
-- 视频：p84-p87、p94
+- 视频：
+  - `5-1 指令系统概述`
+  - `5-2-1 指令格式 —（1）指令的一般格式和指令字长`
+  - `5-2-2 指令格式 — 指令中的地址码字段`
+  - `5-2-3 指令格式 — 指令中的操作码字段`
+  - `5-5 复杂指令集计算机和精简指令集计算机`
 
 页码说明：下面的 `PPT p.X` 指 PDF 文件打开后的实际页序。
+
+## PPT 页码快速索引
+
+| 知识点 | 对应 PPT 页码 |
+|---|---|
+| ISA、architecture / organization、抽象接口 | `Computer Organization 02 for 24H.pdf` p.3-p.14 |
+| MIPS / RISC / instruction overview | `Computer Organization 02 for 24H.pdf` p.15-p.25 |
+| MIPS arithmetic、register operands、寄存器编号 | `Computer Organization 02 for 24H.pdf` p.26-p.36 |
+| memory operands、byte address、alignment、endian | `Computer Organization 02 for 24H.pdf` p.43-p.59 |
+| R-format 字段、R-format 例题 | `Computer Organization 02 for 24H.pdf` p.60-p.62、p.75-p.78 |
+| I-format、load/store、immediate | `Computer Organization 02 for 24H.pdf` p.63-p.74、p.82 |
+| branch / jump 基础 | `Computer Organization 02 for 24H.pdf` p.86-p.100 |
+| MIPS 指令表、op/funct、logical operations | `Computer Organization 02 for 24H.pdf` p.103-p.117、p.121-p.122 |
+| addressing modes 总结、R/I/J 总览 | `Computer Organization 02 for 24H.pdf` p.127-p.142 |
+| endian 复习图 | `Computer Organization 02 for 24H.pdf` p.49-p.53、p.85、p.101 |
 
 ## 1. ISA 是什么
 

@@ -5,9 +5,25 @@
 - 学校 PPT：`Computer Organization 02 for 24H.pdf`
 - Lab：`Lab3 Task for 24H.pdf`
 - 已完成作业：`22H034160227-徐楚明-Lab3-ISA.docx`
-- 视频：p88-p92
+- 视频：
+  - `5-3-1 寻址方式 — 概述`
+  - `5-3-2 寻址方式 — 指令寻址方式`
+  - `5-3-3 寻址方式 — 操作数寻址方式（1）`
+  - `5-3-3 寻址方式 — 操作数寻址方式（2）`
+  - `5-3-4 寻址方式 — 习题课`
 
 页码说明：下面的 `PPT p.X` 指 PDF 文件打开后的实际页序。
+
+## PPT 页码快速索引
+
+| 知识点 | 对应 PPT 页码 |
+|---|---|
+| `lw/sw`、base addressing、有效地址 | `Computer Organization 02 for 24H.pdf` p.43-p.59、p.127-p.128、p.138 |
+| `beq/bne`、PC-relative branch | `Computer Organization 02 for 24H.pdf` p.86-p.92、p.97-p.100、p.133-p.134、p.139 |
+| `j`、pseudo-direct jump | `Computer Organization 02 for 24H.pdf` p.93-p.96、p.107、p.130、p.135、p.140 |
+| `lui/ori`、logical immediate | `Computer Organization 02 for 24H.pdf` p.16、p.105、p.115-p.117 |
+| MIPS addressing modes 总结 | `Computer Organization 02 for 24H.pdf` p.127-p.142 |
+| Lab3 题面 | `Lab3 Task for 24H.pdf` p.1-p.4 |
 
 ## 1. 三类地址计算
 
@@ -157,7 +173,7 @@ Exit = 0x00400060
 
 ## 6. `lui + ori`
 
-PPT 对照：`ori` 和 logical immediate 见 `Computer Organization 02 for 24H.pdf` p.105、p.115-p.117；`lui + ori` 的具体 Lab3 空格见 `Lab3 Task for 24H.pdf` p.1-p.2。
+PPT 对照：`lui` 的 op 表见 `Computer Organization 02 for 24H.pdf` p.16；`ori` 和 logical immediate 见 p.105、p.115-p.117；`lui + ori` 的具体 Lab3 空格见 `Lab3 Task for 24H.pdf` p.1-p.2。
 
 `lui`：
 

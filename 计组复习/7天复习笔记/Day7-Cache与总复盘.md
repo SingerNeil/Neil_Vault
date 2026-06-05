@@ -5,9 +5,39 @@
 - 学校 PPT：`Computer Organization 05 for 24H.pdf`
 - 作业：`Homework5 of Chapter05 for 24H.pdf`
 - Lab：`Lab4 Cache Performance for 24H.pdf`
-- 视频：p65-p76
+- 视频：
+  - `4-7-1 高速缓冲存储器cache—cache的相关基本概念`
+  - `4-7-2 高速缓冲存储器cache—cache的读、写流程`
+  - `4-7-3 高速缓冲存储器cache — 地址映射 — （1）直接映射`
+  - `4-7-3 高速缓冲存储器cache — 地址映射 — （2）直接映射 （习题课）`
+  - `4-7-3 高速缓冲存储器cache — 地址映射 — （3）全相联映射`
+  - `4-7-3 高速缓冲存储器cache — 地址映射 — （4）组相联映射`
+  - `4-7-3 高速缓冲存储器cache — 地址映射 — （5）习题课`
+  - `4-7-4 高速缓冲存储器cache — 替换算法（1）`
+  - `4-7-4 高速缓冲存储器cache — 替换算法（2）习题课1`
+  - `4-7-4 高速缓冲存储器cache — 替换算法（3）习题课2`
+  - `4-7-5 高速缓冲存储器cache — 写入策略`
+  - `4-7-6 高速缓冲存储器cache — cache的分类和应用`
 
 页码说明：下面的 `PPT p.X` 指 PDF 文件打开后的实际页序。
+
+## PPT 页码快速索引
+
+| 知识点 | 对应 PPT 页码 |
+|---|---|
+| memory hierarchy 目标和结构 | `Computer Organization 05 for 24H.pdf` p.5-p.9、p.37-p.38、p.90 |
+| locality、hit/miss terminology | `Computer Organization 05 for 24H.pdf` p.13-p.18 |
+| memory technology：SRAM / DRAM | `Computer Organization 05 for 24H.pdf` p.20-p.36 |
+| cache 基本问题和工作原理 | `Computer Organization 05 for 24H.pdf` p.39-p.41 |
+| direct mapped cache | `Computer Organization 05 for 24H.pdf` p.42-p.55 |
+| valid bit、tag、简单例题 | `Computer Organization 05 for 24H.pdf` p.44-p.55 |
+| write-back / write-through 初步 | `Computer Organization 05 for 24H.pdf` p.56-p.57 |
+| fully associative / set associative | `Computer Organization 05 for 24H.pdf` p.59-p.68 |
+| tag/index/offset 计算例题 | `Computer Organization 05 for 24H.pdf` p.72-p.76 |
+| block placement / identification / replacement / write strategy | `Computer Organization 05 for 24H.pdf` p.78-p.82 |
+| cache 对 CPI 的影响 | `Computer Organization 05 for 24H.pdf` p.58、p.83 |
+| Homework5 题面 | `Homework5 of Chapter05 for 24H.pdf` p.1 |
+| Lab4 题面 | `Lab4 Cache Performance for 24H.pdf` p.1-p.5 |
 
 ## 1. Memory Hierarchy
 

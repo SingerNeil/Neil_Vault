@@ -4,9 +4,32 @@
 
 - 学校 PPT：`Computer Organization Chapter04 for 24H.pdf`
 - Lab：`Lab2 Pipelining for 24H.pdf`
-- 视频：p125-p130、p132
+- 视频：
+  - `6-6-1 指令流水线概述`
+  - `6-6-2 流水线数据通路`
+  - `6-6-3 流水线冲突与处理（1）— 结构冲突与解决方案，控制冲突与解决方案`
+  - `6-6-3 流水线冲突与处理（2）— 数据冲突`
+  - `6-6-3 流水线冲突与处理（3）— 数据冲突的解决方案—插入气泡`
+  - `6-6-3 流水线冲突与处理（4）— 数据冲突的解决方案—数据旁路`
+  - `6-6-4 指令流水线—习题课`
 
 页码说明：下面的 `PPT p.X` 指 PDF 文件打开后的实际页序。
+
+## PPT 页码快速索引
+
+| 知识点 | 对应 PPT 页码 |
+|---|---|
+| pipeline 引入、single-cycle / pipeline 执行时间对比 | `Computer Organization Chapter04 for 24H.pdf` p.101-p.110 |
+| 五级流水线 IF/ID/EX/MEM/WB | `Computer Organization Chapter04 for 24H.pdf` p.105-p.112、p.128 |
+| pipeline registers、pipelined datapath | `Computer Organization Chapter04 for 24H.pdf` p.114-p.116 |
+| cycle-by-cycle pipeline 图 | `Computer Organization Chapter04 for 24H.pdf` p.117-p.129 |
+| pipeline speedup / throughput / latency | `Computer Organization Chapter04 for 24H.pdf` p.108-p.110、p.129、p.159-p.161 |
+| structural hazard | `Computer Organization Chapter04 for 24H.pdf` p.131-p.135 |
+| data hazard、stall、forwarding | `Computer Organization Chapter04 for 24H.pdf` p.136-p.146 |
+| load-use hazard | `Computer Organization Chapter04 for 24H.pdf` p.143-p.145 |
+| control hazard、flush、branch prediction、delayed branch | `Computer Organization Chapter04 for 24H.pdf` p.147-p.158 |
+| pipeline summary | `Computer Organization Chapter04 for 24H.pdf` p.159-p.162 |
+| Lab2 题面 | `Lab2 Pipelining for 24H.pdf` p.1-p.3 |
 
 ## 1. 为什么要流水线
 

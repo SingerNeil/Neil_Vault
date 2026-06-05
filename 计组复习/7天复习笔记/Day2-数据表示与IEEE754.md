@@ -4,13 +4,41 @@
 
 - 学校 PPT：`Computer Organization 03 for 24H.pdf`
 - 作业：`Homework3 for Chapter03 for 24H.pdf`
-- 视频：p10-p20、p25-p26
+- 视频：
+  - `2-1 数据表示的相关基本概念`
+  - `2-2 进位计数制及其数据之间的相互转换`
+  - `2-3-1 定点数的编码—原码`
+  - `2-3-2 定点数的编码—补码`
+  - `2-3-3 定点数的编码—反码`
+  - `2-3-4 定点数的编码—移码`
+  - `2-3-5 定点数的编码—原码、补码、反码、移码之间的转换`
+  - `2-3-6 定点数的编码—习题课`
+  - `2-4-1 浮点数的表示—浮点数的表示形式和表示范围`
+  - `2-4-2 浮点数的表示—浮点数的规格化`
+  - `2-4-3 浮点数的表示—IEEE 754 浮点数标准`
+  - `3-2-1 定点数的加法和减法运算 — 补码加减法运算公式`
+  - `3-2-2 定点数的加法和减法运算 — 补码加减法运算的溢出检测`
 
 页码说明：下面的 `PPT p.X` 指 PDF 文件打开后的实际页序。
 
+## PPT 页码快速索引
+
+| 知识点 | 对应 PPT 页码 |
+|---|---|
+| 为什么用二进制、正整数二进制表示 | `Computer Organization 03 for 24H.pdf` p.5-p.13 |
+| sign-magnitude / one's complement / two's complement | `Computer Organization 03 for 24H.pdf` p.14-p.25 |
+| 补码范围、求负数补码、signed/unsigned | `Computer Organization 03 for 24H.pdf` p.26-p.38 |
+| fixed point / scientific notation | `Computer Organization 03 for 24H.pdf` p.41-p.44 |
+| floating point 基本格式 | `Computer Organization 03 for 24H.pdf` p.45-p.52 |
+| IEEE 754 single / double 字段 | `Computer Organization 03 for 24H.pdf` p.53-p.56 |
+| IEEE 754 特殊值、0、infinity、NaN | `Computer Organization 03 for 24H.pdf` p.58-p.66 |
+| IEEE 754 例题：`-0.75`、十六进制转浮点 | `Computer Organization 03 for 24H.pdf` p.67-p.70 |
+| 补码加减法、溢出判断 | `Computer Organization 03 for 24H.pdf` p.73-p.83 |
+| 浮点加法流程 | `Computer Organization 03 for 24H.pdf` p.84-p.90 |
+
 ## 1. 进制转换
 
-PPT 对照：`Computer Organization 03 for 24H.pdf` p.12-p.13、p.44；十六进制补充见 `Computer Organization 02 for 24H.pdf` p.78、p.81。
+PPT 对照：`Computer Organization 03 for 24H.pdf` p.7-p.13；十六进制补充见 `Computer Organization 02 for 24H.pdf` p.78、p.81。
 
 ### 1.1 二进制转十进制
 
