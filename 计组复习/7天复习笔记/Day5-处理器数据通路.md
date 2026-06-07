@@ -8,21 +8,11 @@
 - 视频：
   - `6-1 中央处理器概述`：补 CPU 组成概念。
   - `6-2-1 指令的执行过程 — 指令执行的一般流程`、`6-2-2 指令的执行过程 — 指令周期`、`6-2-3 指令的执行过程 — 指令周期各阶段的数据流`：补 fetch / decode / execute / memory / write back 的过程理解。
-  - `6-3-1 数据通路 — CPU内部单总线结构`、`6-3-2 数据通路 — 习题课（1）`、`6-3-2 数据通路 —习题课（2）`、`6-3-2 数据通路 — 习题课（3）`：只补通用数据通路和微操作题，不等同于学校 PPT 的 MIPS single-cycle datapath。
+  - `6-3-1 数据通路 — CPU内部单总线结构`、`6-3-2 数据通路 — 习题课（1）`、`6-3-2 数据通路 —习题课（2）`、`6-3-2 数据通路 — 习题课（3）`：可选，只补通用数据通路和微操作题。
   - `6-4-1 控制器 — CPU的时序及其控制方式`：只补控制器/时序概念。
+  - MIPS single-cycle datapath、控制信号表、Homework4 的 LWI 扩展题：直接看 Chapter04 PPT p.29-p.66 和 Homework4。
 
 页码说明：下面的 `PPT p.X` 指 PDF 文件打开后的实际页序。
-
-## 视频匹配度修正
-
-我重新对照了本地视频 p98-p106、Chapter04 PPT 和 Homework4：
-
-- p98-p101 适合补 CPU 组成、指令执行流程、指令周期，和 Day5 前半概念是中等匹配。
-- p102-p105 讲的是“CPU 内部单总线结构”和微操作习题，能帮助理解数据流，但不是学校 PPT 中 `add/lw/sw/beq/j` 的 MIPS single-cycle datapath。
-- p106 讲控制器时序，只能补概念，不覆盖 PPT 的 `RegDst / ALUSrc / MemtoReg / RegWrite / MemRead / MemWrite / Branch / ALUOp` 控制表。
-- Homework4 的 LWI 扩展题必须按学校 PPT 的完整 MIPS datapath 改图、加 mux、加控制信号，视频不能直接替代。
-
-所以 Day 5 的正确用法是：先用 p98-p106 补“CPU 怎么执行指令”的直觉，然后必须回到 `Computer Organization Chapter04 for 24H.pdf` p.29-p.66 和 Homework4 做 MIPS datapath。
 
 ## PPT 页码快速索引
 

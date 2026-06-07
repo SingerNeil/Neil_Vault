@@ -29,15 +29,6 @@
 
 页码说明：下面的 `PPT p.X` 指 PDF 文件打开后的实际页序。
 
-## 视频匹配度检查
-
-我重新对照了本地视频 p44-p76、PPT05、Homework5 和 Lab4：Day 7 的 cache 视频是强匹配，但原清单漏了 PPT05 前半的存储器技术补充。
-
-- p65-p76 直接覆盖 cache 基本概念、读写流程、直接映射、全相联、组相联、替换算法、写策略，和 Homework5 / Lab4 的核心题型匹配。
-- PPT05 p.5-p.18 的 memory hierarchy / locality，可用 `4-1`、`4-1-2` 补理解。
-- PPT05 p.20-p.36 的 SRAM / DRAM / memory technology，可用 `4-2-1` 到 `4-3-3` 补理解。
-- 如果时间不够，Day7 必看仍然是 p65-p76；前半存储器技术视频只在你复习 PPT05 p.5-p.36 时补看。
-
 ## PPT 页码快速索引
 
 | 知识点 | 对应 PPT 页码 |
