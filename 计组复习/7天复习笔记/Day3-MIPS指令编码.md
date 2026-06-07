@@ -5,13 +5,26 @@
 - 学校 PPT：`Computer Organization 02 for 24H.pdf`
 - 作业：`Homework2 of Chapter02 for 24H.pdf`
 - 视频：
-  - `5-1 指令系统概述`
-  - `5-2-1 指令格式 —（1）指令的一般格式和指令字长`
-  - `5-2-2 指令格式 — 指令中的地址码字段`
-  - `5-2-3 指令格式 — 指令中的操作码字段`
-  - `5-5 复杂指令集计算机和精简指令集计算机`
+  - `4-1-5 存储器概述 — 主存中数据的存放`：只对应 endian / memory layout。
+  - MIPS 机器码编码没有强匹配视频，必须以学校 PPT 和 Homework2 为主。
+  - `5-1 指令系统概述`、`5-5 复杂指令集计算机和精简指令集计算机` 只作为 ISA / RISC-CISC 概念补充。
 
 页码说明：下面的 `PPT p.X` 指 PDF 文件打开后的实际页序。
+
+## 视频匹配度修正
+
+我重新对照了本地视频 p84-p97 和学校 PPT02 / Homework2：
+
+- `5-2-1`、`5-2-2`、`5-2-3` 讲的是通用指令字长、地址码字段、操作码字段，不讲 MIPS 的 R/I/J 格式，也不讲 `op/rs/rt/rd/shamt/funct` 的具体编码。
+- `5-3-1` 到 `5-3-4` 讲的是通用寻址方式，不适合作为 MIPS 机器码题的主资料。
+- `5-5` 只讲 CISC/RISC 对比，和 Homework2 只有概念层面的弱关联。
+- `4-1-5 存储器概述 — 主存中数据的存放` 能补 Homework2 第 1 题的 big-endian / little-endian。
+
+所以 Day 3 的正确用法是：
+
+1. endian 题：看 `4-1-5`，再做 Homework2 第 1 题。
+2. MIPS 编码题：直接看 `Computer Organization 02 for 24H.pdf` p.61、p.75-p.78、p.132-p.135，再做 Homework2 第 2 题。
+3. 不要用 `5-2-1`、`5-2-2`、`5-2-3` 替代学校 PPT 的 MIPS 编码部分。
 
 ## PPT 页码快速索引
 
