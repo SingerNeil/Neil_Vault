@@ -2365,7 +2365,7 @@ settings:
     -
         title: Progress Bar Background Color
         description: HTML <progress> value color
-        id: progress
+        id: progress-bg
         type: variable-themed-color
 		format: hex
 		default-dark: '#252c36'
@@ -3982,12 +3982,12 @@ body {
 .is-mobile.is-mobile .view-header-title {
   padding: 0 var(--size-4-1);
 }
+.is-mobile.is-mobile .metadata-content {
+  background-color: transparent;
+}
 
 .is-mobile {
   --mobile-toolbar-background: var(--deep-dark-accent);
-}
-.is-mobile .workspace-drawer .nav-buttons-container {
-  --icon-color-active: var(--interactive-accent-hover);
 }
 .is-mobile .workspace-drawer-backdrop {
   opacity: 0.9 !important;
@@ -3995,6 +3995,16 @@ body {
 .is-mobile .workspace-drawer:is(.mod-left, .mod-right) {
   border: none;
   box-shadow: 0 0 5px var(--outline), 0 0 5px var(--outline), 0 0 5px var(--outline);
+}
+.is-mobile :is(.workspace-drawer-tab-select, .workspace-drawer-tab-options-list) .workspace-tab-header-inner:hover {
+  background-color: var(--hvr-active);
+  color: var(--text-normal);
+  --sidebar-tab-color-hover: var(--text-normal);
+}
+.is-mobile .workspace-drawer-tab-options .workspace-tab-header.is-active {
+  --icon-color: var(--text-dl);
+  --sidebar-icon-color: var(--text-dl);
+  color: var(--text-dl);
 }
 .is-mobile .workspace-drawer-active-tab-container.is-fullscreen .workspace-drawer-active-tab-title {
   text-align: center;
@@ -6821,13 +6831,23 @@ body {
   width: 100%;
   text-overflow: ellipsis;
 }
+.longform-explorer.longform-explorer #project-picker select > .projectOption {
+  font-size: var(--font-text-size);
+}
+.longform-explorer.longform-explorer .tab-list {
+  display: flex;
+}
 .longform-explorer.longform-explorer .tab-list button {
   color: var(--headers);
+  padding: var(--size-4-1) var(--size-4-3);
 }
 .longform-explorer.longform-explorer .tab-list .selected {
   border-color: var(--accent);
   background-color: var(--outer-bar);
   color: var(--text);
+}
+.longform-explorer.longform-explorer .scene-container.scene-container {
+  padding-left: calc(0 * var(--longform-explorer-indent-size) + 6px) !important;
 }
 .longform-explorer.longform-explorer .draft-container.draft-container {
   white-space: pre-wrap;
@@ -9584,7 +9604,6 @@ body:not(.check-color, .check-text) ul > li.task-list-item[data-task][data-task=
   --callout-color: var(--note, var(--background-primary));
   --callout-padding: 0;
   --callout-content-padding: 5px;
-  --callout-margin: 0 0 0 5px;
   background: var(--note, var(--background-primary));
   --h1-border-line-height: 0;
   --h2-border-line-height: 0;
@@ -9598,6 +9617,9 @@ body:not(.check-color, .check-text) ul > li.task-list-item[data-task][data-task=
   max-width: 300px;
   float: right;
   border-radius: var(--radius-s);
+}
+.callout.callout[data-callout~=infobox]:not([data-callout-metadata~=wfull]) {
+  --callout-margin: 0 0 0 5px;
 }
 .callout.callout[data-callout~=infobox] > .callout-title {
   justify-content: center;
